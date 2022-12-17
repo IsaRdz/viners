@@ -5,6 +5,7 @@
     font-family: 'Roboto', sans-serif;
 }
 header{
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -39,7 +40,7 @@ a {
     height: 7rem;
     background-color: rgba(12, 58, 12, 0.712);
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 0 10%;
 }
@@ -53,9 +54,15 @@ a {
     justify-content: space-around;
 }
 .footer-dev > span{
-    color: silver;
+    color: whitesmoke;
 }
-.footer-dev > img{
-    width: 4vw;
-    padding-right: 1vw;
+.footer-dev > a > img{
+    width: 3rem;
+    padding-left: 0.2vw;
+    padding-right: 0.2vw;
+}
+.footer-dev > a > img:hover{
+    -webkit-transform: rotateY(360deg);
+    transition: 1s ease-in-out;
+    
 }
