@@ -31,8 +31,12 @@ header{
 }
 a {
     text-decoration: none;
+    font-size: medium;
     color: whitesmoke;
 }
+
+
+
 .footer-container{
     position: absolute;
     bottom: 0;
@@ -64,5 +68,4 @@ a {
 .footer-dev > a > img:hover{
     -webkit-transform: rotateY(360deg);
     transition: 1s ease-in-out;
-    
 }
