@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+:root{
+    --green: #335c67;
+    --yellow: #fff3b0;
+    --orange: #e09f3e;
+    --red:#9e2a2b;
+    --mahogany: #540b0e;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+body{
+    min-height: 100vh;
+}
+
+/** -----HEADER----- **/
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    background-color: rgba(12, 58, 12, 0.712);
+}
+.logo{
+    font-size: xx-large;
+    font-weight: bold;
+}
+.nav-container > ul{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.nav-container > ul > li{
+    list-style-type: none;
+    margin: 2vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+/** -----SLIDER----- **/
+.slider-frame {
+    height: 23em;
+	overflow: hidden;
+    background-color: #947654;
+}
+
+.slider-frame ul {
+	display: flex;
+	width: 600%;
+	animation: slide 15s infinite alternate ease-in-out;
+}
+
+.slider-frame li {
+	width: 100%;
+}
+
+.slider-img img{
+    width: 100%;
+    /* height: 100%; */
+    /* object-fit: cover; */
+    /* object-position: center; */
+}
+
+@keyframes slide {
+	0% {margin-left: 0;}
+	14% {margin-left: 0;}
+	
+	17% {margin-left: -100%;}
+	31% {margin-left: -100%;}
+	
+	33% {margin-left: -200%;}
+	47% {margin-left: -200%;}
+	
+	50% {margin-left: -300%;}
+	64% {margin-left: -300%;}
+
+    67% {margin-left: -400%;}
+	81% {margin-left: -400%;}
+
+    84% {margin-left: -500%;}
+	100% {margin-left: -500%;}
+}
+
+/** -----CARDS----- **/
+.card{
+    background-color: red;
+    width: 20em;
+    height: 25em;
+}
+
+.card__body{
+    display: flex;
+    gap: 1em;
+}
+
+.card__img{
+    background-color: #BA8B02;
+    width: 100%;
+    /* height: 100%; */
+    background-repeat: no-repeat;
+    background-position-y: 70%;
+    background-size: cover;
+}
+
+.card__img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/** -----FOOTER----- **/
+.footer-container{
+    /* position: absolute; */
+    bottom: 0;
+    width: 100%;
+    height: 7rem;
+    background-color: rgba(12, 58, 12, 0.712);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 10%;
+}
+.footer-container > div{
+    display: flex;
+    align-items: center;
+}
+.footer-dev{
+    margin-left: 2vw;
+    margin-right: 2vw;
+    justify-content: space-around;
+}
+.footer-dev > span{
+    color: whitesmoke;
+}
+.footer-dev > a > img{
+    width: 3rem;
+    padding-left: 0.2vw;
+    padding-right: 0.2vw;
+}
+.footer-dev > a > img:hover{
+    -webkit-transform: rotateY(360deg);
+    transition: 1s ease-in-out;
+}
+
