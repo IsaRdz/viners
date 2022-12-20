@@ -65,6 +65,13 @@ a {
     color: whitesmoke;
 }
 
+
+
+.footer-container{
+    position: absolute;
+    color: whitesmoke;
+}
+
 /** -----SLIDER----- **/
 .slider-frame {
     height: 23em;
