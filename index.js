@@ -33,8 +33,8 @@ function renderFooter(){
         
         body += `
         <div class="footer-dev">
-                <a href=" ${dev.dev_github} " target="_blank"><img src="https://img.icons8.com/glyph-neue/64/FFFFFF/github.png"/></a>
-                <a href=" ${dev.dev_linkedin} "><img src="https://img.icons8.com/glyph-neue/64/FFFFFF/linkedin-circled.png"/></a>
+                <a href=" ${dev.dev_github}" target="_blank"><img src="https://img.icons8.com/glyph-neue/64/FFFFFF/github.png"/></a>
+                <a href=" ${dev.dev_linkedin}" target="_blank"><img src="https://img.icons8.com/glyph-neue/64/FFFFFF/linkedin-circled.png"/></a>
                 <span> ${dev.nickname} </span>
             </div>
         `
