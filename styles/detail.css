@@ -1,0 +1,64 @@
+.main {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    height: calc(100vh - 7rem);
+}
+
+.detail-container {
+    background-color: rgb(243, 115, 115);
+    display: flex;
+    padding: 2rem;
+}
+
+.image-container {
+    background-color: rgb(113, 213, 180);
+    height: 500px;
+    width: 200px;
+    margin-right: 4rem;
+}
+
+.detail-info-container {
+    height: 500px;
+    width: 400px;
+}
+
+.name-id-container {
+    background-color: rgb(101, 173, 236);
+    padding: 0.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+}
+
+.wine-name, .wine-id {
+    margin: auto 0;
+}
+
+.wine-description {
+    background-color: rgb(76, 234, 234);
+    height: 250px;
+    padding: 2rem 0 0 0;
+}
+
+.wine-categories {
+    background-color: rgb(133, 133, 246);
+    height: 100px;
+}
+
+.wine-available {
+    background-color: rgb(178, 108, 244);
+    height: 50px;
+}
+
+.purchase-container {
+    background-color: rgb(197, 241, 110);
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+}
+
+.wine-price, .add-to-cart {
+    margin: auto 0;
+}
