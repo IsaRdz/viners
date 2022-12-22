@@ -65,6 +65,10 @@ a {
     color: whitesmoke;
 }
 
+.hidden {
+    display: none;
+}
+
 /** -----SLIDER----- **/
 .slider-frame {
     height: 23em;
