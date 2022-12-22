@@ -56,9 +56,9 @@ const renderAllWines = async () => {
 
     allWines = await getWines()
 
-    allWines.map(wine => {
-        cardsContainer.insertAdjacentHTML('beforeend', wineCard(wine))
-    })
+    // allWines.map(wine => {
+    //     cardsContainer.insertAdjacentHTML('beforeend', wineCard(wine))
+    // })
     
 }
 
