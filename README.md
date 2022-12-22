@@ -1,4 +1,4 @@
-** VINERS **
+# VINERS
 Vinoteca online donde vas a encontrar las mejores variedades de vinos sin moverte de tu casa.
 
 ------------
@@ -27,7 +27,7 @@ Vinoteca online donde vas a encontrar las mejores variedades de vinos sin movert
 - Etc.
 
 ## Colaboradores
-Boujon, Juan (@juan2805)
-Cristian, Mansila (@cristianmansilla)
+Boujon, Juan (@juan2805) <br>
+Cristian, Mansila (@cristianmansilla) <br>
 Isabel, Rodríguez (@isardz)
 
