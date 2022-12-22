@@ -10,33 +10,36 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/detail.css">
+    <link rel="stylesheet" href="../styles/cardResume.css">
     <title>Viners</title>
 </head>
 <body>
-    <main class="main">
-        <div class="detail-container">
-            <picture class="image-container">
-                <img src="..." alt="">
-            </picture>
-            <div class="detail-info-container">
-                <div class="name-id-container">
-                    <h1 class="wine-name">Cosecha Tardia</h1>
-                    <p class="wine-id">ID: 2</p>
-                </div>
-                <div class="description-container">
-                    <p class="wine-description">
-                        Blanco y Dulce! XD
-                    </p>
-                    <p class="wine-categories">
-                        Blanco
-                    </p>
-                </div>
-                <div class="wine-available">Available: 15 units</div>
-                <div class="purchase-container">
-                    <p class="wine-price">Price: $ 350</p>
-                    <button class="add-to-cart">Add to Cart</button>
+    <header>
+        <a href="../index.html" class="logo">VINERS</a>
+        <nav>
+            <div class="nav-container">
+                <ul>
+                    <li>
+                        <!-- <img src="https://img.icons8.com/external-tanah-basah-glyph-tanah-basah/48/FFFFFF/external-profile-social-media-ui-tanah-basah-glyph-tanah-basah.png"/> -->
+                        <i class="fa-solid fa-user"></i>
+                    </li>
+                    <li class="shopping-cart-image-container">
+                        <!-- <img src="https://img.icons8.com/ios-filled/50/FFFFFF/shopping-cart.png"/> -->
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </li>
+                </ul>
+            </div>
+            <div class="cart-resume-container hidden">
+                <div class="buttons-container">
+                    <button class="clean-cart">Clean Cart</button>
+                    <a href="./cartDetail.html" class="clean-cart">More Details</a>
                 </div>
             </div>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="detail-container">
+            
         </div>
     </main>
     <footer>
@@ -46,4 +49,6 @@
     </footer>
 </body>
 <script src="../fotter.js"></script>
+<script src="../cartResume.js"></script>
+<script src="../detail.js"></script>
 </html>
