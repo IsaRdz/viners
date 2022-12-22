@@ -39,6 +39,11 @@ header{
     font-weight: bold;
 }
 
+.logo img{
+    width: 2.5em;
+    background-color: red;
+}
+
 .nav-container > ul{
     display: flex;
     flex-direction: row;
@@ -62,13 +67,6 @@ header{
 a {
     text-decoration: none;
     font-size: medium;
-    color: whitesmoke;
-}
-
-
-
-.footer-container{
-    position: absolute;
     color: whitesmoke;
 }
 
