@@ -231,7 +231,7 @@ a {
     /* margin-left: -1em; */
 }
 
-/** -----Form----- **/
+/** -----CONTACT FORM----- **/
 
 .iframe-form-container{
     display: grid;
@@ -309,10 +309,7 @@ a {
 .item-image > img{
     height: 15vh;
 }
-.button-item-cart{
-    width: 5%;
-    padding: 0 2vw 0 2vw;
-}
+
 .count-product{
     display: flex;
     flex-direction: row;
@@ -320,6 +317,7 @@ a {
 }
 .button-item-cart{
     margin: 0 1.5vw 0 1.5vw;
+    padding: 0.5vh 2vw 0.5vh 2vw;
     background-color: var(--white);
     border: none;
     color: var(--green);
@@ -331,6 +329,9 @@ a {
     background-color: var(--green);
     color: var(--white);
 }
+.button-item-cart:active{
+    animation: click 0.5s 1;
+  }
 
 .fa-trash-can:active{
     animation: click 0.5s 1;
@@ -362,9 +363,17 @@ a {
   .btn-limpiar{
     background-color: var(--white);
   }
+ .btn-limpiar:hover{
+    background-color: var(--green);
+    color: var(--white);
+  }
   .btn-finalizar{
     background-color: var(--green);
     color: var(--white);
+  }
+  .btn-finalizar:hover{
+    background-color: var(--white);
+    color: var(--black);
   }
 
 /** -----FOOTER----- **/
