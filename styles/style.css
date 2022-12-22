@@ -250,7 +250,7 @@ a {
     box-shadow: 2px 2px 5px black;
     margin-bottom: 2vh;
     padding: 2vh;
-    color: #ffffff;
+    color: --white;
     display: block;
     opacity: 0.8;
 }
@@ -260,13 +260,13 @@ a {
     margin-bottom: 2vh;
 }
 
-form{
+.form-contact{
     width: 100%;
     display: flex;
     flex-direction: column;
     padding: 0 3vw 0 3vw;
 }
-form input,textarea{
+.form-contact input,textarea{
     margin-bottom: 2vh;
     border-radius: 4px;
     
@@ -283,6 +283,90 @@ form input,textarea{
 .btn-submit:hover{
     background-color: #e09f3e;
 }
+
+/** -----CART DETAILS----- **/
+.cart-detail-container{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    background-color: var(--white);
+}
+
+.item-cart{    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2% 10%;
+    margin: 0 5vw 1.5vh 5vw;
+    background-color: var(--white);
+    border-radius: 5px;
+    box-shadow: 8px 4px 14px -12px var(--gray);
+    align-items: center;
+}
+
+.item-image > img{
+    height: 15vh;
+}
+.button-item-cart{
+    width: 5%;
+    padding: 0 2vw 0 2vw;
+}
+.count-product{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.button-item-cart{
+    margin: 0 1.5vw 0 1.5vw;
+    background-color: var(--white);
+    border: none;
+    color: var(--green);
+    text-align: center;
+    font-size: x-large;
+    text-align: center;
+}
+.button-item-cart:hover{
+    background-color: var(--green);
+    color: var(--white);
+}
+
+.fa-trash-can:active{
+    animation: click 0.5s 1;
+  }
+  @keyframes click{
+    25%,75%{
+      transform: scale(0.8)
+    }
+    50%{
+      transform: scale(1.1)
+    }
+  }
+  .total-price{
+    font-size: x-large;
+    display: flex;
+    justify-content: flex-end;
+    margin: 2% 25%;
+  }
+  .btns-container{
+    display: flex;
+    justify-content: space-around;
+  }
+  .btns-container > button{
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 2px 2px 2px var(--gray);
+  }
+  .btn-limpiar{
+    background-color: var(--white);
+  }
+  .btn-finalizar{
+    background-color: var(--green);
+    color: var(--white);
+  }
+
 /** -----FOOTER----- **/
 
 .footer-container{
