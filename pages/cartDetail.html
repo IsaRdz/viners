@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>Cart detail</title>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">VINERS</a>
+      <nav>
+        <div class="nav-container">
+          <ul>
+            <li><a href="#">Category 1</a></li>
+            <li><a href="#">Category 2</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="./pages/detail.html">Details Provisore link</a></li>
+            <li>
+              <!-- <img src="https://img.icons8.com/external-tanah-basah-glyph-tanah-basah/48/FFFFFF/external-profile-social-media-ui-tanah-basah-glyph-tanah-basah.png"/> -->
+              <i class="fa-solid fa-user fa-xl"></i>
+            </li>
+            <li>
+              <!-- <img src="https://img.icons8.com/ios-filled/50/FFFFFF/shopping-cart.png"/> -->
+              <i class="fa-solid fa-cart-shopping fa-xl"></i>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section class="cart-detail-container">
+        <div class="item-cart">
+            <div class="item-image">
+                <img src="../assets/img/products/botella_gaudila2013.svg" alt="">
+            </div>
+            <div class="item-name">
+                <p>Name product</p>
+            </div>
+            <form class="count-product">
+                <button type="button" class="button-item-cart" aria-label="Subtract one item">-</button>
+                <span>0</span>
+                <button type="button" class="button-item-cart" aria-label="Add one item">+</button>
+            </form>
+            <div class="item-price">
+                <p>$ 1000</p>
+            </div>
+            <i class="fa-regular fa-trash-can fa-xl"></i>
+        </div>
+        <div class="item-cart">
+            <div class="item-image">
+                <img src="../assets/img/products/botella_maquinista.svg" alt="">
+            </div>
+            <div class="item-name">
+                <p>Name product</p>
+            </div>
+            <form class="count-product">
+                <button type="button" class="button-item-cart" aria-label="Subtract one item">-</button>
+                <span>0</span>
+                <button type="button" class="button-item-cart" aria-label="Add one item">+</button>
+            </form>
+            <div class="item-price">
+                <p>$ 1000</p>
+            </div>
+            <i class="fa-regular fa-trash-can fa-xl"></i>
+        </div>
+        <div class="item-cart">
+            <div class="item-image">
+                <img src="../assets/img/products/botella_gaudila2017.svg" alt="">
+            </div>
+            <div class="item-name">
+                <p>Name product</p>
+            </div>
+            <form class="count-product">
+                <button type="button" class="button-item-cart" aria-label="Subtract one item">-</button>
+                <span>0</span>
+                <button type="button" class="button-item-cart" aria-label="Add one item">+</button>
+            </form>
+            <div class="item-price">
+                <p>$ 1000</p>
+            </div>
+            <i class="fa-regular fa-trash-can fa-xl"></i>
+        </div>
+        <div class="total-price">
+            <p>Total: $3000</p>
+        </div>
+        <div class="btns-container">
+            <button class="btn-limpiar">Limpiar carrito</button>
+            <button class="btn-finalizar">Finalizar compra</button>
+        </div>
+    </section>
+    <footer>
+      <div class="footer-container" id="footer-container"></div>
+    </footer>
+  </body>
+  <script src="../index.js"></script>
+</html>
