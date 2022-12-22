@@ -245,19 +245,22 @@ a {
 }
 
 .form-container{
-    background-color:#540b0e;
-    border-radius: 20px;
+    background-color:var(--white);
     box-shadow: 2px 2px 5px black;
-    margin-bottom: 2vh;
-    padding: 2vh;
-    color: --white;
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+    padding-bottom: 5vh;
+    color: var(--gray);
     display: block;
     opacity: 0.8;
 }
 
-.form-container > h3{
+.form-container > h2{
     text-align: center;
     margin-bottom: 2vh;
+    padding: 3vh 0 3vh 0;
+    background-color: var(--green);
+    color: var(--white);
 }
 
 .form-contact{
@@ -266,23 +269,30 @@ a {
     flex-direction: column;
     padding: 0 3vw 0 3vw;
 }
+.form-contact > label > span{
+    color: red;
+}
 .form-contact input,textarea{
     margin-bottom: 2vh;
-    border-radius: 4px;
-    
+    padding: 0.5vw;
+    border: none;
+    box-shadow: 1px 1px 2px gray inset;
 }
 .btn-submit{
-    width: 20%;
     display: flex;
     justify-content: center;
-    align-self: flex-end;
-    border-radius: 4px;
-    box-shadow: 2px 2px 5px black;
-    
+    align-self: center;
+    background-color: var(--green);
+    color: var(--white);
+    padding: 10px 20px 10px 20px;
+    border-radius: 3px;
+    border: none;
+    box-shadow: 2px 2px 2px var(--gray);
 }
-.btn-submit:hover{
-    background-color: #e09f3e;
-}
+.btn-submit:active{
+    background-color: var(--white);
+    color: var(--black);
+  }
 
 /** -----CART DETAILS----- **/
 .cart-detail-container{
