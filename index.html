@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/cardResume.css">
     <title>Viners</title>
 </head>
 <body>
@@ -24,10 +25,34 @@
                     <li>
                         <img src="https://img.icons8.com/external-tanah-basah-glyph-tanah-basah/48/FFFFFF/external-profile-social-media-ui-tanah-basah-glyph-tanah-basah.png"/>
                     </li>
-                    <li>
+                    <li class="shopping-cart-image-container">
                         <img src="https://img.icons8.com/ios-filled/50/FFFFFF/shopping-cart.png"/>
                     </li>
                 </ul>
+            </div>
+            <div class="cart-resume-container hidden">
+                <div id="VinoTintoContainer" class="product-resume">
+                    <p class="product-name">Vino Tinto</p>
+                    <p class="product-units">Cant. x2</p>
+                    <p class="product-price">$ 700</p>
+                    <i id="VinoTinto" class="fa-solid fa-trash-can"></i>
+                </div>
+                <div id="VinoBlancoContainer" class="product-resume">
+                    <p class="product-name">Vino Blanco</p>
+                    <p class="product-units">Cant. x2</p>
+                    <p class="product-price">$ 700</p>
+                    <i id="VinoBlanco" class="fa-solid fa-trash-can"></i>
+                </div>
+                <div id="VinoRosadoContainer" class="product-resume">
+                    <p class="product-name">Vino Rosado</p>
+                    <p class="product-units">Cant. x2</p>
+                    <p class="product-price">$ 700</p>
+                    <i id="VinoRosado" class="fa-solid fa-trash-can"></i>
+                </div>
+                <div class="buttons-container">
+                    <button class="clean-cart">Clean Cart</button>
+                    <a href="./pages/cart.html" class="clean-cart">More Details</a>
+                </div>
             </div>
         </nav>
     </header>
@@ -71,23 +96,7 @@
             <i class="fa-solid fa-magnifying-glass"></i>
         </section>
         <section class="cards-container">
-            <div class="card">
-                <p>Category Name</p>
-                <div class="card__body">
-                    <div class="card__img">
-                        <img src="./assets/img/vino1.jpg" alt="Producto">
-                    </div>
-                    <div class="card__info">
-                        <h2>Name Product</h2>
-                        <h3>Id: 123456</h3>
-                        <h2>$1000</h2>
-                        <h2>Description</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus earum unde suscipit iste totam quod?</p>
-                        <h2>Avalaible: 20</h2>
-                        <a href="">More...</a>
-                    </div>
-                </div>
-            </div>
+            
         </section>
     </main>
     <footer>
@@ -96,5 +105,6 @@
         </div>
     </footer>
 </body>
+<script src="./fotter.js"></script>
 <script src="./index.js"></script>
 </html>

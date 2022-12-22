@@ -1,0 +1,12 @@
+.cart-resume-container {
+    position: absolute;
+    background-color: white;
+    right: 5%;
+    width: 300px;
+}
+
+.product-resume, .buttons-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 10% 5%;
+}
