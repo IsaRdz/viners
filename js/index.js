@@ -13,8 +13,8 @@ const wineCard = (wine) => {
                 <div class="card__body">
                     <div class="card__img">
                         <img
-                        src="./assets/img/products/botella_gaudila2013.svg"
-                        alt="Producto"
+                        src="./assets/img/wines/${wine.img}"
+                        alt="${wine.marca}"
                         />
                     </div>
                     <div class="card__info">
