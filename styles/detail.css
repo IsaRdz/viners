@@ -27,7 +27,7 @@
     color: var(--gray);
 }
 .fa-heart:hover{
-    color: var(--mahogany);
+    color: var(--red);
     cursor: pointer;
 }
 

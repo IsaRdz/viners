@@ -359,6 +359,18 @@ a {
     animation: click 0.5s 1;
   }
 
+.fa-trash-can:hover{
+    -webkit-transform:scale(1.2);
+    -moz-transform:scale(1.2);
+    -o-transform:scale(1.2);
+    transition:all .2s ease;
+    -webkit-transition:all .2s ease;
+    -moz-transition:all .2s ease;
+    -o-transition:all .2s ease;
+    z-index: 5;
+    cursor: pointer;
+}
+
 .fa-trash-can:active{
     animation: click 0.5s 1;
   }
