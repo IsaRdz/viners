@@ -2,7 +2,7 @@ var wine = {}
 
 const renderDetail = (wine) => {
     return `<picture class="image-container">
-                <img src="../assets/img/products/botella_gaudila2013.svg" alt="">
+                <img src="../assets/img/wines/${wine.img}" alt="">
             </picture>
             <div class="detail-info-container">
                 <div class="name-id-container">
