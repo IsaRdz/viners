@@ -39,8 +39,12 @@ Vinoteca online donde vas a encontrar las mejores variedades de vinos sin movert
 ![](https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Capturas%2Fcaptura3.png?alt=media&token=d68acf52-bb45-437c-b15d-789c9bac6640)
 > Contacto y Footer
 
-## Colaboradores
 [Boujon, Juan](https://github.com/Juan2805)<br>
+
+## Colaboradores
+
 [Cristian, Mansilla](https://github.com/cristianmansilla)<br>
 [Isabel, Rodríguez](https://github.com/isardz)
 
+| [<img src="https://avatars.githubusercontent.com/u/72816896?v=4" width=115><br><sub>Boujon, Juan</sub>](https://github.com/Juan2805) |  [<img src="hhttps://avatars.githubusercontent.com/u/74721434?v=4" width=115><br><sub>Cristian, Mansilla</sub>](https://github.com/cristianmansilla) |  [<img src="https://avatars.githubusercontent.com/u/87336052?v=4" width=115><br><sub>Isabel, Rodríguez</sub>](https://github.com/isardz)
+| :---: | :---: | :---: |
