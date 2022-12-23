@@ -1,35 +1,53 @@
+:root{
+    --green: #335c67;
+    --yellow: #fff3b0;
+    --orange: #e09f3e;
+    --red:#9e2a2b;
+    --mahogany: #540b0e;
+    --white: #ffffff;
+    --black: #000000;
+    --gray: #25282a;
+}
 .main {
-    display: grid;
+    display: flex;
     justify-content: center;
     align-content: center;
+    width: 100%;
+    height: 80vh;
     /* height: calc(100vh - 7rem); */
 }
 
 .detail-container {
-    background-color: rgb(243, 115, 115);
+    background-color: var(--white);
+    width: 70%;
+    margin: 5vh 0 5vh 0;
+    border-radius: 5px;
     display: flex;
-    padding: 2rem;
+    padding: 3rem;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .image-container {
-    background-color: rgb(113, 213, 180);
-    height: 500px;
-    width: 200px;
     margin-right: 4rem;
+    display: flex;
+}
+.image-container > img{
+    height: 60vh;
+    align-self: center;
+    filter: drop-shadow(5px 5px 5px var(--gray));
 }
 
 .detail-info-container {
-    height: 500px;
-    width: 400px;
+    width: 70%;
 }
 
 .name-id-container {
-    background-color: rgb(101, 173, 236);
-    padding: 0.5rem 0;
+    padding: 0.5rem 2rem 0.5rem 0;
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 50px;
+    height: auto;
 }
 
 .wine-name, .wine-id {
@@ -37,15 +55,22 @@
 }
 
 .wine-description {
-    background-color: rgb(76, 234, 234);
-    height: 250px;
-    padding: 2rem 0 0 0;
+    background-color: rgba(128, 128, 128, 0.411);
+    border-radius: 5px;
+    padding: 2rem 1rem 3rem 1rem;
 }
 
-.wine-categories {
+.wine-category{
+    display: flex;
+    align-items: baseline;
+}
+.wine-category > h3{
+    padding-right: 0.5vw;
+}
+/*.wine-categories {
     background-color: rgb(133, 133, 246);
     height: 100px;
-}
+}*/
 
 .wine-available {
     background-color: rgb(178, 108, 244);
@@ -62,4 +87,23 @@
 .wine-price, .add-to-cart {
     margin: auto 0;
 }
+.wine-price{
+    color: var(--green);
+    font-weight: bolder;
+}
 
+.add-to-cart {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    background-color: var(--green);
+    color: var(--white);
+    padding: 10px 20px 10px 20px;
+    border-radius: 3px;
+    border: none;
+    box-shadow: 2px 2px 2px var(--gray);
+}
+.add-to-cart:active{
+    background-color: var(--white);
+    color: var(--black);
+  }
