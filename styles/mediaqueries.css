@@ -1,14 +1,54 @@
 /* Tablet */
 @media (max-width: 992px) {
+    /** -----SLIDER----- **/
+    .slider-frame {
+        height: 17em;
+        overflow: hidden;
+        background-color: #889454;
+    }
 
+    body{
+        background-color: #889454;
+    }
+}
+
+@media (max-width: 767px) {
+    /** -----SLIDER----- **/
+    .slider-frame {
+        height: 14em;
+        overflow: hidden;
+        background-color: #2800c9;
+    }
+
+    body{
+        background-color: #889454;
+    }
 }
 
 /* Celu */
 @media (max-width: 576px) {
+    /** -----SLIDER----- **/
+    .slider-frame {
+        height: 11em;
+        overflow: hidden;
+        background-color: #cf13c3;
+    }
 
+    body{
+        background-color: #cf13c3;
+    }
 }
 
 
 @media (max-width: 450px) {
-    
+    /** -----SLIDER----- **/
+    .slider-frame {
+        height: 8em;
+        overflow: hidden;
+        background-color: #945454;
+    }
+
+    body{
+        background-color: #945454;
+    }
 }

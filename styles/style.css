@@ -76,7 +76,7 @@ a {
 
 /** -----SLIDER----- **/
 .slider-frame {
-    height: 23em;
+    height: 20em;
 	overflow: hidden;
     background-color: #947654;
 }
@@ -89,6 +89,7 @@ a {
 
 .slider-frame li {
 	width: 100%;
+    text-decoration: none;
 }
 
 .slider-img img{
