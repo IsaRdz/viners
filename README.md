@@ -5,6 +5,7 @@ Vinoteca online donde vas a encontrar las mejores variedades de vinos sin movert
 # Contents 
 - [Mockup](#mockup)
 - [Trello](#trello)
+- [Tecnologías](#tecnologías)
 
 
 ## Mockup
@@ -26,13 +27,13 @@ Vinoteca online donde vas a encontrar las mejores variedades de vinos sin movert
 - Etc.
 
 ## Capturas
-![](https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/captura1.png?alt=media&token=dcc51871-bcef-40a2-8649-b2f907f53947)<br>
+![](https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Capturas%2Fcaptura1.png?alt=media&token=b89ff168-b667-44f8-b4c8-010057fe5c43)<br>
 > Navbar y Slider
 
-![](https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/captura2.png?alt=media&token=b4928933-5506-4b0b-b812-63d860b72677)<br>
+![](https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Capturas%2Fcaptura2.png?alt=media&token=9745d1c5-b5fa-4169-8a00-a54e907dd3bf)<br>
 > Productos
 
-![](https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/captura3.png?alt=media&token=d0d78b4d-ceca-4e33-8576-b425e8aec142)
+![](https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Capturas%2Fcaptura3.png?alt=media&token=d68acf52-bb45-437c-b15d-789c9bac6640)
 > Contacto y Footer
 
 ## Colaboradores
