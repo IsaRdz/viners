@@ -2,7 +2,7 @@
 Vinoteca online donde vas a encontrar las mejores variedades de vinos sin moverte de tu casa.
 
 ------------
-# Contents 
+# Contenidos
 - [Mockup](#mockup)
 - [Trello](#trello)
 - [Tecnologías](#tecnologías)
