@@ -22,9 +22,6 @@ Vinoteca online donde vas a encontrar las mejores variedades de vinos sin movert
 - Etc.
 
 ## Capturas
-![](https://drive.google.com/file/d/1in3HWzEWQzDEsrNbHVhuvoVtAeqVp9fX/view?usp=share_link)<br>
-> Navbar y Slider
-
 ![](.//assets/img/capturas/captura1.png)<br>
 > Navbar y Slider
 
