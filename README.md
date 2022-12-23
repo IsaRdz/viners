@@ -6,6 +6,9 @@ Vinoteca online donde vas a encontrar las mejores variedades de vinos sin movert
 - [Mockup](#mockup)
 - [Trello](#trello)
 - [Tecnologías](#tecnologías)
+- [Funcionalidades](#funcionalidades)
+- [Capturas](#capturas)
+- [Colaboradores](#colaboradores)
 
 
 ## Mockup
