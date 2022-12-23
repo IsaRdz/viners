@@ -21,6 +21,16 @@ Vinoteca online donde vas a encontrar las mejores variedades de vinos sin movert
 - Agregar y eliminar productos.
 - Etc.
 
+## Capturas
+![](.//assets/img/capturas/captura1.png)<br>
+> Navbar y Slider
+
+![](.//assets/img/capturas/captura1.png)<br>
+> Productos
+
+![](.//assets/img/capturas/captura1.png)
+> Contacto y Footer
+
 ## Colaboradores
 [Boujon, Juan](https://github.com/Juan2805)<br>
 [Cristian, Mansilla](https://github.com/cristianmansilla)<br>
