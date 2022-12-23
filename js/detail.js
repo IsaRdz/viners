@@ -1,28 +1,35 @@
 var wine = {}
 
 const renderDetail = (wine) => {
-    return `<picture class="image-container">
+    return `<div class="icon"><i class="fa-solid fa-heart fa-xl"></i></div>
+            <picture class="image-container">
                 <img src="../assets/img/wines/${wine.img}" alt="">
+                <div id="zoom">
+                    <img id="zoom-img" />
+                </div>
             </picture>
             <div class="detail-info-container">
                 <div class="name-id-container">
                     <h1 class="wine-name">${wine.marca}</h1>
-                    <h2 class="wine-price">Price: $ ${wine.precio}</h2>
+                    <p class="wine-id">ID product: ${wine.id}</p>    
                 </div>
-                <p class="wine-id">ID product: ${wine.id}</p>
+                <h2 class="wine-price">Price: $ ${wine.precio}</h2>                
                 <div class="description-container">
-                    <h3>Description:</h3>
+                    <h3 class="wine-description-title">Description:</h3>
                     <p class="wine-description">
                         ${wine.descripcion}
                     </p>
                     <div class="wine-category">
-                    <h3>Category: </h3>
+                    <h3 class="wine-category-title">Category: </h3>
                     <p class="wine-categories"> 
                         ${wine.tipo}
                     </p>
                     </div>
                 </div>
-                <div class="wine-available">Available: 15 units</div>
+                <div class="wine-available">
+                    <h3 class="wine-available-title"> Available: </h3>
+                    <p>15 units</p>
+                </div>
                 <div class="purchase-container">
                     <button class="add-to-cart">Add to Cart</button>
                 </div>
@@ -63,4 +70,5 @@ const readLocalStorage = () => {
 }
 
 readLocalStorage()
+
 

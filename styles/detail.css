@@ -13,25 +13,41 @@
     justify-content: center;
     align-content: center;
     width: 100%;
-    height: 80vh;
+    /*height: 80vh;*/
     /* height: calc(100vh - 7rem); */
+}
+.icon{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.fa-heart{
+    margin-bottom: 5vh;
+    color: var(--gray);
+}
+.fa-heart:hover{
+    color: var(--mahogany);
+    cursor: pointer;
 }
 
 .detail-container {
     background-color: var(--white);
     width: 70%;
-    margin: 5vh 0 5vh 0;
+    margin: 5vh 2vw 5vh 0;
     border-radius: 5px;
     display: flex;
-    padding: 3rem;
+    flex-wrap: wrap;
+    padding: 2.5rem;
     justify-content: space-around;
     align-items: center;
 }
 
 .image-container {
-    margin-right: 4rem;
+    margin: 0 1rem 0 1rem;
     display: flex;
 }
+
 .image-container > img{
     height: 60vh;
     align-self: center;
@@ -39,32 +55,37 @@
 }
 
 .detail-info-container {
-    width: 70%;
+    width: 60%;
+    margin: 0 1rem 0 1rem;
 }
 
 .name-id-container {
-    padding: 0.5rem 2rem 0.5rem 0;
+    padding: 0.5rem 0 0.5rem 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    align-items: baseline;
     width: 100%;
     height: auto;
 }
 
-.wine-name, .wine-id {
-    margin: auto 0;
+.wine-id {
+    font-size: small;
 }
 
-.wine-description {
-    background-color: rgba(128, 128, 128, 0.411);
+.wine-description{
     border-radius: 5px;
-    padding: 2rem 1rem 3rem 1rem;
+    line-height: 1.7em;
+}
+.wine-description-title, .wine-category-title, .wine-available-title{
+    margin-top: 2vh;
 }
 
 .wine-category{
     display: flex;
     align-items: baseline;
 }
-.wine-category > h3{
+.wine-category > h3, .wine-available > h3{
     padding-right: 0.5vw;
 }
 /*.wine-categories {
@@ -73,23 +94,24 @@
 }*/
 
 .wine-available {
-    background-color: rgb(178, 108, 244);
+    /*background-color: rgb(178, 108, 244);*/
     height: 50px;
+    display: flex;
+    align-items: baseline;
 }
 
 .purchase-container {
-    background-color: rgb(197, 241, 110);
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     height: 50px;
 }
 
-.wine-price, .add-to-cart {
-    margin: auto 0;
-}
+
 .wine-price{
-    color: var(--green);
+    width: 100%;
+    color: var(--red);
     font-weight: bolder;
+    margin-bottom: 4vh;
 }
 
 .add-to-cart {
@@ -104,6 +126,7 @@
     box-shadow: 2px 2px 2px var(--gray);
 }
 .add-to-cart:active{
-    background-color: var(--white);
-    color: var(--black);
+    background-color: var(--gray);
+    color: var(--white);
   }
+
