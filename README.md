@@ -32,7 +32,7 @@ Vinoteca online donde vas a encontrar las mejores variedades de vinos sin movert
 ![](https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/captura2.png?alt=media&token=b4928933-5506-4b0b-b812-63d860b72677)<br>
 > Productos
 
-![]([.//assets/img/capturas/captura3.png](https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/captura3.png?alt=media&token=d0d78b4d-ceca-4e33-8576-b425e8aec142))
+![](https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/captura3.png?alt=media&token=d0d78b4d-ceca-4e33-8576-b425e8aec142)
 > Contacto y Footer
 
 ## Colaboradores
