@@ -12,7 +12,7 @@
     display: flex;
     justify-content: center;
     align-content: center;
-    width: 100%;
+    width: 100%;    
     /*height: 80vh;*/
     /* height: calc(100vh - 7rem); */
 }
@@ -34,7 +34,7 @@
 .detail-container {
     background-color: var(--white);
     width: 70%;
-    margin: 5vh 2vw 5vh 0;
+    margin: 5vh 2vw 6vh 0;
     border-radius: 5px;
     display: flex;
     flex-wrap: wrap;
@@ -46,10 +46,11 @@
 .image-container {
     margin: 0 1rem 0 1rem;
     display: flex;
+    justify-content: center;
 }
 
 .image-container > img{
-    height: 60vh;
+    width: 90%;
     align-self: center;
     filter: drop-shadow(5px 5px 5px var(--gray));
 }
@@ -60,6 +61,7 @@
 }
 
 .name-id-container {
+    margin-top: 2vh;
     padding: 0.5rem 0 0.5rem 0;
     display: flex;
     flex-wrap: wrap;
@@ -106,7 +108,6 @@
     height: 50px;
 }
 
-
 .wine-price{
     width: 100%;
     color: var(--red);
@@ -130,3 +131,9 @@
     color: var(--white);
   }
 
+@media (max-width: 1024px){
+    .detail-info-container {
+        width: 80%;
+        margin: 0 1rem 0 1rem;
+    }
+}
