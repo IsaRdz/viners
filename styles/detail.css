@@ -1,65 +1,139 @@
+:root{
+    --green: #335c67;
+    --yellow: #fff3b0;
+    --orange: #e09f3e;
+    --red:#9e2a2b;
+    --mahogany: #540b0e;
+    --white: #ffffff;
+    --black: #000000;
+    --gray: #25282a;
+}
 .main {
-    display: grid;
+    display: flex;
     justify-content: center;
     align-content: center;
+    width: 100%;    
+    /*height: 80vh;*/
     /* height: calc(100vh - 7rem); */
+}
+.icon{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.fa-heart{
+    margin-bottom: 5vh;
+    color: var(--gray);
+}
+.fa-heart:hover{
+    color: var(--mahogany);
+    cursor: pointer;
 }
 
 .detail-container {
-    background-color: rgb(243, 115, 115);
+    background-color: var(--white);
+    width: 70%;
+    margin: 5vh 2vw 6vh 0;
+    border-radius: 5px;
     display: flex;
-    padding: 2rem;
+    flex-wrap: wrap;
+    padding: 2.5rem;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .image-container {
-    background-color: rgb(113, 213, 180);
-    height: 500px;
-    width: 200px;
-    margin-right: 4rem;
+    margin: 0 1rem 0 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.image-container > img{
+    width: 90%;
+    align-self: center;
+    filter: drop-shadow(5px 5px 5px var(--gray));
 }
 
 .detail-info-container {
-    height: 500px;
-    width: 400px;
+    width: 60%;
+    margin: 0 1rem 0 1rem;
 }
 
 .name-id-container {
-    background-color: rgb(101, 173, 236);
-    padding: 0.5rem 0;
+    margin-top: 2vh;
+    padding: 0.5rem 0 0.5rem 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    align-items: baseline;
     width: 100%;
-    height: 50px;
+    height: auto;
 }
 
-.wine-name, .wine-id {
-    margin: auto 0;
+.wine-id {
+    font-size: small;
 }
 
-.wine-description {
-    background-color: rgb(76, 234, 234);
-    height: 250px;
-    padding: 2rem 0 0 0;
+.wine-description{
+    border-radius: 5px;
+    line-height: 1.7em;
+}
+.wine-description-title, .wine-category-title, .wine-available-title{
+    margin-top: 2vh;
 }
 
-.wine-categories {
+.wine-category{
+    display: flex;
+    align-items: baseline;
+}
+.wine-category > h3, .wine-available > h3{
+    padding-right: 0.5vw;
+}
+/*.wine-categories {
     background-color: rgb(133, 133, 246);
     height: 100px;
-}
+}*/
 
 .wine-available {
-    background-color: rgb(178, 108, 244);
+    /*background-color: rgb(178, 108, 244);*/
     height: 50px;
+    display: flex;
+    align-items: baseline;
 }
 
 .purchase-container {
-    background-color: rgb(197, 241, 110);
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     height: 50px;
 }
 
-.wine-price, .add-to-cart {
-    margin: auto 0;
+.wine-price{
+    width: 100%;
+    color: var(--red);
+    font-weight: bolder;
+    margin-bottom: 4vh;
 }
 
+.add-to-cart {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    background-color: var(--green);
+    color: var(--white);
+    padding: 10px 20px 10px 20px;
+    border-radius: 3px;
+    border: none;
+    box-shadow: 2px 2px 2px var(--gray);
+}
+.add-to-cart:active{
+    background-color: var(--gray);
+    color: var(--white);
+  }
+
+@media (max-width: 1024px){
+    .detail-info-container {
+        width: 80%;
+        margin: 0 1rem 0 1rem;
+    }
+}

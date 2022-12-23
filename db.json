@@ -151,7 +151,7 @@
     },
     {
       "id": 11,
-      "marca": "Viña Muriel Gran Reserva Tempranillo",
+      "marca": "Viña Muriel",
       "img": "Viña Muriel Gran Reserva Tempranillo.jpg",
       "bodega": "Muriel Wines",
       "denominacion": "Rioja",
@@ -257,7 +257,7 @@
     {
       "id": 18,
       "marca": "Finca Vinoa Paraje Penaboa",
-      "img.jpg": "Finca Vinoa Paraje Penaboa.jpg",
+      "img": "Finca Vinoa Paraje Penaboa.jpg",
       "bodega": "Bodega y Viñedos Pazo Casanova",
       "denominacion": "Ribeiro",
       "tipo": "Blanco",
@@ -856,7 +856,7 @@
     },
     {
       "id": 58,
-      "marca": "Pago de Tharsys Millesime Rose Brut Reserva",
+      "marca": "Pago de Tharsys Millesime Rose",
       "img": "Pago de Tharsys Millesime Rose Brut Reserva.jpg",
       "bodega": "Pago de Tharsys",
       "denominacion": "Cava",
@@ -871,7 +871,7 @@
     },
     {
       "id": 59,
-      "marca": "Núria Claverol Homenatge Gran Reserva",
+      "marca": "Núria Claverol Homenatge",
       "img": "Núria Claverol Homenatge Gran Reserva.jpg",
       "bodega": "Sumarroca",
       "denominacion": "Cava",
@@ -1156,7 +1156,7 @@
     },
     {
       "id": 78,
-      "marca": "Kimera Espumoso Ancestral Rosado",
+      "marca": "Kimera Espumoso Ancestral",
       "img": "Kimera Espumoso Ancestral Rosado.jpg",
       "bodega": "LMT Wines",
       "denominacion": "Vino de España",
