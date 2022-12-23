@@ -2,24 +2,28 @@ var wine = {}
 
 const renderDetail = (wine) => {
     return `<picture class="image-container">
-                <img src="..." alt="">
+                <img src="../assets/img/products/botella_gaudila2013.svg" alt="">
             </picture>
             <div class="detail-info-container">
                 <div class="name-id-container">
                     <h1 class="wine-name">${wine.marca}</h1>
-                    <p class="wine-id">ID: ${wine.id}</p>
+                    <h2 class="wine-price">Price: $ ${wine.precio}</h2>
                 </div>
+                <p class="wine-id">ID product: ${wine.id}</p>
                 <div class="description-container">
+                    <h3>Description:</h3>
                     <p class="wine-description">
                         ${wine.descripcion}
                     </p>
-                    <p class="wine-categories">
+                    <div class="wine-category">
+                    <h3>Category: </h3>
+                    <p class="wine-categories"> 
                         ${wine.tipo}
                     </p>
+                    </div>
                 </div>
                 <div class="wine-available">Available: 15 units</div>
                 <div class="purchase-container">
-                    <p class="wine-price">Price: $ ${wine.precio}</p>
                     <button class="add-to-cart">Add to Cart</button>
                 </div>
             </div>`
