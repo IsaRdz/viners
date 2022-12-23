@@ -25,7 +25,6 @@ Vinoteca online donde vas a encontrar las mejores variedades de vinos sin movert
 - JS
 
 ## Funcionalidades
-
 - Agregar y eliminar productos.
 - Etc.
 
@@ -39,9 +38,6 @@ Vinoteca online donde vas a encontrar las mejores variedades de vinos sin movert
 ![](https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Capturas%2Fcaptura3.png?alt=media&token=d68acf52-bb45-437c-b15d-789c9bac6640)
 > Contacto y Footer
 
-[Boujon, Juan](https://github.com/Juan2805)<br>
-
 ## Colaboradores
-
 | [<img src="https://avatars.githubusercontent.com/u/72816896?v=4" width=50><br><sub>Boujon, Juan</sub>](https://github.com/Juan2805) |  [<img src="https://avatars.githubusercontent.com/u/74721434?v=4" width=50><br><sub>Cristian, Mansilla</sub>](https://github.com/cristianmansilla) |  [<img src="https://avatars.githubusercontent.com/u/87336052?v=4" width=50><br><sub>Isabel, Rodríguez</sub>](https://github.com/isardz)
 | :---: | :---: | :---: |
