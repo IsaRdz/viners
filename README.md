@@ -43,8 +43,5 @@ Vinoteca online donde vas a encontrar las mejores variedades de vinos sin movert
 
 ## Colaboradores
 
-[Cristian, Mansilla](https://github.com/cristianmansilla)<br>
-[Isabel, Rodríguez](https://github.com/isardz)
-
-| [<img src="https://avatars.githubusercontent.com/u/72816896?v=4" width=115><br><sub>Boujon, Juan</sub>](https://github.com/Juan2805) |  [<img src="hhttps://avatars.githubusercontent.com/u/74721434?v=4" width=115><br><sub>Cristian, Mansilla</sub>](https://github.com/cristianmansilla) |  [<img src="https://avatars.githubusercontent.com/u/87336052?v=4" width=115><br><sub>Isabel, Rodríguez</sub>](https://github.com/isardz)
+| [<img src="https://avatars.githubusercontent.com/u/72816896?v=4" width=50><br><sub>Boujon, Juan</sub>](https://github.com/Juan2805) |  [<img src="https://avatars.githubusercontent.com/u/74721434?v=4" width=50><br><sub>Cristian, Mansilla</sub>](https://github.com/cristianmansilla) |  [<img src="https://avatars.githubusercontent.com/u/87336052?v=4" width=50><br><sub>Isabel, Rodríguez</sub>](https://github.com/isardz)
 | :---: | :---: | :---: |
