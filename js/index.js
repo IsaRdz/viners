@@ -9,7 +9,7 @@ const getWines = async () => {
 }
 
 const wineCard = (wine) => {
-    return  `<div class="card">
+    return  `<div id="wine${wine.id}" class="card">
                 <div class="card__body">
                     <div class="card__img">
                         <img
@@ -47,7 +47,6 @@ const renderAllWines = async () => {
     CartProductsExist = JSON.parse(localStorage.getItem('CartProducts'))
     
     CartProductsExist ? null : localStorage.setItem('CartProducts', JSON.stringify(cartProducts))
-    console.log(CartProductsExist)
 
     allWines = await getWines()
 
@@ -58,3 +57,21 @@ const renderAllWines = async () => {
 }
 
 renderAllWines()
+
+const filterListeners = () => {
+    const filtersContainers = document.querySelectorAll('.button-filter')
+
+    filtersContainers.forEach(filter => {
+        filter.addEventListener('click', event => {
+            allWines.map(wine => {
+                let wineToFilter = document.querySelector(`#wine${wine.id}`)
+                wineToFilter.classList.remove('hidden')
+                if (wine.tipo.split(' ')[0] != event.target.id) {
+                    wineToFilter.classList.toggle('hidden')
+                }
+            })
+        })
+    })
+}
+
+filterListeners()
