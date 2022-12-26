@@ -20,7 +20,10 @@ const wineCard = (wine) => {
                     <div class="card__info">
                         <h2>${wine.marca}</h2>
                         <h2>${wine.tipo}</h2>
-                        <a href="./pages/detail.html"><button value='${wine.marca}' class="card__button">Conocelo...</button></a>
+                    </div>
+                    <div class="button-card-container">
+                        <a><button class="card__button">Add to cart</button> </a>
+                        <a href="./pages/detail.html"><button value='${wine.marca}' class="card__button">See more...</button></a>
                     </div>
                 </div>
             </div>`
