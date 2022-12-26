@@ -181,7 +181,7 @@ a {
     /* background-color: #e09f3e86; */
     box-shadow: 15px 10px 0px 5px rgba(0, 0, 0, 0.331);
     box-shadow: 5px 5px 10px -3px rgba(0, 0, 0, 0.406), -5px -5px 15px 3px #a2909142;
-    width: 18em;
+    width: 28em;
     height: 28em;
     border: 1px solid black;
     padding: 1em;
@@ -228,7 +228,7 @@ a {
 
 .card__info h2{
     margin-top: 0.2em;
-    font-size: 1em;
+    font-size: 2em;
 }
 
 .card__button{
