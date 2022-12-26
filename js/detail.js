@@ -4,9 +4,6 @@ const renderDetail = (wine) => {
     return `<div class="icon"><i class="fa-solid fa-heart fa-xl"></i></div>
             <picture class="image-container">
                 <img src="../assets/img/wines/${wine.img}" alt="">
-                <div id="zoom">
-                    <img id="zoom-img" />
-                </div>
             </picture>
             <div class="detail-info-container">
                 <div class="name-id-container">
@@ -70,5 +67,4 @@ const readLocalStorage = () => {
 }
 
 readLocalStorage()
-
 
