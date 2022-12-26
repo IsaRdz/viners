@@ -44,3 +44,16 @@ const cleanProductListener = () => {
 
 cleanProductListener()
 
+const cleanCartListener = () => {
+    const cleanCartContainer = document.querySelector('.clean-cart-button')
+    const ProductCartContainer = document.querySelectorAll('.product-resume')
+    
+    cleanCartContainer.addEventListener('click', () => {
+        ProductCartContainer.forEach(product => product.remove())
+        localStorage.setItem('CartProducts', JSON.stringify([]))
+        var CartProducts = JSON.parse(localStorage.getItem('CartProducts'))
+        showProducts()
+    })
+}
+
+cleanCartListener()

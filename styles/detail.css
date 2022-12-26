@@ -27,8 +27,13 @@
     color: var(--gray);
 }
 .fa-heart:hover{
+    font-size: xx-large;
     color: var(--red);
     cursor: pointer;
+}
+.fa-heart:active {
+    color: var(--red);
+    
 }
 
 .detail-container {
@@ -44,6 +49,7 @@
 }
 
 .image-container {
+    width: 30%;
     margin: 0 1rem 0 1rem;
     display: flex;
     justify-content: center;
@@ -132,6 +138,9 @@
   }
 
 @media (max-width: 1024px){
+    .image-container{
+        width: 50%;
+    }
     .detail-info-container {
         width: 80%;
         margin: 0 1rem 0 1rem;

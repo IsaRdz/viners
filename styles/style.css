@@ -250,21 +250,27 @@ a {
 /** -----CONTACT FORM----- **/
 
 .iframe-form-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 10%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3vh 10%;
     margin-bottom: 2vh;
-    align-items: center;
+    
+}
+.iframe-container{
+    width: 50%;
+    align-items: stretch;
 }
 .iframe-container > iframe{
     width: 90%;
+    height: 100%;
+    box-shadow: 2px 2px 5px black;
+    align-self: center;
 }
 
 .form-container{
+    width: 50%;
     background-color:var(--white);
     box-shadow: 2px 2px 5px black;
-    margin-bottom: 5vh;
-    margin-top: 5vh;
     padding-bottom: 5vh;
     color: var(--gray);
     display: block;
@@ -454,4 +460,19 @@ a {
 }
 
 
-
+@media (max-width: 768px) {
+    .iframe-form-container{
+        justify-content: center;
+    }
+    .iframe-container{
+        width: 100%;
+        align-self: stretch;
+    } 
+    .iframe-container > iframe{
+        width: 100%;        
+    }   
+    .form-container{
+        width: 90%;
+       
+    }
+}
