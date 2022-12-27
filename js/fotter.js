@@ -1,10 +1,10 @@
 const devs = [
-    {
+    /* {
         name: "Andres Trostdorf",
         nickname: "Andy",
         dev_github: "https://github.com/TrostdorfA",
         dev_linkedin: ""
-    },    
+    },  */   
     {
         name: "Cristian Mansilla",
         nickname: "Cris",
@@ -33,10 +33,10 @@ function renderFooter(){
         
         body += `
         <div class="footer-dev">
-                <a href=" ${dev.dev_github} " target="_blank"><img src="https://img.icons8.com/glyph-neue/64/FFFFFF/github.png"/></a>
-                <a href=" ${dev.dev_linkedin} "><img src="https://img.icons8.com/glyph-neue/64/FFFFFF/linkedin-circled.png"/></a>
-                <span> ${dev.nickname} </span>
-            </div>
+            <a href=" ${dev.dev_github} " target="_blank"><img src="https://img.icons8.com/glyph-neue/64/FFFFFF/github.png"/></a>
+            <a href=" ${dev.dev_linkedin} "><img src="https://img.icons8.com/glyph-neue/64/FFFFFF/linkedin-circled.png"/></a>
+            <span> ${dev.nickname} </span>
+        </div>
         `
     })
     footerContainer.innerHTML = body;
