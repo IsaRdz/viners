@@ -8,9 +8,6 @@
     --black: #000000;
     --gray: #25282a;
 }
-body{
-    background-color: var(--gray);
-}
 
 .cart-resume-container {
     position: absolute;
