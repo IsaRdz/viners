@@ -441,6 +441,7 @@ a {
 footer{
     background-color: var(--green);
 }
+
 .footer-container{
     display: flex;
     flex-wrap: wrap;
