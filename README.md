@@ -1,7 +1,10 @@
+---
 <img src=".//assets/img/viners-logo.png" width=100><br>
-Vinoteca online donde vas a encontrar las mejores variedades de vinos sin moverte de tu casa.
+Vinoteca online donde vas a encontrar las mejores variedades de vinos sin moverte de tu casa.<br><br>
+![Icon status project](http://img.shields.io/static/v1?label=STATUS&message=In%20development&color=RED&style=for-the-badge)
 
-------------
+---
+
 # Contenidos
 - [Mockup](#mockup)
 - [Trello](#trello)
@@ -20,9 +23,9 @@ Vinoteca online donde vas a encontrar las mejores variedades de vinos sin movert
 > Comentario random
 
 ## Tecnologías
-- HTML
-- CSS
-- JS
+![HTML5](https://img.shields.io/badge/HTML-beige?style=for-the-badge&logo=html5)
+![CSS3](https://img.shields.io/badge/CSS3-blue?style=for-the-badge&logo=css3)
+![JavaScript](https://img.shields.io/badge/Javascript-grey?style=for-the-badge&logo=javascript)
 
 ## Funcionalidades
 - Agregar y eliminar productos.
@@ -41,3 +44,10 @@ Vinoteca online donde vas a encontrar las mejores variedades de vinos sin movert
 ## Colaboradores
 | [<img src="https://avatars.githubusercontent.com/u/72816896?v=4" width=50><br><sub>Boujon, Juan</sub>](https://github.com/Juan2805) |  [<img src="https://avatars.githubusercontent.com/u/74721434?v=4" width=50><br><sub>Cristian, Mansilla</sub>](https://github.com/cristianmansilla) |  [<img src="https://avatars.githubusercontent.com/u/87336052?v=4" width=50><br><sub>Isabel, Rodríguez</sub>](https://github.com/isardz) | [<img src="https://avatars.githubusercontent.com/u/87342125?v=4" width=50><br><sub>Trostdorf, Andres</sub>](https://github.com/TrostdorfA)
 | :---: | :---: | :---: | :---: |
+
+---
+<h2>Gracias por visitar nuestro proyecto!</h2>
+
+![Thanks](https://i.gifer.com/origin/b8/b8c864071150cb43902bb8e138d3dc57.gif)
+
+---
