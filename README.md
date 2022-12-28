@@ -59,10 +59,12 @@ Vinoteca online donde vas a encontrar las mejores variedades de vinos sin movert
 ![HTML5](https://img.shields.io/badge/HTML5-beige?style=for-the-badge&logo=html5)
 ![CSS3](https://img.shields.io/badge/CSS3-blue?style=for-the-badge&logo=css3)
 ![JavaScript](https://img.shields.io/badge/Javascript-grey?style=for-the-badge&logo=javascript)
+<br>
 
 ## Funcionalidades
 - Agregar y eliminar productos.
 - Etc.
+<br>
 
 ## Capturas
 ![](https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Capturas%2Fcaptura1.png?alt=media&token=b89ff168-b667-44f8-b4c8-010057fe5c43)<br>
