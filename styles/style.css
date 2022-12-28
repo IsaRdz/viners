@@ -39,7 +39,9 @@ header{
     /* background-color: rgba(12, 58, 12, 0.712); */
     /* background-color: var(--mahogany); */
     /* background-color: var(--green); */
-    background-color:#335c67d3;
+    /* background-color:#335c67d3; */
+    background: rgb(51,92,103);
+    background: linear-gradient(90deg, rgba(51,92,103,1) 19%, rgba(84,11,14,1) 62%, rgba(224,159,62,1) 100%);
     position: sticky;
     top: 0;
     z-index: 98;
@@ -292,10 +294,10 @@ a {
     mix-blend-mode: multiply;
 }
 
-/* .card__img img:hover{
+.card__img img:hover{
     transform: rotate(35deg);
     transition: all 0.5s ease;
-} */
+}
 
 .card__info{
     position: relative;

@@ -22,7 +22,7 @@ const wineCard = (wine) => {
                         <h2>${wine.tipo}</h2>
                     </div>
                     <div class="button-card-container">
-                        <a><button class="card__button">Add to cart</button> </a>
+                        <a><button value='${wine.marca}' class="card__button add_to_cart">Add to cart</button></a>
                         <a href="./pages/detail.html"><button value='${wine.marca}' class="card__button">See more...</button></a>
                     </div>
                 </div>
@@ -41,8 +41,6 @@ const cardButtonListeners = () => {
     })
 }
 
-
-
 const renderAllWines = async () => {
     const cardsContainer = document.querySelector('.cards-container')
 
@@ -57,6 +55,7 @@ const renderAllWines = async () => {
         cardsContainer.insertAdjacentHTML('beforeend', wineCard(wine))
     })
     cardButtonListeners()
+    addToCartListener()
 }
 
 renderAllWines()
@@ -79,19 +78,30 @@ const filterListeners = () => {
 
 filterListeners()
 
+const addToCartListener = () => {
+    const addToCartButtonsContainers = document.querySelectorAll('.add_to_cart')
+    CartProducts = JSON.parse(localStorage.getItem('CartProducts'))
 
-const buttonTop = document.querySelector('#buttonTop');
-
-window.onscroll = () => {
-    if (document.documentElement.scrollTop > 100) {
-        buttonTop.classList.add('shows')
-    } else {
-        buttonTop.classList.remove('shows')
-    }
-    buttonTop.addEventListener('click', () => {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
+    addToCartButtonsContainers.forEach(addToCartButton => {
+        addToCartButton.addEventListener('click', event => {
+            allWines.map(wine => {
+                if (wine.marca == event.target.value) {
+                    if (CartProducts) {
+                        if (CartProducts.find(product => product.id == wine.id)) {
+                            CartProducts.map(product => {
+                                product.id == wine.id ? product.cantidad++ : null
+                            })
+                        }
+                        else {
+                            CartProducts.push(wine)
+                        } 
+                    }
+                    else {
+                        CartProducts.push(wine)
+                    }
+                    localStorage.setItem('CartProducts', JSON.stringify(CartProducts))
+                }
+            })
         })
     })
 }
