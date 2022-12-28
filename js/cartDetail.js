@@ -21,10 +21,11 @@ const renderDetail = (wine) => {
 const renderProducts = () => {
     const cartDetailContainer = document.querySelector('.cart-detail-container')
     var CartProducts = JSON.parse(localStorage.getItem('CartProducts'))
-
+    
     CartProducts.map(product => {
         cartDetailContainer.insertAdjacentHTML('afterbegin', renderDetail(product))
     })
+   
 }
 
 renderProducts()
@@ -40,6 +41,7 @@ const cleanProductListener = () => {
             localStorage.setItem('CartProducts', JSON.stringify(CartProductsFiltered))
             document.querySelector(`#Container${cleanProduct.target.id}`).remove()
             renderTotalPrice()
+            emptyCartMessage()
         })
     }) 
 }
@@ -134,7 +136,20 @@ const cleanCartListener = () => {
         localStorage.setItem('CartProducts', JSON.stringify([]))
         renderProducts()
         renderTotalPrice()
+        emptyCartMessage()
     })
 }
 
 cleanCartListener()
+
+const emptyCartMessage = () => {
+    const emptyCart = document.getElementById('empty-cart');
+    var cartProducts = JSON.parse(localStorage.getItem('CartProducts'))
+    console.log(emptyCart)
+
+    if(cartProducts.length == 0){
+        emptyCart.classList.remove('hidden')
+    }else{
+        emptyCart.classList.add('hidden')
+    }
+}

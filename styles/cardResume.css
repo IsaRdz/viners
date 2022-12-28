@@ -14,7 +14,7 @@
     background-color: white;
     right: 5%;
     width: 450px;
-    height: 400px;
+    height: 50vh;
     border-radius: 3px;
     box-shadow: 3px 3px 5px 2px var(--gray);
     overflow-y: scroll;
