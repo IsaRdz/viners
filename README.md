@@ -62,8 +62,32 @@ Vinoteca online donde vas a encontrar las mejores variedades de vinos sin movert
 <br>
 
 ## Funcionalidades
-- Agregar y eliminar productos.
-- Etc.
+- Ver vinos disponibles en la página principal
+- Filtrar vinos por categoría:
+  + Tinto
+  + Blanco
+  + Cava
+  + Espumoso
+- Buscar vinos desde la barra de búsqueda por tipo y marca.
+- Desde la card de cada vino:
+  + Agregar el vino al Cart
+  + Acceder al detalle de cada vino, donde se puede ver la siguiente información:
+    + Nombre
+    + ID
+    + Precio
+    + Descripción
+    + Categoría
+    + Stock
+  + Desde el detalle de cada vino se puede agregar el vino al Cart.
+- Acceder al resumen del Cart, desde donde se puede:
+  + Ver vinos agregados y su cantidad
+  + Eliminar vinos
+  + Eliminar todos los productos del Cart
+  + Acceder al detalle del Cart
+- Desde el detalle del Cart se puede:
+  + Agregar o quitar unidades de cada vino agregado al carrito
+  + Eliminar vinos
+  + Limpiar Cart
 <br>
 
 ## Capturas
