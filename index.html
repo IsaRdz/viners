@@ -24,7 +24,10 @@
               <ul>
                   <li>
                       <!-- <img src="https://img.icons8.com/external-tanah-basah-glyph-tanah-basah/48/FFFFFF/external-profile-social-media-ui-tanah-basah-glyph-tanah-basah.png"/> -->
-                      <i class="fa-solid fa-user fa-xl"></i>
+                      <!--<i class="fa-solid fa-user fa-xl"></i>-->
+                      <a href="#popup" rel="noopener noreferrer" class="link">
+                        <i class="fa-solid fa-user fa-xl"></i>          
+                      </a>
                   </li>
                   <li class="shopping-cart-image-container">
                       <!-- <img src="https://img.icons8.com/ios-filled/50/FFFFFF/shopping-cart.png"/> -->
@@ -41,6 +44,23 @@
       </nav>
     </header>
     <main>
+      <section class="login">        
+        <div id="popup" class="overlay">
+          <div id="popupBody">
+            <a id="cerrar" href="#">&times;</a>
+            <h2>Login</h2>
+            <div class="popupContent">
+              <form action="">
+                <label for="email">Insert your email: </label>
+                <input type="email" name="email" id="email">
+                <label for="password">Password: </label>
+                <input type="password" name="password" id="password">  
+                <button type="submit" class="btn-login">Login</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
       <div class="slider-frame">
         <ul>
           <li>

@@ -85,6 +85,63 @@ a {
     display: none;
 }
 
+/** -----LOGIN----- **/
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  #popupBody {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 46%;
+    padding: 1vh 2vw;
+    border-radius: 15px;
+    box-shadow: 3px 3px 5px 2px var(--gray);
+    color: var(--black);
+    background: var(--white);
+    margin: 0 auto;
+    margin-top: 20vh;
+    transition: all 1s ease-in-out;
+  }
+    
+  #cerrar {
+    align-self: flex-end;
+    margin-left: 97%;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    transition: all 200ms;
+  }
+
+  .popupContent{
+    padding: 2vw;
+    color: var(--black);
+  }
+  .popupContent input, label{
+    width: 90%;
+    margin: 2vh 0 2vh 0;
+    opacity: 1;
+  }
+  .btn-login{
+    display: flex;
+    justify-content: center;
+    padding: 1vh 2vw 1vh 2vw;
+  }
+
 /** -----SLIDER----- **/
 .slider-frame {
     height: 22em;
