@@ -83,8 +83,27 @@ a {
     color: whitesmoke;
 }
 
+.shopping-cart-image-container {
+    position: relative;
+}
+
+.cart_products_total {
+    background-color:var(--green);
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 13px;
+}
+
 .hidden {
-    display: none;
+    display: none !important;
 }
 
 /** -----LOGIN----- **/
@@ -536,6 +555,8 @@ a {
   .empty-button:active{
     background-color: var(--gray);
   }
+
+  
 
 /** -----FOOTER----- **/
 footer{
