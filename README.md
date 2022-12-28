@@ -91,16 +91,20 @@ Vinoteca online donde vas a encontrar las mejores variedades de vinos sin movert
 <br>
 
 ## Capturas
-![](https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Capturas%2Fcaptura1.png?alt=media&token=b89ff168-b667-44f8-b4c8-010057fe5c43)<br>
+![](https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Capturas%2FCaptura1.png?alt=media&token=ee25490c-5222-491d-b52a-4ec9bb20ca39)<br>
 > Navbar y Slider
 <br>
 
-![](https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Capturas%2Fcaptura2.png?alt=media&token=9745d1c5-b5fa-4169-8a00-a54e907dd3bf)<br>
+![](https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Capturas%2FCaptura2.png?alt=media&token=9d73475d-54a4-4c97-b02f-506d730d9f96)<br>
 > Productos
 <br>
 
-![](https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Capturas%2Fcaptura3.png?alt=media&token=d68acf52-bb45-437c-b15d-789c9bac6640)
-> Contacto y Footer
+![](https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Capturas%2FCaptura3.png?alt=media&token=e5d60cd0-e7fc-4625-9e66-2bca0a89bd62)<br>
+> Contacto
+<br>
+
+![](https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Capturas%2FCaptura4.png?alt=media&token=64ad0611-205c-4015-bb57-f91bd99d00b7)
+> Footer
 <br>
 
 ## Colaboradores
