@@ -44,7 +44,7 @@ Vinoteca online donde vas a encontrar las mejores variedades de vinos sin movert
 > Contacto y Footer
 
 ## Colaboradores
-| [<img src="https://avatars.githubusercontent.com/u/72816896?v=4" width=50><br><sub>Boujon, Juan</sub>](https://github.com/Juan2805) |  [<img src="https://avatars.githubusercontent.com/u/74721434?v=4" width=50><br><sub>Cristian, Mansilla</sub>](https://github.com/cristianmansilla) |  [<img src="https://avatars.githubusercontent.com/u/87336052?v=4" width=50><br><sub>Isabel, Rodríguez</sub>](https://github.com/isardz) | [<img src="https://avatars.githubusercontent.com/u/87342125?v=4" width=50><br><sub>Trostdorf, Andres</sub>](https://github.com/TrostdorfA)
+| [<img src="https://avatars.githubusercontent.com/u/72816896?v=4" width=50><br><sub>Boujon, Juan</sub>](https://github.com/Juan2805) |  [<img src="https://avatars.githubusercontent.com/u/74721434?v=4" width=50><br><sub>Mansilla, Cristian</sub>](https://github.com/cristianmansilla) |  [<img src="https://avatars.githubusercontent.com/u/87336052?v=4" width=50><br><sub>Rodríguez, Isabel</sub>](https://github.com/isardz) | [<img src="https://avatars.githubusercontent.com/u/87342125?v=4" width=50><br><sub>Trostdorf, Andres</sub>](https://github.com/TrostdorfA)
 | :---: | :---: | :---: | :---: |
 
 ---
