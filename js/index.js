@@ -2,14 +2,14 @@ var allWines = []
 var cartProducts = []
 
 const getWines = async () => {
-    var response = await fetch('./db.json')
-    const myWines = await response.json()
-    
-    return myWines.vinos
+  var response = await fetch("./db.json")
+  const myWines = await response.json()
+
+  return myWines.vinos
 }
 
 const wineCard = (wine) => {
-    return  `<div id="wine${wine.id}" class="card">
+  return `<div id="wine${wine.id}" class="card">
                 <div class="card__body">
                     <div class="card__img">
                         <img
@@ -30,51 +30,80 @@ const wineCard = (wine) => {
 }
 
 const cardButtonListeners = () => {
-    const cardButtonsContainers = document.querySelectorAll('.card__button')
-    
-    cardButtonsContainers.forEach(cardButton => {
-        cardButton.addEventListener('click', (event) => {
-            allWines.map(wine => {
-                wine.marca == event.target.value ? localStorage.setItem('myEvent', JSON.stringify(wine)) : null
-            })
-        })
+  const cardButtonsContainers = document.querySelectorAll(".card__button")
+
+  cardButtonsContainers.forEach((cardButton) => {
+    cardButton.addEventListener("click", (event) => {
+      allWines.map((wine) => {
+        wine.marca == event.target.value
+          ? localStorage.setItem("myEvent", JSON.stringify(wine))
+          : null
+      })
     })
+  })
 }
 
-
-
 const renderAllWines = async () => {
-    const cardsContainer = document.querySelector('.cards-container')
+  const cardsContainer = document.querySelector(".cards-container")
 
-    //localStorage.clear()
-    CartProductsExist = JSON.parse(localStorage.getItem('CartProducts'))
-    
-    CartProductsExist ? null : localStorage.setItem('CartProducts', JSON.stringify(cartProducts))
+  //localStorage.clear()
+  CartProductsExist = JSON.parse(localStorage.getItem("CartProducts"))
 
-    allWines = await getWines()
+  CartProductsExist
+    ? null
+    : localStorage.setItem("CartProducts", JSON.stringify(cartProducts))
 
-    allWines.map(wine => {
-        cardsContainer.insertAdjacentHTML('beforeend', wineCard(wine))
-    })
-    cardButtonListeners()
+  allWines = await getWines()
+
+  allWines.map((wine) => {
+    cardsContainer.insertAdjacentHTML("beforeend", wineCard(wine))
+  })
+  cardButtonListeners()
 }
 
 renderAllWines()
 
 const filterListeners = () => {
-    const filtersContainers = document.querySelectorAll('.button-filter')
+  // Filtrando por buscador
+  const inputSearch = document.getElementById("input-search")
 
-    filtersContainers.forEach(filter => {
-        filter.addEventListener('click', event => {
-            allWines.map(wine => {
-                let wineToFilter = document.querySelector(`#wine${wine.id}`)
-                wineToFilter.classList.remove('hidden')
-                if (wine.tipo.split(' ')[0] != event.target.id) {
-                    wineToFilter.classList.toggle('hidden')
-                }
-            })
-        })
+  inputSearch.addEventListener("keyup", (event) => {
+    allWines.map((wine) => {
+      let wineToFilter = document.querySelector(`#wine${wine.id}`)
+      wineToFilter.classList.remove("hidden")
+      if (
+        !wine.marca.toLowerCase().includes(event.target.value.toLowerCase()) &&
+        !wine.tipo.toLowerCase().includes(event.target.value.toLowerCase())
+      ) {
+        wineToFilter.classList.toggle("hidden")
+      }
     })
+
+    const notHiddenWines =
+      document.querySelectorAll(".card:not(.hidden)").length
+
+    if (notHiddenWines == 0) {
+      document.querySelector(".error").classList.remove("hidden")
+    } else {
+      document.querySelector(".error").classList.add("hidden")
+    }
+  })
+
+  const filtersContainers = document.querySelectorAll(".button-filter")
+
+  filtersContainers.forEach((filter) => {
+    filter.addEventListener("click", (event) => {
+      allWines.map((wine) => {
+        let wineToFilter = document.querySelector(`#wine${wine.id}`)
+        wineToFilter.classList.remove("hidden")
+        if (wine.tipo.split(" ")[0] != event.target.id) {
+          wineToFilter.classList.toggle("hidden")
+        }
+      })
+    })
+  })
 }
 
 filterListeners()
+
+// Filtrando por buscador

@@ -1,7 +1,7 @@
 var wine = {}
 
 const renderDetail = (wine) => {
-    return `<div class="icon"><i class="fa-solid fa-heart fa-xl"></i></div>
+  return `<div class="icon"><i class="fa-solid fa-heart fa-xl"></i></div>
             <picture class="image-container">
                 <img src="../assets/img/wines/${wine.img}" alt="">
             </picture>
@@ -34,37 +34,34 @@ const renderDetail = (wine) => {
 }
 
 const buttonListener = () => {
-    const detailContainer = document.querySelector('.add-to-cart')
+  const detailContainer = document.querySelector(".add-to-cart")
 
-    var CartProducts = JSON.parse(localStorage.getItem('CartProducts'))
-    wine = JSON.parse(localStorage.getItem('myEvent'))
+  var CartProducts = JSON.parse(localStorage.getItem("CartProducts"))
+  wine = JSON.parse(localStorage.getItem("myEvent"))
 
-    detailContainer.addEventListener('click', () => {
-        if (CartProducts) {
-            if (CartProducts.find(product => product.id == wine.id)) {
-                CartProducts.map(product => {
-                    product.id == wine.id ? product.cantidad++ : null
-                })
-            }
-            else {
-                CartProducts.push(wine)
-            } 
-        }
-        else {
-            CartProducts.push(wine)
-        }
-        localStorage.setItem('CartProducts', JSON.stringify(CartProducts))
-    })
+  detailContainer.addEventListener("click", () => {
+    if (CartProducts) {
+      if (CartProducts.find((product) => product.id == wine.id)) {
+        CartProducts.map((product) => {
+          product.id == wine.id ? product.cantidad++ : null
+        })
+      } else {
+        CartProducts.push(wine)
+      }
+    } else {
+      CartProducts.push(wine)
+    }
+    localStorage.setItem("CartProducts", JSON.stringify(CartProducts))
+  })
 }
 
 const readLocalStorage = () => {
-    wine = JSON.parse(localStorage.getItem('myEvent'))
+  wine = JSON.parse(localStorage.getItem("myEvent"))
 
-    const detailContainer = document.querySelector('.detail-container')
+  const detailContainer = document.querySelector(".detail-container")
 
-    detailContainer.insertAdjacentHTML('beforeend', renderDetail(wine))
-    buttonListener()
+  detailContainer.insertAdjacentHTML("beforeend", renderDetail(wine))
+  buttonListener()
 }
 
 readLocalStorage()
-

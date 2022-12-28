@@ -84,6 +84,14 @@ a {
   display: none;
 }
 
+.error {
+  color: red;
+}
+
+main p {
+  margin: 2em;
+}
+
 /** -----SLIDER----- **/
 .slider-frame {
   height: 22em;
