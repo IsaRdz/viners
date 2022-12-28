@@ -3,6 +3,7 @@
   <img src=".//assets/img/viners-logo.png" width=250><br>
 </p>
 Vinoteca online donde vas a encontrar las mejores variedades de vinos sin moverte de tu casa.<br><br>
+
 ![Icon status project](http://img.shields.io/static/v1?label=STATUS&message=In%20development&color=RED&style=for-the-badge)
 
 ---
@@ -17,8 +18,23 @@ Vinoteca online donde vas a encontrar las mejores variedades de vinos sin movert
 
 
 ## Mockup
-![](https://media.ambito.com/p/82e68ee7ebdceda46a90f9d8786c59d4/adjuntos/239/imagenes/040/370/0040370819/730x0/smart/messi-copa-matejpg.jpg)
-> afasdfs
+![](https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Mockup%2FMockup1.png?alt=media&token=fb1e83f3-4e59-42b9-89a3-7ffc09f130b9)
+> Navbar y Slider
+
+![](https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Mockup%2FMockup2.png?alt=media&token=6c92584e-ccc7-4dbf-b579-037e6a359bfb)
+> Productos
+
+![](https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Mockup%2FMockup3.png?alt=media&token=eac97f1a-4c90-4ea1-bae4-191d4b358efe)
+> Formulario y Footer
+
+![](https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Mockup%2FMockup4.png?alt=media&token=c861551e-bee0-48e1-8e00-ae48d372f230)
+> Vista del Carrito
+
+![](https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Mockup%2FMockup5.png?alt=media&token=f1eda389-9377-4edf-aa7c-9399ae7e7b26)
+> Detalles de producto
+
+![](https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Mockup%2FMockup6.png?alt=media&token=908b6a70-f7bc-417d-9301-10a2eee1c06d)
+> Carrito
 
 ## Trello
 ![](https://elintransigente.com/wp-content/uploads/2022/12/Messi-Argentina-3.jpg)
