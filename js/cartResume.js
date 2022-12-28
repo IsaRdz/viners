@@ -25,7 +25,6 @@ const showCartResume = () => {
     const cartResumeContainer = document.querySelector('.cart-resume-container')
     const shoppingCartImageContainer = document.querySelector('.shopping-cart-image-container')
     
-    console.log('asd')
     showProducts()
     
     shoppingCartImageContainer.addEventListener('click', () => {

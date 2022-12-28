@@ -44,9 +44,7 @@ const cardButtonListeners = () => {
 const renderAllWines = async () => {
     const cardsContainer = document.querySelector('.cards-container')
 
-    //localStorage.clear()
     CartProductsExist = JSON.parse(localStorage.getItem('CartProducts'))
-    
     CartProductsExist ? null : localStorage.setItem('CartProducts', JSON.stringify(cartProducts))
 
     allWines = await getWines()
@@ -68,8 +66,13 @@ const filterListeners = () => {
             allWines.map(wine => {
                 let wineToFilter = document.querySelector(`#wine${wine.id}`)
                 wineToFilter.classList.remove('hidden')
-                if (wine.tipo.split(' ')[0] != event.target.id) {
-                    wineToFilter.classList.toggle('hidden')
+                if (event.target.id == 'all_wines') {
+                    wineToFilter.classList.remove('hidden')
+                } 
+                else {
+                    if (wine.tipo.split(' ')[0] != event.target.id ) {
+                        wineToFilter.classList.toggle('hidden')
+                    }
                 }
             })
         })
@@ -86,15 +89,10 @@ const addToCartListener = () => {
         addToCartButton.addEventListener('click', event => {
             allWines.map(wine => {
                 if (wine.marca == event.target.value) {
-                    if (CartProducts) {
-                        if (CartProducts.find(product => product.id == wine.id)) {
-                            CartProducts.map(product => {
-                                product.id == wine.id ? product.cantidad++ : null
-                            })
-                        }
-                        else {
-                            CartProducts.push(wine)
-                        } 
+                    if (CartProducts.find(product => product.id == wine.id)) {
+                        CartProducts.map(product => {
+                            product.id == wine.id ? product.cantidad++ : null
+                        })
                     }
                     else {
                         CartProducts.push(wine)
