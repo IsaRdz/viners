@@ -87,6 +87,63 @@ a {
     display: none;
 }
 
+/** -----LOGIN----- **/
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  #popupBody {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 46%;
+    padding: 1vh 2vw;
+    border-radius: 15px;
+    box-shadow: 3px 3px 5px 2px var(--gray);
+    color: var(--black);
+    background: var(--white);
+    margin: 0 auto;
+    margin-top: 20vh;
+    transition: all 1s ease-in-out;
+  }
+    
+  #cerrar {
+    align-self: flex-end;
+    margin-left: 97%;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    transition: all 200ms;
+  }
+
+  .popupContent{
+    padding: 2vw;
+    color: var(--black);
+  }
+  .popupContent input, label{
+    width: 90%;
+    margin: 2vh 0 2vh 0;
+    opacity: 1;
+  }
+  .btn-login{
+    display: flex;
+    justify-content: center;
+    padding: 1vh 2vw 1vh 2vw;
+  }
+
 /** -----SLIDER----- **/
 .slider-frame {
     height: 22em;
@@ -482,4 +539,66 @@ footer{
 .footer-dev > a > img:hover{
     -webkit-transform: rotateY(360deg);
     transition: 1s ease-in-out;
+}
+
+/**BTN IR ARRIBA**/
+.button-arriba {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: all .5s ease;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-arriba .item {
+    width: 0%;
+    height: 0%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+        0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    background-color: var(--orange);
+    color: var(--mahogany) !important;
+    opacity: 0;
+    transform: scale(0);
+    cursor: pointer;
+    box-shadow: var(--box-shadow);
+    transition: all .5s ease;
+}
+
+.shows {
+    animation: popup .5s ease-in-out !important;
+    transform: scale(1) !important;
+    opacity: 1 !important;
+    width: 100% !important;
+    height: 100% !important;
+    transition: all .5s ease;
+}
+
+@keyframes popup {
+    0% {
+        width: 0% !important;
+        height: 0% !important;
+        opacity: 0 !important;
+    }
+
+    50% {
+        width: 50% !important;
+        height: 50% !important;
+        opacity: 0.5 !important;
+    }
+
+    100% {
+        width: 100% !important;
+        height: 100% !important;
+        opacity: 1 !important;
+    }
 }
