@@ -333,7 +333,9 @@ a {
     /*transform: translateX(-50%);*/
     /* margin-left: -1em; */
 }
-
+.card__button:active{
+    background-color: var(--gray);
+}
 /** -----CONTACT FORM----- **/
 
 .iframe-form-container{
