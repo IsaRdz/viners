@@ -1,5 +1,7 @@
 ---
-<img src=".//assets/img/viners-logo.png" width=100><br>
+<p align="center">
+  <img src=".//assets/img/viners-logo.png" width=250><br>
+</p>
 Vinoteca online donde vas a encontrar las mejores variedades de vinos sin moverte de tu casa.<br><br>
 ![Icon status project](http://img.shields.io/static/v1?label=STATUS&message=In%20development&color=RED&style=for-the-badge)
 
