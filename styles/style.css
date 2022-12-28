@@ -413,7 +413,6 @@ a {
     margin: 0;
     padding-top: 10vh;
     padding-bottom: 10vh;
-    
 }
 
 .item-cart{    
@@ -509,6 +508,33 @@ a {
   .btn-finalizar:hover{
     background-color: var(--white);
     color: var(--black);
+  }
+  .empty-cart{
+    width: 40%;
+    margin: 0 auto;
+    padding: 1vh 5vw 3vh 5vw;
+    background-color: var(--white);
+    border-radius: 10px;
+    text-align: center;
+    
+  }
+  .empty-img{
+    width: 50%;
+  }
+  .empty-title{
+    color: var(--red);
+    margin: 1vh;
+  }
+  .empty-button{
+    background-color: var(--mahogany);
+    padding: 1vh 2vw 1vh 2vw;
+    color: var(--white);
+    border-radius: 5px;
+    border: none;
+    margin: 2vh;
+  }
+  .empty-button:active{
+    background-color: var(--gray);
   }
 
 /** -----FOOTER----- **/
