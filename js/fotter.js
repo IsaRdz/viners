@@ -1,10 +1,10 @@
 const devs = [
-    /* {
+    {
         name: "Andres Trostdorf",
         nickname: "Andy",
         dev_github: "https://github.com/TrostdorfA",
         dev_linkedin: ""
-    },  */   
+    },  
     {
         name: "Cristian Mansilla",
         nickname: "Cris",

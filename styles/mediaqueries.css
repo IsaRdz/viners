@@ -44,6 +44,10 @@
     .form-container{
         width: 90%;
     }
+
+    .footer-container > div{
+        margin-right: 1em;
+    }
 }
 
 @media (max-width: 767px) {
