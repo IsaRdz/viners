@@ -37,8 +37,14 @@ Vinoteca online donde vas a encontrar las mejores variedades de vinos sin movert
 > Carrito
 
 ## Trello
-![](https://elintransigente.com/wp-content/uploads/2022/12/Messi-Argentina-3.jpg)
-> Comentario random
+![](https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Trello%2FTrello1.png?alt=media&token=136caaa0-f157-4311-b008-b60a97a4f126)
+> Tablero de trello
+
+![](https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Trello%2FTrello2.png?alt=media&token=1e2ff35c-4c70-4497-b5b6-71452a346e4a)
+> Continuación de products backlogs en Done parte 1
+
+![](https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Trello%2FTrello3.png?alt=media&token=75aef643-37e9-4b19-b083-e5355406f54b)
+> Continuación de products backlogs en Done parte 2
 
 ## Tecnologías
 ![HTML5](https://img.shields.io/badge/HTML5-beige?style=for-the-badge&logo=html5)
