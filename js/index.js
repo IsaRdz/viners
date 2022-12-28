@@ -59,6 +59,31 @@ const renderAllWines = async () => {
 renderAllWines()
 
 const filterListeners = () => {
+    // Filtrando por buscador
+    const inputSearch = document.getElementById("input-search")
+
+    inputSearch.addEventListener("keyup", (event) => {
+        console.log(event)
+        allWines.map((wine) => {
+            let wineToFilter = document.querySelector(`#wine${wine.id}`)
+            wineToFilter.classList.remove("hidden")
+            if (
+                !wine.marca.toLowerCase().includes(event.target.value.toLowerCase()) &&
+                !wine.tipo.toLowerCase().includes(event.target.value.toLowerCase())
+            ){
+                wineToFilter.classList.toggle("hidden")
+            }
+        })
+
+        const notHiddenWines =
+        document.querySelectorAll(".card:not(.hidden)").length
+
+        if (notHiddenWines == 0) {
+            document.querySelector(".error").classList.remove("hidden")
+        } else {
+            document.querySelector(".error").classList.add("hidden")
+        }
+    })
     const filtersContainers = document.querySelectorAll('.button-filter')
 
     filtersContainers.forEach(filter => {
