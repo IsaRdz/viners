@@ -103,6 +103,7 @@ a {
   .overlay:target {
     visibility: visible;
     opacity: 1;
+    z-index: 100;
   }
   #popupBody {
     display: flex;
@@ -133,15 +134,69 @@ a {
     padding: 2vw;
     color: var(--black);
   }
+  .title-login{
+    width: 100%;
+    text-align: center;
+  }
+  .form-login{
+    width: 100%;
+  }
   .popupContent input, label{
-    width: 90%;
-    margin: 2vh 0 2vh 0;
+    width: 100%;
+    margin-top: 2vh;
+    margin-bottom: 2vh; 
     opacity: 1;
+    border-radius: 5px;
+    padding: 1vh;
   }
   .btn-login{
     display: flex;
     justify-content: center;
     padding: 1vh 2vw 1vh 2vw;
+  }
+
+/** -----CONFIRM OF ADD TO CART----- **/
+#popup-add-cart{
+    width: 40%;
+    position: fixed;
+
+}
+.overlay-add-cart {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .overlay-add-cart:target {
+    visibility: visible;
+    opacity: 1;
+    z-index: 100;
+  }
+#popupBody-add-cart{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    padding: 3vh 2vw;
+    color: var(--white);
+    background: var(--black);
+    opacity: 0.5;
+    margin: 0 auto;
+    margin-bottom: 0;
+    transition: all 1s ease-in-out;
+}
+#cerrar-add-cart {
+    align-self: flex-end;
+    margin-left: 90%;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--white);
+    transition: all 200ms;
   }
 
 /** -----SLIDER----- **/
@@ -630,3 +685,4 @@ footer{
         opacity: 1 !important;
     }
 }
+

@@ -25,7 +25,7 @@
                   <li>
                       <!-- <img src="https://img.icons8.com/external-tanah-basah-glyph-tanah-basah/48/FFFFFF/external-profile-social-media-ui-tanah-basah-glyph-tanah-basah.png"/> -->
                       <!--<i class="fa-solid fa-user fa-xl"></i>-->
-                      <a href="#popup" rel="noopener noreferrer" class="link">
+                      <a href="#popup-login" rel="noopener noreferrer" class="link">
                         <i class="fa-solid fa-user fa-xl"></i>          
                       </a>
                   </li>
@@ -45,16 +45,16 @@
     </header>
     <main>
       <section class="login">        
-        <div id="popup" class="overlay">
+        <div id="popup-login" class="overlay">
           <div id="popupBody">
             <a id="cerrar" href="#">&times;</a>
-            <h2>Login</h2>
+            <h2 class="title-login">Sign in</h2>
             <div class="popupContent">
-              <form action="">
-                <label for="email">Insert your email: </label>
-                <input type="email" name="email" id="email">
+              <form action="" class="form-login">
+                <label for="email">Email address: </label>
+                <input type="email" name="email" id="email" placeholder="Enter email">
                 <label for="password">Password: </label>
-                <input type="password" name="password" id="password">  
+                <input type="password" name="password" id="password" placeholder="Enter password">                  
                 <button type="submit" class="btn-login">Login</button>
               </form>
             </div>
@@ -143,8 +143,17 @@
             <button class="btn-submit">Submit</button>
           </form>
         </div>
-
       </section>
+      <div id="popup-add-cart" class="overlay-add-cart">
+        <div id="popupBody-add-cart">
+          <a id="cerrar-add-cart" href="#">&times;</a>
+          <div class="popupContent-add-to-cart">
+            <h3 class="title-add-to-cart">The wine has been added</h3>
+            
+          </div>
+        </div>
+      </div>
+    </section>
     </main>
     <div class="button-arriba">
       <a class="item" id="buttonTop">
