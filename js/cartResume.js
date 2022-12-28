@@ -11,9 +11,13 @@ const productRender = (wine) => {
 
 const showProducts = () => {
     CartProducts = JSON.parse(localStorage.getItem('CartProducts'))
-    const cartResumeContainer = document.querySelector('.cart-resume-container')
+    const cartResumeContainer = document.querySelector('.products_container_resume')
     const productsContainers = document.querySelectorAll('.product-resume')
-
+    if (CartProducts.length == 0) {
+        document.querySelector('#empty-cart').classList.remove('hidden')
+    } else {
+        document.querySelector('#empty-cart').classList.add('hidden')
+    }
     productsContainers.forEach(product => product.remove())
     
     CartProducts.map(product => {
@@ -42,6 +46,10 @@ const cleanProductListener = () => {
     clenaProductButtons.forEach(clenaProductButton => {
         clenaProductButton.addEventListener('click', cleanProduct => {
             CartProducts = JSON.parse(localStorage.getItem('CartProducts'))
+            ProductEliminated = CartProducts.filter(product => product.id == cleanProduct.target.id)
+            for (let i = 0; i < ProductEliminated[0].cantidad; i++) {
+                document.querySelector('.cart_products_total').innerHTML--
+            }
             CartProducts = CartProducts.filter(product => product.id != cleanProduct.target.id)
             localStorage.setItem('CartProducts', JSON.stringify(CartProducts))
             showProducts()
@@ -58,6 +66,7 @@ const cleanCartListener = () => {
         ProductCartContainer.forEach(product => product.remove())
         localStorage.setItem('CartProducts', JSON.stringify([]))
         showProducts()
+        document.querySelector('.cart_products_total').innerHTML = 0
     })
 }
 

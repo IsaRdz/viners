@@ -58,12 +58,21 @@ const renderAllWines = async () => {
 
 renderAllWines()
 
+const renderTotalProductNumber = () => {
+    document.querySelector('.cart_products_total').innerHTML = 0
+    let cantidadTotal = CartProducts.reduce((accumulator, product) => 
+    accumulator + product.cantidad
+    ,0)
+    document.querySelector('.cart_products_total').innerHTML = cantidadTotal
+}
+
+renderTotalProductNumber()
+
 const filterListeners = () => {
     // Filtrando por buscador
     const inputSearch = document.getElementById("input-search")
 
     inputSearch.addEventListener("keyup", (event) => {
-        console.log(event)
         allWines.map((wine) => {
             let wineToFilter = document.querySelector(`#wine${wine.id}`)
             wineToFilter.classList.remove("hidden")
@@ -116,12 +125,15 @@ const addToCartListener = () => {
                 if (wine.marca == event.target.value) {
                     if (CartProducts.find(product => product.id == wine.id)) {
                         CartProducts.map(product => {
-                            product.id == wine.id ? product.cantidad++ : null
+                            if (product.id == wine.id) {
+                                product.cantidad++
+                            }
                         })
                     }
                     else {
                         CartProducts.push(wine)
                     }
+                    document.querySelector('.cart_products_total').innerHTML++
                     localStorage.setItem('CartProducts', JSON.stringify(CartProducts))
                 }
             })

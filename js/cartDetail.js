@@ -21,6 +21,7 @@ const renderDetail = (wine) => {
 const renderProducts = () => {
     const cartDetailContainer = document.querySelector('.cart-detail-container')
     var CartProducts = JSON.parse(localStorage.getItem('CartProducts'))
+    CartProducts.length != 0 ? null : document.querySelector('#empty-cart').classList.remove('hidden')
     
     CartProducts.map(product => {
         cartDetailContainer.insertAdjacentHTML('afterbegin', renderDetail(product))
@@ -36,8 +37,11 @@ const cleanProductListener = () => {
     clenaProductButtons.forEach(clenaProductButton => {
         clenaProductButton.addEventListener('click', cleanProduct => {
             var CartProducts = JSON.parse(localStorage.getItem('CartProducts'))
+            ProductEliminated = CartProducts.filter(product => product.id == cleanProduct.target.id)
+            for (let i = 0; i < ProductEliminated[0].cantidad; i++) {
+                document.querySelector('.cart_products_total').innerHTML--
+            }
             let CartProductsFiltered = CartProducts.filter(product => product.id != cleanProduct.target.id)
-            console.log(CartProductsFiltered)
             localStorage.setItem('CartProducts', JSON.stringify(CartProductsFiltered))
             document.querySelector(`#Container${cleanProduct.target.id}`).remove()
             renderTotalPrice()
@@ -61,6 +65,7 @@ const subtractListener = () => {
                     unitsContainer.forEach(Unit => {
                         if (Unit.id == event.target.id) {
                             if (Unit.innerHTML > 1) {
+                                document.querySelector('.cart_products_total').innerHTML--
                                 Unit.innerHTML--
                                 CartProduct.cantidad--
                                 document.querySelector(`#Precio${event.target.id}`).innerHTML = CartProduct.cantidad * CartProduct.precio
@@ -94,6 +99,7 @@ const addListener = () => {
                 if (CartProduct.id == event.target.id) {
                     unitsContainer.forEach(Unit => {
                         if (Unit.id == event.target.id) {
+                            document.querySelector('.cart_products_total').innerHTML++
                             Unit.innerHTML++
                             CartProduct.cantidad++
                             document.querySelector(`#Precio${event.target.id}`).innerHTML = CartProduct.cantidad * CartProduct.precio
@@ -134,6 +140,7 @@ const cleanCartListener = () => {
     cleanCartContainer.addEventListener('click', () => {
         ProductCartContainer.forEach(product => product.remove())
         localStorage.setItem('CartProducts', JSON.stringify([]))
+        document.querySelector('.cart_products_total').innerHTML = 0
         renderProducts()
         renderTotalPrice()
         emptyCartMessage()
@@ -145,7 +152,6 @@ cleanCartListener()
 const emptyCartMessage = () => {
     const emptyCart = document.getElementById('empty-cart');
     var cartProducts = JSON.parse(localStorage.getItem('CartProducts'))
-    console.log(emptyCart)
 
     if(cartProducts.length == 0){
         emptyCart.classList.remove('hidden')
@@ -153,3 +159,14 @@ const emptyCartMessage = () => {
         emptyCart.classList.add('hidden')
     }
 }
+
+const renderTotalProductNumber = () => {
+    document.querySelector('.cart_products_total').innerHTML = 0
+    var CartProducts = JSON.parse(localStorage.getItem('CartProducts'))
+    let cantidadTotal = CartProducts.reduce((accumulator, product) => 
+    accumulator + product.cantidad
+    ,0)
+    document.querySelector('.cart_products_total').innerHTML = cantidadTotal
+}
+
+renderTotalProductNumber()
