@@ -41,7 +41,6 @@ header{
     /* background-color: var(--green); */
     /* background-color:#335c67d3; */
     background: rgb(51,92,103);
-    background: rgb(51,92,103);
     background: linear-gradient(90deg, rgba(51,92,103,1) 19%, rgba(84,11,14,1) 62%, rgba(224,159,62,1) 100%);
     position: sticky;
     top: 0;
