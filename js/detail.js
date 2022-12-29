@@ -3,7 +3,7 @@ var wine = {}
 const renderDetail = (wine) => {
     return `<div class="icon"><i class="fa-solid fa-heart fa-xl"></i></div>
             <picture class="image-container">
-                <img src="../assets/img/wines/${wine.img}" alt="">
+                <img src="../assets/img/winesPNG/${wine.img}" alt="">
             </picture>
             <div class="detail-info-container">
                 <div class="name-id-container">
