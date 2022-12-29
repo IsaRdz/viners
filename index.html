@@ -17,7 +17,7 @@
   <body>
     <header>
       <a href="#" class="logo">
-          <img src="./assets/img/viners-logo.png" alt="">
+          <img src="./assets/img/viners-logo1.png" alt="">
       </a>
       <nav>
           <div class="nav-container">
@@ -32,11 +32,19 @@
                   <li class="shopping-cart-image-container">
                       <!-- <img src="https://img.icons8.com/ios-filled/50/FFFFFF/shopping-cart.png"/> -->
                       <i class="fa-solid fa-cart-shopping fa-xl"></i>
+                      <div class="cart_products_total">0</div>
                   </li>
               </ul>
+              
           </div>
           <div class="cart-resume-container hidden">
-              <div class="buttons-container">
+              <div class="products_container_resume"></div>
+              <div class="empty_cart" id="empty-cart">
+                <img src="./assets/empty-cart.png" alt="empty-cart" class="empty_img">
+                <h2 class="empty_title">Your Cart es Empty!</h2>
+                <p>Let's go buy something!</p>
+              </div>
+              <div class="buttons_container">
                   <button class="clean-cart clean-cart-button">Clean Cart</button>
                   <a href="./pages/cartDetail.html" class="clean-cart">More Details</a>
               </div>
@@ -95,36 +103,43 @@
           </li>
         </ul>
       </div>
-      <div class="filter">
-        <section class="filter__category">
+
+      <section class="products">
+        <div class="container__background-triangle">
+          <div class="triangle triangle1"></div>
+          <div class="triangle triangle2"></div>
+          <div class="triangle triangle3"></div>
+        </div>
+
+        <div class="filter">
+          <section class="filter__category">
             <button id="Tinto" class="button-filter">
-                <i id="Tinto" class="fa-solid fa-wine-bottle"></i>
-                <h2 id="Tinto">Tinto</h2>
+              <i id="Tinto" class="fa-solid fa-wine-bottle"></i>
+              <h2 id="Tinto">Tinto</h2>
             </button>
             <button id="Blanco" class="button-filter">
-                <i id="Blanco" class="fa-solid fa-wine-bottle"></i>
-                <h2 id="Blanco">Blanco</h2>
+              <i id="Blanco" class="fa-solid fa-wine-bottle"></i>
+              <h2 id="Blanco">Blanco</h2>
             </button>
             <button id="Cava" class="button-filter">
-                <i id="Cava" class="fa-solid fa-wine-bottle"></i>
-                <h2 id="Cava">Cava</h2>
+              <i id="Cava" class="fa-solid fa-wine-bottle"></i>
+              <h2 id="Cava">Cava</h2>
             </button>
             <button id="Espumoso" class="button-filter">
-                <i id="Espumoso" class="fa-solid fa-wine-bottle"></i>
-                <h2 id="Espumoso">Espumoso</h2>
+              <i id="Espumoso" class="fa-solid fa-wine-bottle"></i>
+              <h2 id="Espumoso">Espumoso</h2>
             </button>
-            <button id="all_wines" class="button-filter">
-                <i id="all_wines" class="fa-solid fa-wine-bottle"></i>
-                <h2 id="all_wines">All wines</h2>
-            </button>
-        </section>
-        <section class="filter__searchBar">
-          <input id="input-search" class="searchInput" type="text" />
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </section>
-      </div>
-      <p class="error hidden" id="errorP">No results found</p>
-      <section class="cards-container">
+          </section>
+          <section class="filter__searchBar">
+            <input type="text" />
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </section>
+        </div>
+  
+        
+  
+        <section class="cards-container">
+      </section>
         
       </section>
       <section class="iframe-form-container">

@@ -46,9 +46,21 @@ const buttonListener = () => {
         else {
             CartProducts.push(wine)
         }
+        document.querySelector('.cart_products_total').innerHTML++
         localStorage.setItem('CartProducts', JSON.stringify(CartProducts))
     })
 }
+
+const renderTotalProductNumber = () => {
+    document.querySelector('.cart_products_total').innerHTML = 0
+    var CartProducts = JSON.parse(localStorage.getItem('CartProducts'))
+    let cantidadTotal = CartProducts.reduce((accumulator, product) => 
+        accumulator + product.cantidad
+    ,0)
+    document.querySelector('.cart_products_total').innerHTML = cantidadTotal
+}
+
+renderTotalProductNumber()
 
 const readLocalStorage = () => {
     wine = JSON.parse(localStorage.getItem('myEvent'))

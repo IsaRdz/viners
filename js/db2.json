@@ -2,7 +2,7 @@
     {
       "id": 1,
       "marca": "Vega Sicilia Unico",
-      "img": "Vega Sicilia Unico.jpg",
+      "img": "Vega Sicilia Unico.png",
       "bodega": "Vega Sicilia",
       "denominacion": "Ribera del Duero",
       "tipo": "Tinto",
@@ -17,7 +17,7 @@
     {
       "id": 2,
       "marca": "El Grifo Canari",
-      "img": "El Grifo Canari.jpg",
+      "img": "El Grifo Canari.png",
       "bodega": "El Grifo",
       "denominacion": "Lanzarote",
       "tipo": "Blanco dulce",
@@ -32,7 +32,7 @@
     {
       "id": 3,
       "marca": "Extrem de Bonaval",
-      "img": "Extrem de Bonaval.jpg",
+      "img": "Extrem de Bonaval.png",
       "bodega": "Bodegas Valdeorite",
       "denominacion": "Cava",
       "tipo": "Cava",
@@ -47,7 +47,7 @@
     {
       "id": 4,
       "marca": "Gallaecia",
-      "img": "Gallaecia.jpg",
+      "img": "Gallaecia.png",
       "bodega": "Martín Códax",
       "denominacion": "Rías Baixas",
       "tipo": "Blanco",
@@ -62,7 +62,7 @@
     {
       "id": 5,
       "marca": "Malkoa Private Collection",
-      "img": "Malkoa Private Collection.jpg",
+      "img": "Malkoa Private Collection.png",
       "bodega": "Astobiza",
       "denominacion": "Txakoli de Álava",
       "tipo": "Blanco",
@@ -77,7 +77,7 @@
     {
       "id": 6,
       "marca": "Finca Malaveina",
-      "img": "Finca Malaveina.jpg",
+      "img": "Finca Malaveina.png",
       "bodega": "Castillo de Perelada",
       "denominacion": "Empordà",
       "tipo": "Tinto",
@@ -92,7 +92,7 @@
     {
       "id": 7,
       "marca": "Remirez de Ganuza Reserva",
-      "img": "Remirez de Ganuza Reserva.jpg",
+      "img": "Remirez de Ganuza Reserva.png",
       "bodega": "Bodegas Remírez de Ganuza",
       "denominacion": "Rioja",
       "tipo": "Tinto Reserva",
@@ -107,7 +107,7 @@
     {
       "id": 8,
       "marca": "Guimaro Finca Capelinos",
-      "img": "Guimaro Finca Capelinos.jpg",
+      "img": "Guimaro Finca Capelinos.png",
       "bodega": "Guímaro",
       "denominacion": "Ribeira Sacra",
       "tipo": "Tinto",
@@ -122,7 +122,7 @@
     {
       "id": 9,
       "marca": "La Poza de Ballesteros",
-      "img": "La Poza de Ballesteros.jpg",
+      "img": "La Poza de Ballesteros.png",
       "bodega": "Bodegas y viñedos Artadi",
       "denominacion": "Vino de España",
       "tipo": "Tinto",
