@@ -130,11 +130,10 @@ a {
     flex-wrap: wrap;
     justify-content: center;
     width: 46%;
-    padding: 1vh 2vw;
     border-radius: 15px;
     box-shadow: 3px 3px 5px 2px var(--gray);
     color: var(--black);
-    background: var(--white);
+    background: var(--green);
     margin: 0 auto;
     margin-top: 20vh;
     transition: all 1s ease-in-out;
@@ -142,7 +141,7 @@ a {
     
   #cerrar {
     align-self: flex-end;
-    margin-left: 97%;
+    margin-left: 92%;
     font-size: 30px;
     font-weight: bold;
     text-decoration: none;
@@ -151,29 +150,66 @@ a {
   }
 
   .popupContent{
-    padding: 2vw;
+    width: 100%;
+    padding: 10vh 5vw 5vh 5vw;
     color: var(--black);
+    -webkit-mask-image: url(../assets/img/background-footer.svg);
+    mask-image: url(../assets/img/background-footer.svg);
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    background-color: #6098a7;
   }
   .title-login{
     width: 100%;
+    color: var(--white);
     text-align: center;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+    text-shadow: 2px 2px 2px var(--gray);
   }
   .form-login{
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   .popupContent input, label{
-    width: 100%;
-    margin-top: 2vh;
-    margin-bottom: 2vh; 
     opacity: 1;
     border-radius: 5px;
     padding: 1vh;
+}
+.popupContent input{
+      border: none;
+      box-shadow: 1px 1px 2px gray inset;
   }
-  .btn-login{
+.container-check{
+    padding-top: 2vh;
+}
+.container-btn-login{
     display: flex;
     justify-content: center;
+}
+.container-icons{
+    display: flex;
+    justify-content: center;
+}
+.container-icons img{
+    margin: 2vh 1vw 3vh 1vw;
+    cursor: pointer;
+}
+.btn-login{
     padding: 1vh 2vw 1vh 2vw;
+    background-color: var(--gray);
+    border-radius: 5px;
+    border: none;
+    color: var(--white);
   }
+  .btn-login:active{
+    background-color: var(--green);
+  }
+.forgot-pass{
+    padding-top: 1vh;
+    text-align: center;
+}
 
 /** -----CONFIRM OF ADD TO CART----- **/
 #popup-add-cart{
