@@ -2,7 +2,7 @@
     {
       "id": 1,
       "marca": "Vega Sicilia Unico",
-      "img": "Vega Sicilia Unico.jpg",
+      "img": "Vega Sicilia Unico.png",
       "bodega": "Vega Sicilia",
       "denominacion": "Ribera del Duero",
       "tipo": "Tinto",
@@ -17,7 +17,7 @@
     {
       "id": 2,
       "marca": "El Grifo Canari",
-      "img": "El Grifo Canari.jpg",
+      "img": "El Grifo Canari.png",
       "bodega": "El Grifo",
       "denominacion": "Lanzarote",
       "tipo": "Blanco dulce",
@@ -32,7 +32,7 @@
     {
       "id": 3,
       "marca": "Extrem de Bonaval",
-      "img": "Extrem de Bonaval.jpg",
+      "img": "Extrem de Bonaval.png",
       "bodega": "Bodegas Valdeorite",
       "denominacion": "Cava",
       "tipo": "Cava",
@@ -47,7 +47,7 @@
     {
       "id": 4,
       "marca": "Gallaecia",
-      "img": "Gallaecia.jpg",
+      "img": "Gallaecia.png",
       "bodega": "Martín Códax",
       "denominacion": "Rías Baixas",
       "tipo": "Blanco",
@@ -62,7 +62,7 @@
     {
       "id": 5,
       "marca": "Malkoa Private Collection",
-      "img": "Malkoa Private Collection.jpg",
+      "img": "Malkoa Private Collection.png",
       "bodega": "Astobiza",
       "denominacion": "Txakoli de Álava",
       "tipo": "Blanco",
@@ -77,7 +77,7 @@
     {
       "id": 6,
       "marca": "Finca Malaveina",
-      "img": "Finca Malaveina.jpg",
+      "img": "Finca Malaveina.png",
       "bodega": "Castillo de Perelada",
       "denominacion": "Empordà",
       "tipo": "Tinto",
@@ -92,7 +92,7 @@
     {
       "id": 7,
       "marca": "Remirez de Ganuza Reserva",
-      "img": "Remirez de Ganuza Reserva.jpg",
+      "img": "Remirez de Ganuza Reserva.png",
       "bodega": "Bodegas Remírez de Ganuza",
       "denominacion": "Rioja",
       "tipo": "Tinto Reserva",
@@ -107,7 +107,7 @@
     {
       "id": 8,
       "marca": "Guimaro Finca Capelinos",
-      "img": "Guimaro Finca Capelinos.jpg",
+      "img": "Guimaro Finca Capelinos.png",
       "bodega": "Guímaro",
       "denominacion": "Ribeira Sacra",
       "tipo": "Tinto",
@@ -122,7 +122,7 @@
     {
       "id": 9,
       "marca": "La Poza de Ballesteros",
-      "img": "La Poza de Ballesteros.jpg",
+      "img": "La Poza de Ballesteros.png",
       "bodega": "Bodegas y viñedos Artadi",
       "denominacion": "Vino de España",
       "tipo": "Tinto",
@@ -137,7 +137,7 @@
     {
       "id": 10,
       "marca": "Remirez de Ganuza Reserva 2014",
-      "img": "Remirez de Ganuza Reserva2017.jpg",
+      "img": "Remirez de Ganuza Reserva2017.png",
       "bodega": "Bodegas Remírez de Ganuza",
       "denominacion": "denominacion",
       "tipo": "Tinto Reserva",
@@ -152,7 +152,7 @@
     {
       "id": 11,
       "marca": "Viña Muriel",
-      "img": "Viña Muriel Gran Reserva Tempranillo.jpg",
+      "img": "Viña Muriel Gran Reserva Tempranillo.png",
       "bodega": "Muriel Wines",
       "denominacion": "Rioja",
       "tipo": "Tinto",
@@ -167,7 +167,7 @@
     {
       "id": 12,
       "marca": "F de Fuentespina Reserva Especial",
-      "img": "F de Fuentespina Reserva Especial.jpg",
+      "img": "F de Fuentespina Reserva Especial.png",
       "bodega": "Avelino Vegas",
       "denominacion": "Ribera del Duero",
       "tipo": "Tinto",
@@ -182,7 +182,7 @@
     {
       "id": 13,
       "marca": "Pago de los Capellanes Reserva",
-      "img": "Pago de los Capellanes Reserva.jpg",
+      "img": "Pago de los Capellanes Reserva.png",
       "bodega": "Pago de los Capellanes",
       "denominacion": "Ribera del Duero",
       "tipo": "Tinto Reserva",
@@ -197,7 +197,7 @@
     {
       "id": 14,
       "marca": "Legaris Reserva",
-      "img": "Legaris Reserva.jpg",
+      "img": "Legaris Reserva.png",
       "bodega": "Legaris",
       "denominacion": "Ribera del Duero",
       "tipo": "Tinto Reserva",
@@ -212,7 +212,7 @@
     {
       "id": 15,
       "marca": "Vina Pomal Crianza",
-      "img": "Vina Pomal Crianza.jpg",
+      "img": "Vina Pomal Crianza.png",
       "bodega": "Bodegas Bilbaínas",
       "denominacion": "Rioja",
       "tipo": "Tinto Crianza",
@@ -227,7 +227,7 @@
     {
       "id": 16,
       "marca": "Granbazan Limousin",
-      "img": "Granbazan Limousin.jpg",
+      "img": "Granbazan Limousin.png",
       "bodega": "Bodega Granbazán",
       "denominacion": "Rías Baixas",
       "tipo": "Blanco",
@@ -242,7 +242,7 @@
     {
       "id": 17,
       "marca": "Shaya Habis",
-      "img": "Shaya Habis.jpg",
+      "img": "Shaya Habis.png",
       "bodega": "Shaya",
       "denominacion": "Rueda",
       "tipo": "Blanco",
@@ -257,7 +257,7 @@
     {
       "id": 18,
       "marca": "Finca Vinoa Paraje Penaboa",
-      "img": "Finca Vinoa Paraje Penaboa.jpg",
+      "img": "Finca Vinoa Paraje Penaboa.png",
       "bodega": "Bodega y Viñedos Pazo Casanova",
       "denominacion": "Ribeiro",
       "tipo": "Blanco",
@@ -272,7 +272,7 @@
     {
       "id": 19,
       "marca": "Astobiza",
-      "img": "Astobiza.jpg",
+      "img": "Astobiza.png",
       "bodega": "Astobiza",
       "denominacion": "Txakoli de Álava",
       "tipo": "Blanco",
@@ -287,7 +287,7 @@
     {
       "id": 20,
       "marca": "Blanc del Terrer",
-      "img": "Blanc del Terrer.jpg",
+      "img": "Blanc del Terrer.png",
       "bodega": "Vinyes del Terrerbodega",
       "denominacion": "Cataluña",
       "tipo": "Blanco",
@@ -302,7 +302,7 @@
     {
       "id": 21,
       "marca": "Estrany",
-      "img": "Estrany.jpg",
+      "img": "Estrany.png",
       "bodega": "Celler Credo",
       "denominacion": "Penedés",
       "tipo": "Blanco",
@@ -317,7 +317,7 @@
     {
       "id": 22,
       "marca": "Silice Blanco",
-      "img": "Silice Blanco.jpg",
+      "img": "Silice Blanco.png",
       "bodega": "Sílice Viticultores",
       "denominacion": "Vino de España",
       "tipo": "Blanco",
@@ -332,7 +332,7 @@
     {
       "id": 23,
       "marca": "Vidonia",
-      "img": "Vidonia.jpg",
+      "img": "Vidonia.png",
       "bodega": "Suertes del Marqués",
       "denominacion": "Valle de la Orotava",
       "tipo": "Blanco Fermentado en Barrica",
@@ -347,7 +347,7 @@
     {
       "id": 24,
       "marca": "Pazo Barrantes Magnum",
-      "img": "Pazo Barrantes Magnum.jpg",
+      "img": "Pazo Barrantes Magnum.png",
       "bodega": "Pazo de Barrantes",
       "denominacion": "Rías Baixas",
       "tipo": "Blanco",
@@ -362,7 +362,7 @@
     {
       "id": 25,
       "marca": "O Santo do Mar Blanco",
-      "img": "O Santo do Mar Blanco.jpg",
+      "img": "O Santo do Mar Blanco.png",
       "bodega": "Rodrigo Méndez",
       "denominacion": "Vino de España",
       "tipo": "Blanco Fermentado en Barrica",
@@ -377,7 +377,7 @@
     {
       "id": 26,
       "marca": "Sameiras Blanco",
-      "img": "Sameiras Blanco.jpg",
+      "img": "Sameiras Blanco.png",
       "bodega": "Adega Sameirás",
       "denominacion": "Ribeiro",
       "tipo": "Blanco",
@@ -392,7 +392,7 @@
     {
       "id": 27,
       "marca": "Montes Obarenes",
-      "img": "Montes Obarenes.jpg",
+      "img": "Montes Obarenes.png",
       "bodega": "Gómez Cruzado",
       "denominacion": "Rioja",
       "tipo": "Blanco Fermentado en Barrica",
@@ -407,7 +407,7 @@
     {
       "id": 28,
       "marca": "Marina Alta Coleccion",
-      "img": "Marina Alta Coleccion.jpg",
+      "img": "Marina Alta Coleccion.png",
       "bodega": "Bocopa",
       "denominacion": "Alicante",
       "tipo": "Blanco",
@@ -422,7 +422,7 @@
     {
       "id": 29,
       "marca": "Sketch",
-      "img": "Sketch.jpg",
+      "img": "Sketch.png",
       "bodega": "Raúl Pérez Bodegas y Viñedos",
       "denominacion": "Vino de España",
       "tipo": "Blanco Fermentado en Barrica",
@@ -437,7 +437,7 @@
     {
       "id": 30,
       "marca": "Rolland Galarreta Rueda Barrica",
-      "img": "Rolland Galarreta Rueda Barrica.jpg",
+      "img": "Rolland Galarreta Rueda Barrica.png",
       "bodega": "Rolland y Galarreta",
       "denominacion": "Rueda",
       "tipo": "Blanco Fermentado en Barrica",
@@ -452,7 +452,7 @@
     {
       "id": 31,
       "marca": "Finca Montico",
-      "img": "Finca Montico.jpg",
+      "img": "Finca Montico.png",
       "bodega": "Marqués de Riscal",
       "denominacion": "Rueda",
       "tipo": "Blanco",
@@ -467,7 +467,7 @@
     {
       "id": 32,
       "marca": "Altos de Torona Godello",
-      "img": "Altos de Torona Godello.jpg",
+      "img": "Altos de Torona Godello.png",
       "bodega": "Altos de Torona",
       "denominacion": "Rías Baixas",
       "tipo": "Blanco",
@@ -482,7 +482,7 @@
     {
       "id": 33,
       "marca": "Uxia da Ponte",
-      "img": "Uxia da Ponte.jpg",
+      "img": "Uxia da Ponte.png",
       "bodega": "Mauro Estévez",
       "denominacion": "Ribeiro",
       "tipo": "Blanco",
@@ -497,7 +497,7 @@
     {
       "id": 34,
       "marca": "Pazo Senorans Coleccion",
-      "img": "Pazo Senorans Coleccion.jpg",
+      "img": "Pazo Senorans Coleccion.png",
       "bodega": "Pazo de Señorans",
       "denominacion": "Rías Baixas",
       "tipo": "Blanco",
@@ -512,7 +512,7 @@
     {
       "id": 35,
       "marca": "Les Freses",
-      "img": "Les Freses.jpg",
+      "img": "Les Freses.png",
       "bodega": "Les Freses",
       "denominacion": "Vino de España",
       "tipo": "Blanco",
@@ -527,7 +527,7 @@
     {
       "id": 36,
       "marca": "Coleccion Comenge Verdejo",
-      "img": "Coleccion Comenge Verdejo.jpg",
+      "img": "Coleccion Comenge Verdejo.png",
       "bodega": "Bodegas Comenge",
       "denominacion": "Rueda",
       "tipo": "Blanco",
@@ -542,7 +542,7 @@
     {
       "id": 37,
       "marca": "Noelia Bebelia Albarino",
-      "img": "Noelia Bebelia Albarino.jpg",
+      "img": "Noelia Bebelia Albarino.png",
       "bodega": "Noelia Bebelia",
       "denominacion": "Rías Baixas",
       "tipo": "Blanco",
@@ -557,7 +557,7 @@
     {
       "id": 38,
       "marca": "Altos de Torona Rosal",
-      "img": "Altos de Torona Rosal.jpg",
+      "img": "Altos de Torona Rosal.png",
       "bodega": "Altos de Torona",
       "denominacion": "Rías Baixas",
       "tipo": "Blanco",
@@ -572,7 +572,7 @@
     {
       "id": 39,
       "marca": "La Comtesse",
-      "img": "La Comtesse.jpg",
+      "img": "La Comtesse.png",
       "bodega": "Pazo de Barrantes",
       "denominacion": "Rías Baixas",
       "tipo": "Blanco Fermentado en Barrica",
@@ -587,7 +587,7 @@
     {
       "id": 40,
       "marca": "Granbazan Etiqueta Ambar",
-      "img": "Granbazan Etiqueta Ambar.jpg",
+      "img": "Granbazan Etiqueta Ambar.png",
       "bodega": "Bodega Granbazán",
       "denominacion": "Rías Baixas",
       "tipo": "Blanco",
@@ -602,7 +602,7 @@
     {
       "id": 41,
       "marca": "Castellroig Reserva Brut",
-      "img": "Castellroig Reserva Brut.jpg",
+      "img": "Castellroig Reserva Brut.png",
       "bodega": "Sabaté i Coca",
       "denominacion": "Vino de España",
       "tipo": "Cava",
@@ -617,7 +617,7 @@
     {
       "id": 42,
       "marca": "Jaume Codorniu Gran Reserva",
-      "img": "Jaume Codorniu Gran Reserva.jpg",
+      "img": "Jaume Codorniu Gran Reserva.png",
       "bodega": "Ars Collecta",
       "denominacion": "Cava",
       "tipo": "Cava",
@@ -632,7 +632,7 @@
     {
       "id": 43,
       "marca": "Lumen Brut Reserva",
-      "img": "Lumen Brut Reserva.jpg",
+      "img": "Lumen Brut Reserva.png",
       "bodega": "Bodegas Bilbaínas",
       "denominacion": "Rioja",
       "tipo": "Espumoso",
@@ -647,7 +647,7 @@
     {
       "id": 44,
       "marca": "Llopart Llegat Familiar",
-      "img": "Llopart Llegat Familiar.jpg",
+      "img": "Llopart Llegat Familiar.png",
       "bodega": "Llopart",
       "denominacion": "Vino de España",
       "tipo": "Espumoso",
@@ -662,7 +662,7 @@
     {
       "id": 45,
       "marca": "Ars Collecta Grand Rose",
-      "img": "Ars Collecta Grand Rose.jpg",
+      "img": "Ars Collecta Grand Rose.png",
       "bodega": "Ars Collecta",
       "denominacion": "denominacion",
       "tipo": "Cava",
@@ -677,7 +677,7 @@
     {
       "id": 46,
       "marca": "AUS Bruant",
-      "img": "AUS Bruant.jpg",
+      "img": "AUS Bruant.png",
       "bodega": "Alta Alella",
       "denominacion": "Cava",
       "tipo": "Cava",
@@ -692,7 +692,7 @@
     {
       "id": 47,
       "marca": "Tharsys Unico",
-      "img": "Tharsys Unico.jpg",
+      "img": "Tharsys Unico.png",
       "bodega": "Pago de Tharsys",
       "denominacion": "Utiel - Requena",
       "tipo": "Espumoso",
@@ -707,7 +707,7 @@
     {
       "id": 48,
       "marca": "Raimat Lo Fred de Ponent",
-      "img": "Raimat Lo Fred de Ponent.jpg",
+      "img": "Raimat Lo Fred de Ponent.png",
       "bodega": "Raimat",
       "denominacion": "Cava",
       "tipo": "Cava",
@@ -722,7 +722,7 @@
     {
       "id": 49,
       "marca": "Descregut Brut Nature Reserva",
-      "img": "Descregut Brut Nature Reserva.jpg",
+      "img": "Descregut Brut Nature Reserva.png",
       "bodega": "Can Descregut",
       "denominacion": "Vino de España",
       "tipo": "Cava",
@@ -737,7 +737,7 @@
     {
       "id": 50,
       "marca": "Taanug Cava Brut",
-      "img": "Taanug Cava Brut.jpg",
+      "img": "Taanug Cava Brut.png",
       "bodega": "Pinord",
       "denominacion": "Cava",
       "tipo": "Cava",
@@ -752,7 +752,7 @@
     {
       "id": 51,
       "marca": "Visol Brut Nature Gran Reserva",
-      "img": "Visol Brut Nature Gran Reserva.jpg",
+      "img": "Visol Brut Nature Gran Reserva.png",
       "bodega": "Mestres",
       "denominacion": "Cava",
       "tipo": "Cava",
@@ -767,7 +767,7 @@
     {
       "id": 52,
       "marca": "Raimat El Cim del Turo",
-      "img": "Raimat El Cim del Turo.jpg",
+      "img": "Raimat El Cim del Turo.png",
       "bodega": "Raimat",
       "denominacion": "Cava",
       "tipo": "Cava",
@@ -782,7 +782,7 @@
     {
       "id": 53,
       "marca": "Juve Camps Reserva de la Familia",
-      "img": "Juve Camps Reserva de la Familia.jpg",
+      "img": "Juve Camps Reserva de la Familia.png",
       "bodega": "Juvé & Camps",
       "denominacion": "Cava",
       "tipo": "Cava",
@@ -797,7 +797,7 @@
     {
       "id": 54,
       "marca": "Parxet Cuvée 21 Eco 2018",
-      "img": "Parxet Cuvée 21 Eco 2018.jpg",
+      "img": "Parxet Cuvée 21 Eco 2018.png",
       "bodega": "Parxet",
       "denominacion": "Cava",
       "tipo": "Cava",
@@ -812,7 +812,7 @@
     {
       "id": 55,
       "marca": "Marta",
-      "img": "Marta.jpg",
+      "img": "Marta.png",
       "bodega": "Torre del Veguer",
       "denominacion": "Penedés",
       "tipo": "Espumoso",
@@ -827,7 +827,7 @@
     {
       "id": 56,
       "marca": "Castellroig Xarel.lo Vermell Brut",
-      "img": "Castellroig Xarel.lo Vermell Brut.jpg",
+      "img": "Castellroig Xarel.lo Vermell Brut.png",
       "bodega": "Sabaté i Coca",
       "denominacion": "Vino de España",
       "tipo": "Espumoso",
@@ -842,7 +842,7 @@
     {
       "id": 57,
       "marca": "Esparter",
-      "img": "Esparter.jpg",
+      "img": "Esparter.png",
       "bodega": "At Roca",
       "denominacion": "Penedés",
       "tipo": "Espumoso",
@@ -857,7 +857,7 @@
     {
       "id": 58,
       "marca": "Pago de Tharsys Millesime Rose",
-      "img": "Pago de Tharsys Millesime Rose Brut Reserva.jpg",
+      "img": "Pago de Tharsys Millesime Rose Brut Reserva.png",
       "bodega": "Pago de Tharsys",
       "denominacion": "Cava",
       "tipo": "Cava",
@@ -872,7 +872,7 @@
     {
       "id": 59,
       "marca": "Núria Claverol Homenatge",
-      "img": "Núria Claverol Homenatge Gran Reserva.jpg",
+      "img": "Núria Claverol Homenatge Gran Reserva.png",
       "bodega": "Sumarroca",
       "denominacion": "Cava",
       "tipo": "Cava",
@@ -887,7 +887,7 @@
     {
       "id": 60,
       "marca": "Alta Alella Mirgin Opus",
-      "img": "Alta Alella Mirgin Opus.jpg",
+      "img": "Alta Alella Mirgin Opus.png",
       "bodega": "Alta Alella",
       "denominacion": "Cava",
       "tipo": "Cava",
@@ -902,7 +902,7 @@
     {
       "id": 61,
       "marca": "Hacienda Lopez de Haro Reserva",
-      "img": "Hacienda Lopez de Haro Reserva.jpg",
+      "img": "Hacienda Lopez de Haro Reserva.png",
       "bodega": "Bodega Hacienda López de Haro",
       "denominacion": "Rioja",
       "tipo": "Tinto Reserva",
@@ -917,7 +917,7 @@
     {
       "id": 62,
       "marca": "Coto de Imaz Reserva",
-      "img": "Coto de Imaz Reserva.jpg",
+      "img": "Coto de Imaz Reserva.png",
       "bodega": "El Coto de Rioja",
       "denominacion": "Rioja",
       "tipo": "Tinto Reserva",
@@ -932,7 +932,7 @@
     {
       "id": 63,
       "marca": "Campo Viejo Gran Reserva",
-      "img": "Campo Viejo Gran Reserva.jpg",
+      "img": "Campo Viejo Gran Reserva.png",
       "bodega": "Campo Viejo",
       "denominacion": "Rioja",
       "tipo": "Tinto Gran Reserva",
@@ -947,7 +947,7 @@
     {
       "id": 64,
       "marca": "Arienzo Crianza",
-      "img": "Arienzo Crianza.jpg",
+      "img": "Arienzo Crianza.png",
       "bodega": "Marqués de Riscal",
       "denominacion": "denominacion",
       "tipo": "Rioja",
@@ -962,7 +962,7 @@
     {
       "id": 65,
       "marca": "Viña Lanciano Reserva",
-      "img": "Viña Lanciano Reserva.jpg",
+      "img": "Viña Lanciano Reserva.png",
       "bodega": "LAN",
       "denominacion": "Rioja",
       "tipo": "Tinto Reserva",
@@ -977,7 +977,7 @@
     {
       "id": 66,
       "marca": "Vina Cumbrero Crianza",
-      "img": "Vina Cumbrero Crianza.jpg",
+      "img": "Vina Cumbrero Crianza.png",
       "bodega": "Bodegas Osborne",
       "denominacion": "Rioja",
       "tipo": "Tinto Crianza",
@@ -992,7 +992,7 @@
     {
       "id": 67,
       "marca": "Tierra Crianza",
-      "img": "Tierra Crianza.jpg",
+      "img": "Tierra Crianza.png",
       "bodega": "Bodegas Tierra",
       "denominacion": "Rioja",
       "tipo": "Tinto Crianza",
@@ -1007,7 +1007,7 @@
     {
       "id": 68,
       "marca": "Pradorey Reserva Finca La Mina",
-      "img": "Pradorey Reserva Finca La Mina.jpg",
+      "img": "Pradorey Reserva Finca La Mina.png",
       "bodega": "Bodega y viñedos Pradorey",
       "denominacion": "Ribera del Duero",
       "tipo": "Tinto Reserva",
@@ -1022,7 +1022,7 @@
     {
       "id": 69,
       "marca": "Emilio Moro",
-      "img": "Emilio Moro.jpg",
+      "img": "Emilio Moro.png",
       "bodega": "Emilio Moro",
       "denominacion": "Ribera del Duero",
       "tipo": "Tinto",
@@ -1037,7 +1037,7 @@
     {
       "id": 70,
       "marca": "Coto de Imaz Reserva",
-      "img": "Coto de Imaz Reserva.jpg",
+      "img": "Coto de Imaz Reserva.png",
       "bodega": "El Coto de Rioja",
       "denominacion": "Rioja",
       "tipo": "Tinto Reserva",
@@ -1052,7 +1052,7 @@
     {
       "id": 71,
       "marca": "Finca Resalso",
-      "img": "Finca Resalso.jpg",
+      "img": "Finca Resalso.png",
       "bodega": "Emilio Moro",
       "denominacion": "Ribera del Duero",
       "tipo": "tinto",
@@ -1067,7 +1067,7 @@
     {
       "id": 72,
       "marca": "Rolland Galarreta Ribera del Duero",
-      "img": "Rolland Galarreta Ribera del Duero.jpg",
+      "img": "Rolland Galarreta Ribera del Duero.png",
       "bodega": "Rolland y Galarreta",
       "denominacion": "Ribera del Duero",
       "tipo": "Tinto",
@@ -1082,7 +1082,7 @@
     {
       "id": 73,
       "marca": "Ausas Interpretacion",
-      "img": "Ausas Interpretacion.jpg",
+      "img": "Ausas Interpretacion.png",
       "bodega": "Ausàs Bodegas y Viñedos",
       "denominacion": "Ribera del Duero",
       "tipo": "Tinto",
@@ -1097,7 +1097,7 @@
     {
       "id": 74,
       "marca": "Viore Ribera del Duero Crianza",
-      "img": "Viore Ribera del Duero Crianza.jpg",
+      "img": "Viore Ribera del Duero Crianza.png",
       "bodega": "bodega",
       "denominacion": "Ribera del Duero",
       "tipo": "Tinto Crianza",
@@ -1112,7 +1112,7 @@
     {
       "id": 75,
       "marca": "Pago de los Capellanes El Nogal",
-      "img": "Pago de los Capellanes El Nogal.jpg",
+      "img": "Pago de los Capellanes El Nogal.png",
       "bodega": "Pago de los Capellanes",
       "denominacion": "Ribera del Duero",
       "tipo": "Tinto",
@@ -1127,7 +1127,7 @@
     {
       "id": 76,
       "marca": "Palacio de Bornos Brut",
-      "img": "Palacio de Bornos Brut.jpg",
+      "img": "Palacio de Bornos Brut.png",
       "bodega": "Bornos Bodegas y Viñedos",
       "denominacion": "Rueda",
       "tipo": "Espumoso",
@@ -1142,7 +1142,7 @@
     {
       "id": 77,
       "marca": "Elivo Espumoso",
-      "img": "Elivo Espumoso.jpg",
+      "img": "Elivo Espumoso.png",
       "bodega": "Grupo Élivo",
       "denominacion": "Vino de España",
       "tipo": "Espumoso",
@@ -1157,7 +1157,7 @@
     {
       "id": 78,
       "marca": "Kimera Espumoso Ancestral",
-      "img": "Kimera Espumoso Ancestral Rosado.jpg",
+      "img": "Kimera Espumoso Ancestral Rosado.png",
       "bodega": "LMT Wines",
       "denominacion": "Vino de España",
       "tipo": "Espumoso",
@@ -1172,7 +1172,7 @@
     {
       "id": 79,
       "marca": "Llopart Leopardi",
-      "img": "Llopart Leopardi.jpg",
+      "img": "Llopart Leopardi.png",
       "bodega": "Llopart",
       "denominacion": "Vino de España",
       "tipo": "Espumoso",
@@ -1187,7 +1187,7 @@
     {
       "id": 80,
       "marca": "Torello Rose Reserva",
-      "img": "Torello Rose Reserva.jpg",
+      "img": "Torello Rose Reserva.png",
       "bodega": "Torelló Viticultors",
       "denominacion": "Vino de España",
       "tipo": "Espumoso",
@@ -1202,7 +1202,7 @@
     {
       "id": 81,
       "marca": "Espuma de Otazu",
-      "img": "Espuma de Otazu.jpg",
+      "img": "Espuma de Otazu.png",
       "bodega": "Espuma de Otazu",
       "denominacion": "Vino de España",
       "tipo": "Espumoso",
@@ -1217,7 +1217,7 @@
     {
       "id": 82,
       "marca": "Campo Eliseo Blanco",
-      "img": "Campo Eliseo Blanco.jpg",
+      "img": "Campo Eliseo Blanco.png",
       "bodega": "Campo Elíseo en Rueda",
       "denominacion": "Rueda",
       "tipo": "Blanco",
@@ -1232,7 +1232,7 @@
     {
       "id": 83,
       "marca": "Emina Verdejo",
-      "img": "Emina Verdejo.jpg",
+      "img": "Emina Verdejo.png",
       "bodega": "Emina Rueda",
       "denominacion": "Rueda",
       "tipo": "Blanco",
@@ -1247,7 +1247,7 @@
     {
       "id": 84,
       "marca": "Cvne Rueda",
-      "img": "Cvne Rueda.jpg",
+      "img": "Cvne Rueda.png",
       "bodega": "CVNE",
       "denominacion": "Rueda",
       "tipo": "Blanco",
@@ -1262,7 +1262,7 @@
     {
       "id": 85,
       "marca": "Beronia Rueda",
-      "img": "Beronia Rueda.jpg",
+      "img": "Beronia Rueda.png",
       "bodega": "Beronia",
       "denominacion": "Rueda",
       "tipo": "Blanco",
@@ -1277,7 +1277,7 @@
     {
       "id": 86,
       "marca": "Basa",
-      "img": "Basa.jpg",
+      "img": "Basa.png",
       "bodega": "Compañía de Vinos Telmo Rodriguez",
       "denominacion": "Rueda",
       "tipo": "Blanco",
