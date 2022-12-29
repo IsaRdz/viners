@@ -196,7 +196,13 @@ main p {
   /* background-color: var(--white); */
 }
 
-.button-filter {
+.filter__category > select {
+  color: var(--mahogany);
+  cursor: pointer;
+}
+
+.button-filter,
+.select__category {
   background-color: var(--green);
   width: 12em;
   height: 6em;

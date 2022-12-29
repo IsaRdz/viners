@@ -65,6 +65,10 @@ renderAllWines()
 
 // Array de tipos de vinos sin repetir
 
+let contenedorSelect = document.getElementById("select-js")
+let inputSearch = document.getElementById("input-search")
+let padreSelect = document.getElementById("category-js")
+
 const wineTypes = async () => {
   allWines = await getWines()
   let tipos = []
@@ -73,105 +77,92 @@ const wineTypes = async () => {
   })
   return [...new Set(tipos)]
 }
-
 console.log(wineTypes())
 
+// function renderButtons() {
+//   wineTypes().then((tipos) => {
+//     tipos.map((tipo) => {
+//       padreSelect.insertAdjacentHTML(
+//         "beforeend",
+//         `<button class="button-filter" value="${tipo}">
+//         <i id="${tipo}" class="fa-solid fa-wine-bottle"></i>
+//         <h2 id="${tipo}">${tipo}</h2>
+//         </button>`
+//       )
+//     })
+//     console.log(tipos)
+//   })
+// }
+// renderButtons()
+
 function renderOptions() {
-  const select = document.getElementById("select-js")
   wineTypes().then((tipos) => {
     tipos.map((tipo) => {
-      select.insertAdjacentHTML(
+      contenedorSelect.insertAdjacentHTML(
         "beforeend",
-        `<option selected value="${tipo}">${tipo}</option>`
+        `<option class="fa-solid fa-wine-bottle" value="${tipo}">${tipo}</option>`
       )
     })
+    console.log(tipos)
   })
 }
-
 renderOptions()
 
-let contenedorSelect = document.getElementById("select-js")
-
-contenedorSelect.addEventListener("change", (event) => {
-  allWines.map((wine) => {
-    let wineToFilter = document.querySelector(`#wine${wine.id}`)
-    wineToFilter.classList.remove("hidden")
-    if (wine.tipo.toLowerCase() != event.target.value.toLowerCase()) {
-      wineToFilter.classList.toggle("hidden")
-    }
-  })
+padreSelect.addEventListener("change", (event) => {
+  let filtadoPorTipo = filtrar()
+  renderWines(filtadoPorTipo)
 })
 
-let inputBusqueda = document.getElementById("input-search")
-
-inputBusqueda.addEventListener("keyup", (event) => {
-  allWines.map((wine) => {
-    let wineToFilter = document.querySelector(`#wine${wine.id}`)
-    wineToFilter.classList.remove("hidden")
-    if (
-      !wine.marca.toLowerCase().includes(event.target.value.toLowerCase()) &&
-      !wine.tipo.toLowerCase().includes(event.target.value.toLowerCase())
-    ) {
-      wineToFilter.classList.toggle("hidden")
-    }
+function renderWines(vinos) {
+  let cardsContainer = document.querySelector(".cards-container")
+  cardsContainer.innerHTML = ""
+  vinos.map((vino) => {
+    cardsContainer.insertAdjacentHTML("beforeend", wineCard(vino))
   })
+  cardButtonListeners()
+}
 
-  const notHiddenWines = document.querySelectorAll(".card:not(.hidden)").length
-
-  if (notHiddenWines == 0) {
-    document.querySelector(".error").classList.remove("hidden")
+function filtarPorTipo(vinos, tipoSeleccionado) {
+  if (tipoSeleccionado === "Todos".toLowerCase()) {
+    return vinos
   } else {
-    document.querySelector(".error").classList.add("hidden")
+    return vinos.filter(
+      (vino) => vino.tipo.toLowerCase() === tipoSeleccionado.toLowerCase()
+    )
   }
+}
+
+inputSearch.addEventListener("keyup", (event) => {
+  let vinosFiltradosPorBusqueda = filtrar()
+  renderWines(vinosFiltradosPorBusqueda)
 })
 
-function filtradoPorBusquedaYSelect() {
-  let inputBusqueda = document.getElementById("input-search")
-  let contenedorSelect = document.getElementById("select-js")
-
-  allWines.map((wine) => {
-    let wineToFilter = document.querySelector(`#wine${wine.id}`)
-    wineToFilter.classList.remove("hidden")
-    if (
-      !wine.marca.toLowerCase().includes(inputBusqueda.value.toLowerCase()) &&
-      !wine.tipo.toLowerCase().includes(inputBusqueda.value.toLowerCase())
-    ) {
-      wineToFilter.classList.toggle("hidden")
-    }
-    if (wine.tipo.toLowerCase() != contenedorSelect.value.toLowerCase()) {
-      wineToFilter.classList.toggle("hidden")
-    }
+function filtarPorBusqueda(vinos, busqueda) {
+  return vinos.filter((vino) => {
+    return (
+      vino.marca.toLowerCase().includes(busqueda.toLowerCase()) ||
+      vino.tipo.toLowerCase().includes(busqueda.toLowerCase())
+    )
   })
 }
 
-filtradoPorBusquedaYSelect()
+function filtrar() {
+  let vinosFiltrados = filtarPorTipo(allWines, contenedorSelect.value)
+  let vinosFiltradosPorBusqueda = filtarPorBusqueda(
+    vinosFiltrados,
+    inputSearch.value
+  )
+
+  vinosFiltradosPorBusqueda.length === 0
+    ? (document.querySelector(".error").classList.remove("hidden"),
+      (document.querySelector(".cards-container").style.display = "none"))
+    : (document.querySelector(".error").classList.add("hidden"),
+      (document.querySelector(".cards-container").style.display = "flex"))
+
+  return vinosFiltradosPorBusqueda
+}
 
 const filterListeners = () => {
-  // Filtrando por buscador
-  const inputSearch = document.getElementById("input-search")
-
-  inputSearch.addEventListener("keyup", (event) => {
-    allWines.map((wine) => {
-      let wineToFilter = document.querySelector(`#wine${wine.id}`)
-      wineToFilter.classList.remove("hidden")
-      if (
-        !wine.marca.toLowerCase().includes(event.target.value.toLowerCase()) &&
-        !wine.tipo.toLowerCase().includes(event.target.value.toLowerCase())
-      ) {
-        wineToFilter.classList.toggle("hidden")
-      }
-    })
-
-    const notHiddenWines =
-      document.querySelectorAll(".card:not(.hidden)").length
-
-    if (notHiddenWines == 0) {
-      document.querySelector(".error").classList.remove("hidden")
-    } else {
-      document.querySelector(".error").classList.add("hidden")
-    }
-  })
-
   const filtersContainers = document.querySelectorAll(".button-filter")
 
   filtersContainers.forEach((filter) => {
