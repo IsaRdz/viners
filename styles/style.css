@@ -177,7 +177,7 @@ a {
 
 /** -----CONFIRM OF ADD TO CART----- **/
 #popup-add-cart{
-    width: 40%;
+    width: 25%;
     position: fixed;
 
 }
@@ -202,12 +202,13 @@ a {
     justify-content: center;
     width: 100%;
     padding: 3vh 2vw;
-    color: var(--white);
-    background: var(--black);
-    opacity: 0.8;
+    color: var(--black);
+    background: var(--white);
+    opacity: 0.9;
     margin: 0 auto;
     margin-bottom: 0;
     transition: all 1s ease-in-out;
+    border-radius: 5px;
 }
 #cerrar-add-cart {
     align-self: flex-end;
@@ -215,10 +216,21 @@ a {
     font-size: 30px;
     font-weight: bold;
     text-decoration: none;
-    color: var(--white);
+    color: var(--black);
     transition: all 200ms;
   }
-
+  .popupContent-add-to-cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .title-add-to-cart{
+    font-weight: lighter;
+  }
+.img-add-to-cart{
+    width: 6vh;
+    margin-left: 2vw;
+}
 /** -----SLIDER----- **/
 .slider-frame {
     height: 22em;
