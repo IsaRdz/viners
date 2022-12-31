@@ -1,7 +1,7 @@
 const renderDetail = (wine) => {
     return `<div id="Container${wine.id}" class="item-cart">
                 <div class="item-image">
-                    <img src="../assets/img/wines/${wine.img}" alt="">
+                    <img src="${wine.img}" alt="${wine.marca}">
                 </div>
                 <div class="item-name">
                     <p>${wine.marca}</p>
