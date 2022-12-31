@@ -26,16 +26,26 @@
         <ul>
           <li>
             <!-- <img src="https://img.icons8.com/external-tanah-basah-glyph-tanah-basah/48/FFFFFF/external-profile-social-media-ui-tanah-basah-glyph-tanah-basah.png"/> -->
-            <i class="fa-solid fa-user fa-xl"></i>
+            <!--<i class="fa-solid fa-user fa-xl"></i>-->
+            <a href="#popup" rel="noopener noreferrer" class="link">
+              <i class="fa-solid fa-user fa-xl"></i>
+            </a>
           </li>
           <li class="shopping-cart-image-container">
             <!-- <img src="https://img.icons8.com/ios-filled/50/FFFFFF/shopping-cart.png"/> -->
             <i class="fa-solid fa-cart-shopping fa-xl"></i>
+            <div class="cart_products_total">0</div>
           </li>
         </ul>
       </div>
       <div class="cart-resume-container hidden">
-        <div class="buttons-container">
+        <div class="products_container_resume"></div>
+        <div class="empty_cart" id="empty-cart">
+          <img src="./assets/empty-cart.png" alt="empty-cart" class="empty_img">
+          <h2 class="empty_title">Your Cart es Empty!</h2>
+          <p>Let's go buy something!</p>
+        </div>
+        <div class="buttons_container">
           <button class="clean-cart clean-cart-button">Clean Cart</button>
           <a href="./pages/cartDetail.html" class="clean-cart">More Details</a>
         </div>
@@ -43,6 +53,23 @@
     </nav>
   </header>
   <main>
+    <section class="login">
+      <div id="popup" class="overlay">
+        <div id="popupBody">
+          <a id="cerrar" href="#">&times;</a>
+          <h2>Login</h2>
+          <div class="popupContent">
+            <form action="">
+              <label for="email">Insert your email: </label>
+              <input type="email" name="email" id="email">
+              <label for="password">Password: </label>
+              <input type="password" name="password" id="password">
+              <button type="submit" class="btn-login">Login</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
     <div class="slider-frame">
       <ul>
         <li>
@@ -79,11 +106,8 @@
     </div>
     <div class="filter">
       <section class="filter__category" id="category-js">
-        <select class="select__category" id="select-js">
-          <option class="fa-solid fa-wine-bottle" selected value="todos">Todos</option>
-        </select>
         <div id="buttons-js">
-          <button id="Tinto" value="todos" class="button-filter">
+          <button id="Tinto" class="button-filter">
             <i id="Tinto" class="fa-solid fa-wine-bottle"></i>
             <h2 id="Tinto">Tinto</h2>
           </button>
@@ -99,9 +123,9 @@
             <i id="Espumoso" class="fa-solid fa-wine-bottle"></i>
             <h2 id="Espumoso">Espumoso</h2>
           </button>
-          <button id="Todos" selected value="todos" class="button-filter">
-            <i id="Todos" class="fa-solid fa-wine-bottle"></i>
-            <h2 id="Todos">All Wines</h2>
+          <button id="all_wines" class="button-filter button-filter--active">
+            <i id="all_wines" class="fa-solid fa-wine-bottle"></i>
+            <h2 id="all_wines">All Wines</h2>
           </button>
         </div>
       </section>
@@ -127,7 +151,7 @@
           <label for="name">Name: <span>*</span></label>
           <input type="text" name="name" id="name" required>
           <label for="email">Email: <span>*</span></label>
-          <input type="text" name="email" id="email" required>
+          <input type="text" name="email" id="form-email" required>
           <label for="message">Message: <span>*</span></label>
           <textarea name="message" id="message" cols="30" rows="8" required></textarea>
           <button class="btn-submit">Submit</button>
@@ -136,8 +160,15 @@
 
     </section>
   </main>
+  <div class="button-arriba">
+    <a class="item" id="buttonTop">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+  </div>
   <footer>
-    <div class="footer-container" id="footer-container"></div>
+    <div class="footer-container" id="footer-container">
+
+    </div>
   </footer>
 </body>
 <script src="./js/fotter.js"></script>
