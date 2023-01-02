@@ -57,6 +57,12 @@
         overflow: hidden;
         background-color: #2800c9;
     }
+
+    .footer-top{
+        flex-direction: column;
+        align-items: center;
+        gap: 2em;
+    }
 }
 
 /* Celu */
