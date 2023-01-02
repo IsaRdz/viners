@@ -24,7 +24,9 @@
                 <ul>
                     <li>
                         <!-- <img src="https://img.icons8.com/external-tanah-basah-glyph-tanah-basah/48/FFFFFF/external-profile-social-media-ui-tanah-basah-glyph-tanah-basah.png"/> -->
+                        <a href="#popup-login" rel="noopener noreferrer" class="link">
                         <i class="fa-solid fa-user fa-xl"></i>
+                        </a>
                     </li>
                     <li class="shopping-cart-image-container">
                         <!-- <img src="https://img.icons8.com/ios-filled/50/FFFFFF/shopping-cart.png"/> -->
@@ -48,6 +50,35 @@
         </nav>
     </header>
     <main class="main">
+        <section class="login">        
+            <div id="popup-login" class="overlay">
+              <div id="popupBody">
+                <a id="cerrar" href="#">&times;</a>
+                <h2 class="title-login">Sign in</h2>
+                <div class="popupContent">
+                  <form action="" class="form-login">
+                    <label for="email">Email address: </label>
+                    <input type="email" name="email" id="email" placeholder=" Enter email">
+                    <label for="password">Password: </label>
+                    <input type="password" name="password" id="password" placeholder=" Enter password"> 
+                    <div class="container-check">
+                      <input type="checkbox" name="remember" id="remeber">
+                      <label for="remeber">Remember me</label>
+                    </div>
+                    <div class="container-icons">
+                      <img src="https://img.icons8.com/color/48/null/google-logo.png"/>
+                      <img src="https://img.icons8.com/ios-glyphs/48/null/mac-os.png"/>
+                      <img src="https://img.icons8.com/color/48/null/facebook.png"/>
+                    </div>   
+                  </form>
+                  <div class="container-btn-login">
+                    <a href="#"><button type="submit" class="btn-login">Login</button></a>
+                  </div>           
+                  <p class="forgot-pass">Forgot your password?</p>   
+                </div>
+              </div>
+            </div>
+          </section>
         <div class="detail-container">
             
         </div>
