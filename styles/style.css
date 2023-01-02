@@ -803,8 +803,9 @@ a {
   .empty-button:active{
     background-color: var(--gray);
   }
-
-  
+=========
+}
+>>>>>>>>> Temporary merge branch 2
 
 /** -----FOOTER----- **/
 footer{
@@ -1037,3 +1038,12 @@ footer a:hover{
     }
 }
 
+/* @keyframes wave{
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: 1000px;
+    }
+} */
+>>>>>>>>> Temporary merge branch 2
