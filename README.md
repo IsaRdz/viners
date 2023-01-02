@@ -12,6 +12,7 @@ Vinoteca online donde vas a encontrar las mejores variedades de vinos sin movert
 - [Mockup](#mockup)
 - [Trello](#trello)
 - [Tecnologías](#tecnologías)
+- [Cómo ejecutar el sitio](#Cómo_ejecutar_el_sitio)
 - [Funcionalidades](#funcionalidades)
 - [Capturas](#capturas)
 - [Colaboradores](#colaboradores)
@@ -60,6 +61,28 @@ Vinoteca online donde vas a encontrar las mejores variedades de vinos sin movert
 ![CSS3](https://img.shields.io/badge/CSS3-blue?style=for-the-badge&logo=css3)
 ![JavaScript](https://img.shields.io/badge/Javascript-grey?style=for-the-badge&logo=javascript)
 <br>
+
+## Cómo_ejecutar_el_sitio
+Para este tutorial sobre cómo configurar y ejecutar nuestro proyecto, recomendamos usar Visual Studio Code con su terminal integrado.
+
+Una de las maneras más fáciles de hacer esto es hacer lo siguiente:
+Primero copie la dirección HTTPS del repositorio.
+
+![](https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Ejecutar%2FEjecutar1.jpeg?alt=media&token=c9b653bf-6c7e-4ca2-a582-a77e6effc0a1)
+<br>
+
+Después debemos posicionarnos en el directorio donde queremos que se descargue nuestra carpeta.
+
+Luego, clone nuestro repositorio usando git clone + la dirección HTTPS. Escriba en la terminal de Git:
+
+`
+git clone https://github.com/Juan2805/CP2-Viners.git
+`
+
+Se creará una carpeta, inicie la aplicación ejecutando el archivo index.html.
+
+Luego, la aplicación debería comenzar a funcionar sin problemas.
+
 
 ## Funcionalidades
 - Ver vinos disponibles en la página principal

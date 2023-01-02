@@ -117,7 +117,6 @@ filterListeners()
 
 /* const filterListeners = () => {
     const filtersContainers = document.querySelectorAll('.button-filter')
-
     filtersContainers.forEach(filter => {
         filter.addEventListener('click', event => {
             allWines.map(wine => {
