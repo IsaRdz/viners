@@ -68,7 +68,7 @@ const renderTotalProductNumber = () => {
 
 renderTotalProductNumber()
 
-const filterListeners = () => {
+/*const filterListeners = () => {
     // Filtrando por buscador
     const inputSearch = document.getElementById("input-search")
 
@@ -113,7 +113,7 @@ const filterListeners = () => {
     })
 }
 
-filterListeners()
+filterListeners()*/
 
 const addToCartListener = () => {
     const addToCartButtonsContainers = document.querySelectorAll('.add_to_cart')
@@ -141,8 +141,8 @@ const addToCartListener = () => {
     })
 }
 
-const buttonTop = document.querySelector('#buttonTop');
 
+const buttonTop = document.querySelector('#buttonTop');
 window.onscroll = () => {
     if (document.documentElement.scrollTop > 100) {
         buttonTop.classList.add('shows')

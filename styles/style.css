@@ -212,26 +212,28 @@ a {
 }
 
 /** -----CONFIRM OF ADD TO CART----- **/
-#popup-add-cart{
-    width: 25%;
-    position: fixed;
-
-}
 .overlay-add-cart {
+    width: 25%;
     position: fixed;
     top: 100;
     bottom: 0;
-    left: 100;
-    right: 0;
+    left: 0;
+    right: 100;
     transition: opacity 500ms;
     visibility: hidden;
     opacity: 0;
   }
-  .overlay-add-cart:target {
+.overlay-add-cart:target {
     visibility: visible;
     opacity: 1;
     z-index: 100;
   }
+
+.add_to_cart:hover .overlay-add-cart{
+    animation-name: disappear;
+    animation-duration: 4s;
+}
+
 #popupBody-add-cart{
     display: flex;
     flex-wrap: wrap;
@@ -255,12 +257,12 @@ a {
     color: var(--black);
     transition: all 200ms;
   }
-  .popupContent-add-to-cart{
+.popupContent-add-to-cart{
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .title-add-to-cart{
+.title-add-to-cart{
     font-weight: lighter;
   }
 .img-add-to-cart{
@@ -850,7 +852,7 @@ footer{
     position: fixed;
     right: 20px;
     bottom: 20px;
-    z-index: 99;
+    z-index: 1000;
     display: flex;
     justify-content: center;
     align-items: center;
