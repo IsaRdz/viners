@@ -78,7 +78,7 @@ Luego, clone nuestro repositorio usando git clone + la dirección HTTPS. Escriba
 
 Se creará una carpeta, inicie la aplicación ejecutando el archivo index.html:
 
-Luego, la aplicación debería comenzar a funcionar sin problemas y sin ningún problema.
+Luego, la aplicación debería comenzar a funcionar sin problemas.
 
 
 ## Funcionalidades
