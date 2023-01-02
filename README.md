@@ -63,7 +63,7 @@ Vinoteca online donde vas a encontrar las mejores variedades de vinos sin movert
 ![JavaScript](https://img.shields.io/badge/Javascript-grey?style=for-the-badge&logo=javascript)
 <br>
 
-## Comoejecutarelsitio
+## Como ejecutar el sitio
 Para este tutorial sobre cómo configurar y ejecutar nuestro proyecto, recomendamos usar Visual Studio Code con su terminal integrado.
 
 Una de las maneras más fáciles de hacer esto es hacer lo siguiente:
