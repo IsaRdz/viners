@@ -96,17 +96,13 @@
 
 
 .cupon-container{
-    /* width: 400px; */
-    /* height: 600px; */
-
-    /* background-color: #505050; */
-    /* box-shadow: 0px 10px 10px #00000030; */
     border-radius: 15px;
 
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    /* flex-direction: column; */
+    justify-content: space-around;
     align-items: center;
+    margin-bottom: 2em;
 }
 
 .copiar_coupon h2 {
