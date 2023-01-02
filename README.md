@@ -12,7 +12,7 @@ Vinoteca online donde vas a encontrar las mejores variedades de vinos sin movert
 - [Mockup](#mockup)
 - [Trello](#trello)
 - [Tecnologías](#tecnologías)
-- [Como correr el sitio](#Como_correr_el_sitio)
+- [Cómo ejecutar el sitio](#Cómo_ejecutar_el_sitio)
 - [Funcionalidades](#funcionalidades)
 - [Capturas](#capturas)
 - [Colaboradores](#colaboradores)
@@ -62,7 +62,7 @@ Vinoteca online donde vas a encontrar las mejores variedades de vinos sin movert
 ![JavaScript](https://img.shields.io/badge/Javascript-grey?style=for-the-badge&logo=javascript)
 <br>
 
-## Como_correr_el_sitio
+## Cómo_ejecutar_el_sitio
 Para este tutorial sobre cómo configurar y ejecutar nuestro proyecto, recomendamos usar Visual Studio Code con su terminal integrado.
 
 Una de las maneras más fáciles de hacer esto es hacer lo siguiente:
