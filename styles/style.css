@@ -108,6 +108,14 @@ a {
     display: none !important;
 }
 
+.error {
+    color: red;
+}
+  
+main p {
+    margin: 2em;
+}
+
 /** -----LOGIN----- **/
 
 .overlay {
