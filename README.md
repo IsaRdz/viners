@@ -12,6 +12,7 @@ Vinoteca online donde vas a encontrar las mejores variedades de vinos sin movert
 - [Mockup](#mockup)
 - [Trello](#trello)
 - [Tecnologías](#tecnologías)
+- [Cómo ejecutar el sitio](#Cómo ejecutar el sitio)
 - [Funcionalidades](#funcionalidades)
 - [Capturas](#capturas)
 - [Colaboradores](#colaboradores)
@@ -60,6 +61,25 @@ Vinoteca online donde vas a encontrar las mejores variedades de vinos sin movert
 ![CSS3](https://img.shields.io/badge/CSS3-blue?style=for-the-badge&logo=css3)
 ![JavaScript](https://img.shields.io/badge/Javascript-grey?style=for-the-badge&logo=javascript)
 <br>
+
+## Cómo ejecutar el sitio
+Para este tutorial sobre cómo configurar y ejecutar nuestro proyecto, recomendamos usar Visual Studio Code con su terminal integrado.
+
+Una de las maneras más fáciles de hacer esto es hacer lo siguiente:
+Primero copie la dirección HTTPS del repositorio.
+
+<imagen1>
+
+Luego debemos posicionarnos en el directorio donde queremos que se descargue nuestra carpeta
+
+Luego, clone nuestro repositorio usando git clone + la dirección HTTPS. Escriba en la terminal de Git:
+
+<imagen2>
+
+Se creará una carpeta, inicie la aplicación ejecutando el archivo index.html:
+
+Luego, la aplicación debería comenzar a funcionar sin problemas y sin ningún problema.
+
 
 ## Funcionalidades
 - Ver vinos disponibles en la página principal
