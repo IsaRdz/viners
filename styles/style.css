@@ -261,21 +261,21 @@ label {
   gap: 0.5em;
 }
 
-.filter__category > div > button:nth-of-type(1) {
+.filter__category > button:nth-of-type(1) {
   color: var(--mahogany);
 }
 
-.filter__category > div > button:nth-of-type(2) {
+.filter__category > button:nth-of-type(2) {
   color: var(--white);
   /* background-color: var(--white); */
 }
 
-.filter__category > div > button:nth-of-type(3) {
+.filter__category > button:nth-of-type(3) {
   color: pink;
   /* background-color: var(--white); */
 }
 
-.filter__category > div > button:nth-of-type(4) {
+.filter__category > button:nth-of-type(4) {
   color: var(--orange);
   /* background-color: var(--white); */
 }
