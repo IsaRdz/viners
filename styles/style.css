@@ -755,8 +755,8 @@ a {
 .btns-container{
     display: flex;
     justify-content: space-around;
-}
-.btns-container > button{
+  }
+  .btn-limpiar, .btn-finalizar{
     padding: 10px 20px 10px 20px;
     border-radius: 5px;
     border: none;
@@ -809,13 +809,9 @@ a {
     background-color: var(--gray);
   }
 
-  
-
 /** -----FOOTER----- **/
 footer{
-    /* background-color: var(--green); */
     min-height: 15vh;
-    /* height: 25em; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -853,8 +849,6 @@ footer a:hover{
     color: var(--red);
     transition: all 0.5s;
 }
-
-
 
 .footer-top{
     display: flex;
@@ -1041,3 +1035,12 @@ footer a:hover{
         opacity: 1 !important;
     }
 }
+
+/* @keyframes wave{
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: 1000px;
+    }
+} */

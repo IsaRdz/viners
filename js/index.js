@@ -68,7 +68,7 @@ const renderTotalProductNumber = () => {
 
 renderTotalProductNumber()
 
-/*const filterListeners = () => {
+const filterListeners = () => {
     // Filtrando por buscador
     const inputSearch = document.getElementById("input-search")
 
@@ -113,7 +113,30 @@ renderTotalProductNumber()
     })
 }
 
-filterListeners()*/
+filterListeners()
+
+/* const filterListeners = () => {
+    const filtersContainers = document.querySelectorAll('.button-filter')
+
+    filtersContainers.forEach(filter => {
+        filter.addEventListener('click', event => {
+            allWines.map(wine => {
+                let wineToFilter = document.querySelector(`#wine${wine.id}`)
+                wineToFilter.classList.remove('hidden')
+                if (event.target.id == 'all_wines') {
+                    wineToFilter.classList.remove('hidden')
+                } 
+                else {
+                    if (wine.tipo.split(' ')[0] != event.target.id ) {
+                        wineToFilter.classList.toggle('hidden')
+                    }
+                }
+            })
+        })
+    })
+}
+
+filterListeners() */
 
 const addToCartListener = () => {
     const addToCartButtonsContainers = document.querySelectorAll('.add_to_cart')
