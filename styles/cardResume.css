@@ -93,3 +93,111 @@
     color: var(--red);
     margin: 1vh;
 }
+
+
+.cupon-container{
+    /* width: 400px; */
+    /* height: 600px; */
+
+    /* background-color: #505050; */
+    /* box-shadow: 0px 10px 10px #00000030; */
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.copiar_coupon h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333; }
+h3{
+    font-size: 40px;
+    font-weight: bold;
+    color: #7e57c2;
+}
+
+span{
+    font-size: 20px;
+    font-weight: bold;
+    color: #c25757;
+}
+
+.copiar_cupon{
+    width: 360px;
+    height: 200px;
+    background-color: var(--white);
+    /* background-color: #e6d8ff; */
+    box-shadow: 0px 5px 5px #00000030;
+    border-radius: 10px;
+
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.canjear_cupon {
+    width: 360px;
+    height: 200px;
+    background-color: var(--white);
+    /* background-color: #e6d8ff; */
+    box-shadow: 0px 5px 5px #00000030;
+    border-radius: 10px;
+
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.txt_cont{
+    width: 100%;
+    height: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.price_cont{
+    width: 100%;
+    height: 80px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.action_cont{
+    width: 100%;
+    height: 80px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.action_cont input{
+    width: 160px;
+    height: 40px;
+
+    outline: none;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+
+    color: #333;
+
+    font-size: 18px;
+    font-weight: bold;
+}
+.action_cont button{
+    width: 160px;
+    height: 40px;
+
+    background-color: #333;
+    background-color: var(--orange);
+    border-radius: 0px 5px 5px 0px;
+    border: none;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    cursor: pointer;
+}

@@ -81,11 +81,40 @@
         <div class="total-price">
             <p class="total-product-price"></p>
         </div>
-        <div class="btns-container">
-            <button class="btn-limpiar">Clean cart</button>
-            <a href="./confirmation.html"><button class="btn-finalizar">Checkout</button></a>
+        
+
+        <div class="cupon-container">
+
+          <div class="copiar_cupon">
+              <div class="txt_cont"><h2>Precio Actual</h2></div>
+              <div class="price_cont"> <h3 id="price"></h3></div>
+
+              <div class="action_cont">
+                  <input id="input1" type="text" value="54ldqwer23">
+                  <button id="btn1" onclick="copyCoupon()">copiar cupon</button>
+              </div>
+          </div>
+
+          <div class="canjear_cupon">
+              <div class="txt_cont"><h2>Precio de un 50% de descuento</h2></div>
+              <div class="price_cont" id="discount">
+                  <h3 style="font-size: 15px; width: 300px;">
+                  Haz click en el buton canjear cupon para obtener un 50% de descuento
+                  </h3>
+              </div>
+
+              <div class="action_cont">
+                  <input id="input2" type="text" placeholder="pegar codigo">
+                  <button id="btn2" onclick="canjearCoupon()">canjear cupon</button>
+              </div>
+          </div>
+
         </div>
 
+      <div class="btns-container">
+        <button class="btn-limpiar">Clean cart</button>
+        <a href="./confirmation.html"><button class="btn-finalizar">Checkout</button></a>
+    </div>
     </main>
     <footer>
       <div class="footer-top">
