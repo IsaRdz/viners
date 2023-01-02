@@ -803,9 +803,6 @@ a {
   .empty-button:active{
     background-color: var(--gray);
   }
-=========
-}
->>>>>>>>> Temporary merge branch 2
 
 /** -----FOOTER----- **/
 footer{
@@ -849,8 +846,6 @@ footer a:hover{
     color: var(--red);
     transition: all 0.5s;
 }
-
-
 
 .footer-top{
     display: flex;
@@ -1046,4 +1041,3 @@ footer a:hover{
         background-position-x: 1000px;
     }
 } */
->>>>>>>>> Temporary merge branch 2
