@@ -9,7 +9,7 @@ const getWines = async () => {
 }
 
 const wineCard = (wine) => {
-    return  `<div id="wine${wine.id}" class="card">
+    return  `<div id="wine${wine.id}" class="card no_hidden">
                 <div class="card__body">
                     <div class="card__img">
                         <img
@@ -73,25 +73,45 @@ const filterListeners = () => {
     const inputSearch = document.getElementById("input-search")
 
     inputSearch.addEventListener("keyup", (event) => {
-        allWines.map((wine) => {
-            let wineToFilter = document.querySelector(`#wine${wine.id}`)
-            wineToFilter.classList.remove("hidden")
-            if (
-                !wine.marca.toLowerCase().includes(event.target.value.toLowerCase()) &&
-                !wine.tipo.toLowerCase().includes(event.target.value.toLowerCase())
-            ){
-                wineToFilter.classList.toggle("hidden")
-            }
+        console.log(event)
+        const winesRenderContainer = document.querySelectorAll('.no_hidden')
+        var winesRender = []
+        var winesFiltered = []
+        
+        winesRenderContainer.forEach(wineRender => {
+            let id = wineRender.id.split('wine')[1]
+            allWines.find(wine => {
+                if (wine.id == id) winesRender.push(wine)
+            })
         })
+        console.log(winesRender)
+        winesRender.map(wine => {
+            wine.marca.toLowerCase().includes(event.target.value.toLowerCase()) ? winesFiltered.push(wine) : null
+        })
+        winesRenderContainer.forEach(wineRender => {
+            let id = wineRender.id.split('wine')[1]
+            winesFiltered.find(wine => {
+                wine.id == id ? null : wineRender.classList.add('hidden')
+            })
+        })
+        // allWines.map((wine) => {
+        //     let wineToFilter = document.querySelector(`#wine${wine.id}`)
+        //     wineToFilter.classList.remove("hidden")
+        //     if (
+        //         !wine.marca.toLowerCase().includes(event.target.value.toLowerCase())
+        //     ){
+        //         wineToFilter.classList.toggle("hidden")
+        //     }
+        // })
 
-        const notHiddenWines =
-        document.querySelectorAll(".card:not(.hidden)").length
+        // const notHiddenWines =
+        // document.querySelectorAll(".card:not(.hidden)").length
 
-        if (notHiddenWines == 0) {
-            document.querySelector(".error").classList.remove("hidden")
-        } else {
-            document.querySelector(".error").classList.add("hidden")
-        }
+        // if (notHiddenWines == 0) {
+        //     document.querySelector(".error").classList.remove("hidden")
+        // } else {
+        //     document.querySelector(".error").classList.add("hidden")
+        // }
     })
     const filtersContainers = document.querySelectorAll('.button-filter')
 
@@ -102,18 +122,54 @@ const filterListeners = () => {
                 wineToFilter.classList.remove('hidden')
                 if (event.target.id == 'all_wines') {
                     wineToFilter.classList.remove('hidden')
+                    wineToFilter.classList.add('no_hidden')
                 } 
                 else {
                     if (wine.tipo.split(' ')[0] != event.target.id ) {
                         wineToFilter.classList.toggle('hidden')
+                        wineToFilter.classList.remove('no_hidden')
+                    }
+                    else {
+                        wineToFilter.classList.add('no_hidden')
                     }
                 }
             })
         })
     })
+    //searchListener()
 }
 
 filterListeners()
+
+// const searchListener = () => {
+//     const searchContainer = document.querySelector('.searchInput')
+
+//     searchContainer.addEventListener('keyup', event => {
+//         const winesRenderContainer = document.querySelectorAll('.no_hidden')
+//         var winesRender = []
+//         var winesFiltered = []
+        
+//         winesRenderContainer.forEach(wineRender => {
+//             let id = wineRender.id.split('wine')[1]
+//             allWines.find(wine => {
+//                 if (wine.id == id) winesRender.push(wine)
+//             })
+//         })
+//         winesRender.map(wine => {
+//             wine.marca.toLowerCase().includes(event.target.value.toLowerCase()) ? winesFiltered.push(wine) : null
+//         })
+//         winesRenderContainer.forEach(wineRender => {
+//             let id = wineRender.id.split('wine')[1]
+//             winesFiltered.find(wine => {
+//                 wine.id == id ? null : winesRender.classList.toggle('hidden')
+//             })
+//         })
+//         //console.log(winesFiltered)
+//         // `wine${wine.id}` == event.target.value
+//     })
+// }
+
+//searchListener()
 
 const addToCartListener = () => {
     const addToCartButtonsContainers = document.querySelectorAll('.add_to_cart')
