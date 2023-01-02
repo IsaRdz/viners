@@ -21,10 +21,12 @@ const renderDetail = (wine) => {
 const renderProducts = () => {
     const cartDetailContainer = document.querySelector('.cart-detail-container')
     var CartProducts = JSON.parse(localStorage.getItem('CartProducts'))
-
+    CartProducts.length != 0 ? null : document.querySelector('#empty-cart').classList.remove('hidden')
+    
     CartProducts.map(product => {
         cartDetailContainer.insertAdjacentHTML('afterbegin', renderDetail(product))
     })
+   
 }
 
 renderProducts()
@@ -35,11 +37,15 @@ const cleanProductListener = () => {
     clenaProductButtons.forEach(clenaProductButton => {
         clenaProductButton.addEventListener('click', cleanProduct => {
             var CartProducts = JSON.parse(localStorage.getItem('CartProducts'))
+            ProductEliminated = CartProducts.filter(product => product.id == cleanProduct.target.id)
+            for (let i = 0; i < ProductEliminated[0].cantidad; i++) {
+                document.querySelector('.cart_products_total').innerHTML--
+            }
             let CartProductsFiltered = CartProducts.filter(product => product.id != cleanProduct.target.id)
-            console.log(CartProductsFiltered)
             localStorage.setItem('CartProducts', JSON.stringify(CartProductsFiltered))
             document.querySelector(`#Container${cleanProduct.target.id}`).remove()
             renderTotalPrice()
+            emptyCartMessage()
         })
     }) 
 }
@@ -59,6 +65,7 @@ const subtractListener = () => {
                     unitsContainer.forEach(Unit => {
                         if (Unit.id == event.target.id) {
                             if (Unit.innerHTML > 1) {
+                                document.querySelector('.cart_products_total').innerHTML--
                                 Unit.innerHTML--
                                 CartProduct.cantidad--
                                 document.querySelector(`#Precio${event.target.id}`).innerHTML = CartProduct.cantidad * CartProduct.precio
@@ -92,6 +99,7 @@ const addListener = () => {
                 if (CartProduct.id == event.target.id) {
                     unitsContainer.forEach(Unit => {
                         if (Unit.id == event.target.id) {
+                            document.querySelector('.cart_products_total').innerHTML++
                             Unit.innerHTML++
                             CartProduct.cantidad++
                             document.querySelector(`#Precio${event.target.id}`).innerHTML = CartProduct.cantidad * CartProduct.precio
@@ -126,15 +134,39 @@ const renderTotalPrice = () => {
 renderTotalPrice()
 
 const cleanCartListener = () => {
-    const cleanCartContainer = document.querySelector('.clean-cart-button')
-    const ProductCartContainer = document.querySelectorAll('.product-resume')
+    const cleanCartContainer = document.querySelector('.btn-limpiar')
+    const ProductCartContainer = document.querySelectorAll('.item-cart')
     
     cleanCartContainer.addEventListener('click', () => {
         ProductCartContainer.forEach(product => product.remove())
         localStorage.setItem('CartProducts', JSON.stringify([]))
-        var CartProducts = JSON.parse(localStorage.getItem('CartProducts'))
-        showProducts()
+        document.querySelector('.cart_products_total').innerHTML = 0
+        renderProducts()
+        renderTotalPrice()
+        emptyCartMessage()
     })
 }
 
 cleanCartListener()
+
+const emptyCartMessage = () => {
+    const emptyCart = document.getElementById('empty-cart');
+    var cartProducts = JSON.parse(localStorage.getItem('CartProducts'))
+
+    if(cartProducts.length == 0){
+        emptyCart.classList.remove('hidden')
+    }else{
+        emptyCart.classList.add('hidden')
+    }
+}
+
+const renderTotalProductNumber = () => {
+    document.querySelector('.cart_products_total').innerHTML = 0
+    var CartProducts = JSON.parse(localStorage.getItem('CartProducts'))
+    let cantidadTotal = CartProducts.reduce((accumulator, product) => 
+    accumulator + product.cantidad
+    ,0)
+    document.querySelector('.cart_products_total').innerHTML = cantidadTotal
+}
+
+renderTotalProductNumber()
