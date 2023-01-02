@@ -196,6 +196,7 @@ a {
 .container-icons img{
     margin: 2vh 1vw 3vh 1vw;
     cursor: pointer;
+    filter: drop-shadow(2px 2px 2px var(--gray));
 }
 .btn-login{
     padding: 1vh 2vw 1vh 2vw;

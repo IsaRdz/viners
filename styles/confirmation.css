@@ -13,11 +13,11 @@
     --black: #000000;
     --gray: #25282a;
 }
-main{
+/*main{
     background-image: url(../assets/confirmationImage.jpg);
     background-size: cover;
     background-position-y: bottom;
-}
+}*/
 .confirmation-container{
     background-color: var(--yellow);
     opacity: 0.8;    
