@@ -28,7 +28,9 @@ const renderDetail = (wine) => {
                     <p>15 units</p>
                 </div>
                 <div class="purchase-container">
+                    <a href="#popup-add-cart" rel="noopener noreferrer" class="link">
                     <button class="add-to-cart">Add to Cart</button>
+                    </a>
                 </div>
             </div>`
 }
