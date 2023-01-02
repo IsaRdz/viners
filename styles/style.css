@@ -124,17 +124,17 @@ a {
   .overlay:target {
     visibility: visible;
     opacity: 1;
+    z-index: 100;
   }
   #popupBody {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     width: 46%;
-    padding: 1vh 2vw;
     border-radius: 15px;
     box-shadow: 3px 3px 5px 2px var(--gray);
     color: var(--black);
-    background: var(--white);
+    background: var(--green);
     margin: 0 auto;
     margin-top: 20vh;
     transition: all 1s ease-in-out;
@@ -142,7 +142,7 @@ a {
     
   #cerrar {
     align-self: flex-end;
-    margin-left: 97%;
+    margin-left: 92%;
     font-size: 30px;
     font-weight: bold;
     text-decoration: none;
@@ -151,20 +151,126 @@ a {
   }
 
   .popupContent{
-    padding: 2vw;
+    width: 100%;
+    padding: 10vh 5vw 5vh 5vw;
     color: var(--black);
+    -webkit-mask-image: url(../assets/img/background-footer.svg);
+    mask-image: url(../assets/img/background-footer.svg);
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    background-color: #6098a7;
+  }
+  .title-login{
+    width: 100%;
+    color: var(--white);
+    text-align: center;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+    text-shadow: 2px 2px 2px var(--gray);
+  }
+  .form-login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   .popupContent input, label{
-    width: 90%;
-    margin: 2vh 0 2vh 0;
     opacity: 1;
+    border-radius: 5px;
+    padding: 1vh;
+}
+.popupContent input{
+      border: none;
+      box-shadow: 1px 1px 2px gray inset;
   }
-  .btn-login{
+.container-check{
+    padding-top: 2vh;
+}
+.container-btn-login{
     display: flex;
     justify-content: center;
+}
+.container-icons{
+    display: flex;
+    justify-content: center;
+}
+.container-icons img{
+    margin: 2vh 1vw 3vh 1vw;
+    cursor: pointer;
+    filter: drop-shadow(2px 2px 2px var(--gray));
+}
+.btn-login{
     padding: 1vh 2vw 1vh 2vw;
+    background-color: var(--gray);
+    border-radius: 5px;
+    border: none;
+    color: var(--white);
+  }
+  .btn-login:active{
+    background-color: var(--green);
+  }
+.forgot-pass{
+    padding-top: 1vh;
+    text-align: center;
+}
+
+/** -----CONFIRM OF ADD TO CART----- **/
+.overlay-add-cart {
+    width: 25%;
+    position: fixed;
+    top: 100;
+    bottom: 0;
+    left: 0;
+    right: 100;
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+.overlay-add-cart:target {
+    visibility: visible;
+    opacity: 1;
+    z-index: 100;
   }
 
+.add_to_cart:hover .overlay-add-cart{
+    animation-name: disappear;
+    animation-duration: 4s;
+}
+
+#popupBody-add-cart{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    padding: 3vh 2vw;
+    color: var(--black);
+    background: var(--white);
+    opacity: 0.9;
+    margin: 0 auto;
+    margin-bottom: 0;
+    transition: all 1s ease-in-out;
+    border-radius: 5px;
+}
+#cerrar-add-cart {
+    align-self: flex-end;
+    margin-left: 90%;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--black);
+    transition: all 200ms;
+  }
+.popupContent-add-to-cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.title-add-to-cart{
+    font-weight: lighter;
+  }
+.img-add-to-cart{
+    width: 6vh;
+    margin-left: 2vw;
+}
 /** -----SLIDER----- **/
 .slider-frame {
     height: 22em;
@@ -649,8 +755,8 @@ a {
 .btns-container{
     display: flex;
     justify-content: space-around;
-}
-.btns-container > button{
+  }
+  .btn-limpiar, .btn-finalizar{
     padding: 10px 20px 10px 20px;
     border-radius: 5px;
     border: none;
@@ -699,13 +805,9 @@ a {
     background-color: var(--gray);
   }
 
-  
-
 /** -----FOOTER----- **/
 footer{
-    /* background-color: var(--green); */
     min-height: 15vh;
-    /* height: 25em; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -743,8 +845,6 @@ footer a:hover{
     color: var(--red);
     transition: all 0.5s;
 }
-
-
 
 .footer-top{
     display: flex;
@@ -879,7 +979,7 @@ footer a:hover{
     position: fixed;
     right: 20px;
     bottom: 20px;
-    z-index: 99;
+    z-index: 1000;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -931,3 +1031,12 @@ footer a:hover{
         opacity: 1 !important;
     }
 }
+
+/* @keyframes wave{
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: 1000px;
+    }
+} */

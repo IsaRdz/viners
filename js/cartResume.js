@@ -23,6 +23,7 @@ const showProducts = () => {
     CartProducts.map(product => {
         cartResumeContainer.insertAdjacentHTML('afterbegin', productRender(product))
     })
+
 }
 
 const showCartResume = () => {
@@ -71,3 +72,5 @@ const cleanCartListener = () => {
 }
 
 cleanCartListener()
+
+
