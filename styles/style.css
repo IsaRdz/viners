@@ -772,6 +772,10 @@ a {
 .btn-finalizar{
     background-color: var(--green);
     color: var(--white);
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 2px 2px 2px var(--gray);
 }
 .btn-finalizar:hover{
     background-color: var(--white);
