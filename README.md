@@ -68,15 +68,18 @@ Para este tutorial sobre cómo configurar y ejecutar nuestro proyecto, recomenda
 Una de las maneras más fáciles de hacer esto es hacer lo siguiente:
 Primero copie la dirección HTTPS del repositorio.
 
-<imagen1>
+![](https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Ejecutar%2FEjecutar1.jpeg?alt=media&token=c9b653bf-6c7e-4ca2-a582-a77e6effc0a1)
+<br>
 
-Luego debemos posicionarnos en el directorio donde queremos que se descargue nuestra carpeta
+Después debemos posicionarnos en el directorio donde queremos que se descargue nuestra carpeta.
 
 Luego, clone nuestro repositorio usando git clone + la dirección HTTPS. Escriba en la terminal de Git:
 
-<imagen2>
+`
+git clone https://github.com/Juan2805/CP2-Viners.git
+`
 
-Se creará una carpeta, inicie la aplicación ejecutando el archivo index.html:
+Se creará una carpeta, inicie la aplicación ejecutando el archivo index.html.
 
 Luego, la aplicación debería comenzar a funcionar sin problemas.
 
