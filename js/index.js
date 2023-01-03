@@ -73,9 +73,6 @@ const renderTotalProductNumber = () => {
 
 renderTotalProductNumber()
 
-// Array de tipos de vinos sin repetir
-
-let contenedorSelect = document.getElementById("select-js")
 let inputSearch = document.getElementById("input-search")
 let padreSelect = document.getElementById("category-js")
 let buttonsSelect = document.querySelectorAll(".button-filter")
@@ -130,9 +127,10 @@ function renderWinesPorTipoYbusqueda(vinos) {
     cardsContainer.insertAdjacentHTML("beforeend", wineCard(vino))
   })
   cardButtonListeners()
+  addToCartListener()
 }
 
-// button-filter button-filter--active
+// button-filter--active
 
 padreSelect.addEventListener("click", (event) => {
   let buttonActive = document.querySelector(".button-filter--active")
@@ -146,8 +144,8 @@ inputSearch.addEventListener("keyup", (event) => {
   let buttonActive = document.querySelector(".button-filter--active")
   let vinosFiltrados = filtrarPorTipo(allWines, buttonActive.id)
   let vinosFiltradosPorBusqueda = filtrarPorBusqueda(
-    vinosFiltrados, //todos los vinos
-    event.target.value // lo que se escribe en el input
+    vinosFiltrados,
+    event.target.value
   )
   vinosFiltradosPorBusqueda.length === 0
     ? (document.querySelector(".error").classList.remove("hidden"),
@@ -157,8 +155,6 @@ inputSearch.addEventListener("keyup", (event) => {
   renderWinesPorTipoYbusqueda(vinosFiltradosPorBusqueda)
   cardButtonListeners()
 })
-
-// Filtrando por tipo de vino
 
 buttonsSelect.forEach((button) => {
   button.addEventListener("click", (event) => {
@@ -174,13 +170,21 @@ const addToCartListener = () => {
 
   addToCartButtonsContainers.forEach((addToCartButton) => {
     addToCartButton.addEventListener("click", (event) => {
-      CartProducts.map((product) => {
-        if (product.marca == event.target.value) {
-          product.cantidad++
+      allWines.map((wine) => {
+        if (wine.marca == event.target.value) {
+          if (CartProducts.find((product) => product.id == wine.id)) {
+            CartProducts.map((product) => {
+              if (product.id == wine.id) {
+                product.cantidad++
+              }
+            })
+          } else {
+            CartProducts.push(wine)
+          }
+          document.querySelector(".cart_products_total").innerHTML++
+          localStorage.setItem("CartProducts", JSON.stringify(CartProducts))
         }
       })
-      localStorage.setItem("CartProducts", JSON.stringify(CartProducts))
-      renderTotalProductNumber()
     })
   })
 }
