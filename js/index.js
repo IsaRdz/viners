@@ -22,8 +22,8 @@ const wineCard = (wine) => {
                         <h2>${wine.tipo}</h2>
                     </div>
                     <div class="button-card-container">
-                        <a href="#popup-add-cart" rel="noopener noreferrer" class="link"><button value='${wine.marca}' class="card__button add_to_cart">Add to cart</button></a>
-                        <a href="./pages/detail.html"><button value='${wine.marca}' class="card__button">See more...</button></a>
+                        <a href="#popup-add-cart" rel="noopener noreferrer" class="link"><button value='${wine.marca}' class="card__button add_to_cart">Agregar al carrito</button></a>
+                        <a href="./pages/detail.html"><button value='${wine.marca}' class="card__button">Ver producto</button></a>
                     </div>
                 </div>
             </div>`

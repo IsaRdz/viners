@@ -25,6 +25,7 @@
 .fa-heart{
     margin-bottom: 5vh;
     color: var(--gray);
+    font-size: x-large;
 }
 .fa-heart:hover{
     font-size: xx-large;
@@ -33,8 +34,8 @@
 }
 .fa-heart:active {
     color: var(--red);
-    
 }
+
 
 .detail-container {
     background-color: var(--white);

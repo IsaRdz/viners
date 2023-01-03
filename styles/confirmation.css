@@ -50,6 +50,7 @@
 }
 .container-button{       
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-self: flex-end;
+    margin-top: 4vh;
 }
