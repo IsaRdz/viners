@@ -2,14 +2,14 @@ var allWines = []
 var cartProducts = []
 
 const getWines = async () => {
-    var response = await fetch('./db.json')
-    const myWines = await response.json()
-    
-    return myWines.vinos
+  var response = await fetch("./db.json")
+  const myWines = await response.json()
+
+  return myWines.vinos
 }
 
 const wineCard = (wine) => {
-    return  `<div id="wine${wine.id}" class="card">
+  return `<div id="wine${wine.id}" class="card">
                 <div class="card__body">
                     <div class="card__img">
                         <img
@@ -30,19 +30,21 @@ const wineCard = (wine) => {
 }
 
 const cardButtonListeners = () => {
-    const cardButtonsContainers = document.querySelectorAll('.card__button')
-    
-    cardButtonsContainers.forEach(cardButton => {
-        cardButton.addEventListener('click', (event) => {
-            allWines.map(wine => {
-                wine.marca == event.target.value ? localStorage.setItem('myEvent', JSON.stringify(wine)) : null
+    const cardButtonsContainers = document.querySelectorAll(".card__button")
+
+    cardButtonsContainers.forEach((cardButton) => {
+        cardButton.addEventListener("click", (event) => {
+            allWines.map((wine) => {
+                wine.marca == event.target.value
+                ? localStorage.setItem("myEvent", JSON.stringify(wine))
+                : null
             })
         })
     })
 }
 
 const renderAllWines = async () => {
-    const cardsContainer = document.querySelector('.cards-container')
+    const cardsContainer = document.querySelector(".cards-container")
 
     CartProductsExist = JSON.parse(localStorage.getItem('CartProducts'))
     CartProductsExist ? null : localStorage.setItem('CartProducts', JSON.stringify(cartProducts))
@@ -59,123 +61,143 @@ const renderAllWines = async () => {
 renderAllWines()
 
 const renderTotalProductNumber = () => {
-    document.querySelector('.cart_products_total').innerHTML = 0
-    let cantidadTotal = CartProducts.reduce((accumulator, product) => 
-    accumulator + product.cantidad
-    ,0)
-    document.querySelector('.cart_products_total').innerHTML = cantidadTotal
+  document.querySelector(".cart_products_total").innerHTML = 0
+  let cantidadTotal = CartProducts.reduce(
+    (accumulator, product) => accumulator + product.cantidad,
+    0
+  )
+  document.querySelector(".cart_products_total").innerHTML = cantidadTotal
 }
 
 renderTotalProductNumber()
 
-const filterListeners = () => {
-    // Filtrando por buscador
-    const inputSearch = document.getElementById("input-search")
+let inputSearch = document.getElementById("input-search")
+let padreSelect = document.getElementById("category-js")
+let buttonsSelect = document.querySelectorAll(".button-filter")
 
-    inputSearch.addEventListener("keyup", (event) => {
-        allWines.map((wine) => {
-            let wineToFilter = document.querySelector(`#wine${wine.id}`)
-            wineToFilter.classList.remove("hidden")
-            if (
-                !wine.marca.toLowerCase().includes(event.target.value.toLowerCase()) &&
-                !wine.tipo.toLowerCase().includes(event.target.value.toLowerCase())
-            ){
-                wineToFilter.classList.toggle("hidden")
-            }
-        })
-
-        const notHiddenWines =
-        document.querySelectorAll(".card:not(.hidden)").length
-
-        if (notHiddenWines == 0) {
-            document.querySelector(".error").classList.remove("hidden")
-        } else {
-            document.querySelector(".error").classList.add("hidden")
-        }
-    })
-    const filtersContainers = document.querySelectorAll('.button-filter')
-
-    filtersContainers.forEach(filter => {
-        filter.addEventListener('click', event => {
-            allWines.map(wine => {
-                let wineToFilter = document.querySelector(`#wine${wine.id}`)
-                wineToFilter.classList.remove('hidden')
-                if (event.target.id == 'all_wines') {
-                    wineToFilter.classList.remove('hidden')
-                } 
-                else {
-                    if (wine.tipo.split(' ')[0] != event.target.id ) {
-                        wineToFilter.classList.toggle('hidden')
-                    }
-                }
-            })
-        })
-    })
+const wineTypes = async () => {
+  allWines = await getWines()
+  let tipos = []
+  allWines.map((wine) => {
+    tipos.push(wine.tipo)
+  })
+  return [...new Set(tipos)]
 }
 
-filterListeners()
-
-/* const filterListeners = () => {
-    const filtersContainers = document.querySelectorAll('.button-filter')
-
-    filtersContainers.forEach(filter => {
-        filter.addEventListener('click', event => {
-            allWines.map(wine => {
-                let wineToFilter = document.querySelector(`#wine${wine.id}`)
-                wineToFilter.classList.remove('hidden')
-                if (event.target.id == 'all_wines') {
-                    wineToFilter.classList.remove('hidden')
-                } 
-                else {
-                    if (wine.tipo.split(' ')[0] != event.target.id ) {
-                        wineToFilter.classList.toggle('hidden')
-                    }
-                }
-            })
-        })
-    })
+function filtrarPorTipo(vinos, tipoSeleccionado) {
+  if (tipoSeleccionado === "all_wines".toLowerCase()) {
+    return vinos
+  } else {
+    return vinos.filter(
+      (vino) => vino.tipo.toLowerCase() === tipoSeleccionado.toLowerCase()
+    )
+  }
 }
 
-filterListeners() */
+function filtrarPorBusqueda(vinos, busqueda) {
+  return vinos.filter((vino) => {
+    return (
+      vino.marca.toLowerCase().includes(busqueda.toLowerCase()) ||
+      vino.tipo.toLowerCase().includes(busqueda.toLowerCase())
+    )
+  })
+}
+
+function filtrarPorTipoYbusqueda(event) {
+  let vinosFiltrados = filtrarPorTipo(allWines, event.target.id)
+  let vinosFiltradosPorBusqueda = filtrarPorBusqueda(
+    vinosFiltrados,
+    inputSearch.value
+  )
+  vinosFiltradosPorBusqueda.length === 0
+    ? (document.querySelector(".error").classList.remove("hidden"),
+      (document.querySelector(".cards-container").style.display = "none"))
+    : (document.querySelector(".error").classList.add("hidden"),
+      (document.querySelector(".cards-container").style.display = "flex"))
+  return vinosFiltradosPorBusqueda
+}
+
+function renderWinesPorTipoYbusqueda(vinos) {
+  let cardsContainer = document.querySelector(".cards-container")
+  cardsContainer.innerHTML = ""
+  vinos.map((vino) => {
+    cardsContainer.insertAdjacentHTML("beforeend", wineCard(vino))
+  })
+  cardButtonListeners()
+  addToCartListener()
+}
+
+// button-filter--active
+
+padreSelect.addEventListener("click", (event) => {
+  let buttonActive = document.querySelector(".button-filter--active")
+  buttonActive.classList.remove("button-filter--active")
+  event.target.classList.add("button-filter--active")
+})
+
+// Filtrando por buscador segun el tipo de vino seleccionado
+
+inputSearch.addEventListener("keyup", (event) => {
+  let buttonActive = document.querySelector(".button-filter--active")
+  let vinosFiltrados = filtrarPorTipo(allWines, buttonActive.id)
+  let vinosFiltradosPorBusqueda = filtrarPorBusqueda(
+    vinosFiltrados,
+    event.target.value
+  )
+  vinosFiltradosPorBusqueda.length === 0
+    ? (document.querySelector(".error").classList.remove("hidden"),
+      (document.querySelector(".cards-container").style.display = "none"))
+    : (document.querySelector(".error").classList.add("hidden"),
+      (document.querySelector(".cards-container").style.display = "flex"))
+  renderWinesPorTipoYbusqueda(vinosFiltradosPorBusqueda)
+  cardButtonListeners()
+})
+
+buttonsSelect.forEach((button) => {
+  button.addEventListener("click", (event) => {
+    let vinosFiltrados = filtrarPorTipoYbusqueda(event)
+    renderWinesPorTipoYbusqueda(vinosFiltrados)
+    cardButtonListeners()
+  })
+})
 
 const addToCartListener = () => {
-    const addToCartButtonsContainers = document.querySelectorAll('.add_to_cart')
-    CartProducts = JSON.parse(localStorage.getItem('CartProducts'))
+  const addToCartButtonsContainers = document.querySelectorAll(".add_to_cart")
+  CartProducts = JSON.parse(localStorage.getItem("CartProducts"))
 
-    addToCartButtonsContainers.forEach(addToCartButton => {
-        addToCartButton.addEventListener('click', event => {
-            allWines.map(wine => {
-                if (wine.marca == event.target.value) {
-                    if (CartProducts.find(product => product.id == wine.id)) {
-                        CartProducts.map(product => {
-                            if (product.id == wine.id) {
-                                product.cantidad++
-                            }
-                        })
-                    }
-                    else {
-                        CartProducts.push(wine)
-                    }
-                    document.querySelector('.cart_products_total').innerHTML++
-                    localStorage.setItem('CartProducts', JSON.stringify(CartProducts))
-                }
+  addToCartButtonsContainers.forEach((addToCartButton) => {
+    addToCartButton.addEventListener("click", (event) => {
+      allWines.map((wine) => {
+        if (wine.marca == event.target.value) {
+          if (CartProducts.find((product) => product.id == wine.id)) {
+            CartProducts.map((product) => {
+              if (product.id == wine.id) {
+                product.cantidad++
+              }
             })
-        })
+          } else {
+            CartProducts.push(wine)
+          }
+          document.querySelector(".cart_products_total").innerHTML++
+          localStorage.setItem("CartProducts", JSON.stringify(CartProducts))
+        }
+      })
     })
+  })
 }
 
+const buttonTop = document.querySelector("#buttonTop")
 
-const buttonTop = document.querySelector('#buttonTop');
 window.onscroll = () => {
-    if (document.documentElement.scrollTop > 100) {
-        buttonTop.classList.add('shows')
-    } else {
-        buttonTop.classList.remove('shows')
-    }
-    buttonTop.addEventListener('click', () => {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        })
+  if (document.documentElement.scrollTop > 100) {
+    buttonTop.classList.add("shows")
+  } else {
+    buttonTop.classList.remove("shows")
+  }
+  buttonTop.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
     })
+  })
 }

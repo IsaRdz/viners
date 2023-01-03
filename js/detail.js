@@ -1,7 +1,7 @@
 var wine = {}
 
 const renderDetail = (wine) => {
-    return `<div class="icon"><i class="fa-solid fa-heart fa-xl"></i></div>
+  return `<div class="icon"><i class="fa-solid fa-heart fa-xl"></i></div>
             <picture class="image-container">
                 <img src="${wine.img}" alt="${wine.marca}">
             </picture>
@@ -34,7 +34,7 @@ const renderDetail = (wine) => {
 }
 
 const buttonListener = () => {
-    const detailContainer = document.querySelector('.add-to-cart')
+  const detailContainer = document.querySelector(".add-to-cart")
 
     detailContainer.addEventListener('click', () => {
         var CartProducts = JSON.parse(localStorage.getItem('CartProducts'))
@@ -63,13 +63,12 @@ const renderTotalProductNumber = () => {
 renderTotalProductNumber()
 
 const readLocalStorage = () => {
-    wine = JSON.parse(localStorage.getItem('myEvent'))
+  wine = JSON.parse(localStorage.getItem("myEvent"))
 
-    const detailContainer = document.querySelector('.detail-container')
+  const detailContainer = document.querySelector(".detail-container")
 
-    detailContainer.insertAdjacentHTML('beforeend', renderDetail(wine))
-    buttonListener()
+  detailContainer.insertAdjacentHTML("beforeend", renderDetail(wine))
+  buttonListener()
 }
 
 readLocalStorage()
-
