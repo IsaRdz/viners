@@ -22,9 +22,10 @@
   flex-wrap: wrap;
   justify-content: flex-end;
 }
-.fa-heart {
-  margin-bottom: 5vh;
-  color: var(--gray);
+.fa-heart{
+    margin-bottom: 5vh;
+    color: var(--gray);
+    font-size: x-large;
 }
 .fa-heart:hover {
   font-size: xx-large;
@@ -32,8 +33,10 @@
   cursor: pointer;
 }
 .fa-heart:active {
-  color: var(--red);
+    color: var(--red);
+    
 }
+
 
 .detail-container {
   background-color: var(--white);

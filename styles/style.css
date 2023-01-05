@@ -585,8 +585,9 @@ main p {
 }
 
 .card__info h2{
-  margin-top: 0.2em;
-  font-size: 1em;
+    margin-top: 0.2em;
+    font-size: 1em;
+    font-weight: lighter;
 }
 .button-card-container{
   display: flex;
@@ -602,7 +603,7 @@ main p {
     border: none;
     /* margin-top: 2em; */
     color: var(--white);
-    font-weight: bold;
+    /*font-weight: bold;*/
     /*position: absolute;*/
     /* text-align: center; */
     margin-top: 0.4em;

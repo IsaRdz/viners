@@ -22,8 +22,8 @@ const wineCard = (wine) => {
                         <h2>${wine.tipo}</h2>
                     </div>
                     <div class="button-card-container">
-                        <a href="#popup-add-cart" rel="noopener noreferrer" class="link"><button value='${wine.marca}' class="card__button add_to_cart">Add to cart</button></a>
-                        <a href="./pages/detail.html"><button value='${wine.marca}' class="card__button">See more...</button></a>
+                        <a href="#popup-add-cart" rel="noopener noreferrer" class="link"><button value='${wine.marca}' class="card__button add_to_cart">Agregar al carrito</button></a>
+                        <a href="./pages/detail.html"><button value='${wine.marca}' class="card__button">Ver producto</button></a>
                     </div>
                 </div>
             </div>`
@@ -160,6 +160,27 @@ buttonsSelect.forEach((button) => {
     cardButtonListeners()
   })
 })
+
+ const filterListeners = () => {
+    const filtersContainers = document.querySelectorAll('.button-filter')
+    filtersContainers.forEach(filter => {
+        filter.addEventListener('click', event => {
+            allWines.map(wine => {
+                let wineToFilter = document.querySelector(`#wine${wine.id}`)
+                wineToFilter.classList.remove('hidden')
+                if (event.target.id == 'all_wines') {
+                    wineToFilter.classList.remove('hidden')
+                } 
+                else {
+                    if (wine.tipo.split(' ')[0] != event.target.id ) {
+                        wineToFilter.classList.toggle('hidden')
+                    }
+                }
+            })
+        })
+    })
+}
+filterListeners() 
 
 const addToCartListener = () => {
   const addToCartButtonsContainers = document.querySelectorAll(".add_to_cart")
