@@ -634,10 +634,12 @@ main p {
   height: 100%;
   box-shadow: 2px 2px 5px black;
   align-self: center;
+  border-radius: 10px;
 }
 
 .form-container {
   width: 50%;
+  border-radius: 10px;
   background-color: var(--white);
   box-shadow: 2px 2px 5px black;
   padding-bottom: 5vh;
@@ -648,6 +650,8 @@ main p {
 
 .form-container > h2 {
   text-align: center;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
   margin-bottom: 2vh;
   padding: 3vh 0 3vh 0;
   background-color: var(--green);
@@ -698,6 +702,7 @@ textarea {
 
 .item-cart {
   display: flex;
+  max-height: 200px;
   flex-direction: row;
   justify-content: space-around;
   padding: 2% 10%;
@@ -850,6 +855,7 @@ footer{
 
 .footer-direccion iframe{
     margin-top: 0.5em;
+    border-radius: 20px;
 }
 
 footer a{
@@ -867,8 +873,8 @@ footer a:hover{
 .footer-top{
     display: flex;
     justify-content: space-around;
-    margin-top: 10em;
-    padding-bottom: 3em;
+    margin-top: 8em;
+    padding-bottom: 2em;
     width: 100%;
     /* background-color: red; */
     border-bottom: 1px solid var(--white);
@@ -906,7 +912,7 @@ footer a:hover{
     margin: auto;
     /* color: var(--white); */
     color: var(--mahogany);
-    margin-bottom: 1em;
+    margin-top: 1em;
 }
 
 .circular-image {
