@@ -572,8 +572,9 @@ main p {
 }
 
 .card__img img:hover {
-  transform: rotate(10deg);
+  /*transform: rotate(10deg);*/
   transition: all 0.5s ease;
+  /*opacity: 0.3;*/
 }
 
 .card__info {
@@ -592,12 +593,14 @@ main p {
 .button-card-container{
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
 }
 
 .card__button{
     /*display: inline-block;*/
-    background-color: var(--mahogany);
-    padding: 0.5em 1em;
+    /*background-color: var(--gray);*/
+    font-size: large;
+    padding: 0.5em 3em;
     border-radius: 0.4em;
     cursor: pointer;
     border: none;
@@ -612,8 +615,35 @@ main p {
     /*transform: translateX(-50%);*/
     /* margin-left: -1em; */
 }
+.view_more{
+  background-color: transparent;
+  display: none;
+  opacity: 1;
+}
+.card__img:hover .view_more{
+  display: block;
+  position: absolute;
+  top: 10em;
+  color: var(--white);
+  font-size: large;
+  width: 90%;
+  padding: 1em;
+  background: rgba(225,225,225,0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  align-self: center;
+  align-items: center;
+}
+.view_more:hover{
+  opacity: 1;
+  z-index: 99;
+}
 .card__button:active{
     background-color: var(--gray);
+}
+.add_to_cart{
+  background-color: var(--mahogany);
+  color: var(--white);
 }
 /** -----CONTACT FORM----- **/
 
