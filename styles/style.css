@@ -19,7 +19,8 @@
 body{
     min-height: 100vh;
     background-color: var(--green);
-    
+    /* overflow: hidden; */
+    overflow-x: hidden;
 }
 
 main{
@@ -368,13 +369,40 @@ a {
     background-color: #397485;
 }
 
+.filter__searchBar{
+    height: 50px;
+    position: relative;
+    box-shadow: 	0px 0px 11px 1px rgba(0,0,0,0.14),
+		            0px 0px 19px 6px rgba(0,0,0,0.03),
+		            0px 0px 26px 12px rgba(0,0,0,0.14),
+		            0px 0px 29px 12px rgba(0,0,0,0.14);
+    border:	1px solid rgba(0,0,0,0);
+    border-radius:	4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .filter__searchBar>input{
     width: 20em;
+    height: 100%;
+    padding: 10px 25px;
+    border: none;
+    outline: none;
     opacity: 0.8;
+    font-size: 1.1em;
+    background: linear-gradient(#dbdae1, #a3aaba);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1), 15px 15px 15px rgba(0, 0, 0, 0.1), 20px 20px 15px rgba(0, 0, 0, 0.1), 30px 30px 15px rgba(0, 0, 0, 0.1), inset 1px 1px 2px var(--white);
 }
 
 .filter__searchBar>i{
     color: var(--white);
+    position: absolute;
+    /* padding: 10px 0; */
+    right: 20px;
+    /* color: #555; */
+    font-size: 1.5em;
+    cursor: pointer;
 }
 
 /** -----CARDS----- **/
