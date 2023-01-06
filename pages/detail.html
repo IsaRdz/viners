@@ -1,154 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    <link rel="stylesheet" href="../styles/style.css">
-    <link rel="stylesheet" href="../styles/detail.css">
-    <link rel="stylesheet" href="../styles/cardResume.css">
-    <link rel="shortcut icon" href="../assets/img/viners-logo.png" type="image/x-icon">
-    <title>Viners</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="../styles/mediaqueries.css">
+  <link rel="stylesheet" href="../styles/detail.css">
+  <link rel="stylesheet" href="../styles/cardResume.css">
+  <link rel="shortcut icon" href="../assets/img/viners-logo.png" type="image/x-icon">
+  <title>Viners</title>
 </head>
+
 <body>
-    <header>
-        <a href="../index.html" class="logo">
-            <img src="../assets/img/viners-logo1.png" alt="">
+  <header>
+    <a href="../index.html" class="logo">
+      <img src="../assets/img/viners-logo1.png" alt="">
+    </a>
+    <nav>
+      <div class="nav-container">
+        <ul>
+          <li>
+            <!-- <img src="https://img.icons8.com/external-tanah-basah-glyph-tanah-basah/48/FFFFFF/external-profile-social-media-ui-tanah-basah-glyph-tanah-basah.png"/> -->
+            <a href="#popup-login" rel="noopener noreferrer" class="link">
+              <i class="fa-solid fa-user fa-xl"></i>
+            </a>
+          </li>
+          <li class="shopping-cart-image-container">
+            <!-- <img src="https://img.icons8.com/ios-filled/50/FFFFFF/shopping-cart.png"/> -->
+            <i class="fa-solid fa-cart-shopping fa-xl"></i>
+            <div class="cart_products_total">0</div>
+          </li>
+        </ul>
+      </div>
+      <div class="cart-resume-container hidden">
+        <div class="products_container_resume"></div>
+        <div class="empty_cart" id="empty-cart">
+          <img src="../assets/empty-cart.png" alt="empty-cart" class="empty_img">
+          <h2 class="empty_title">¡Carrito vacío!</h2>
+          <!--<p>Let's go buy something!</p>-->
+        </div>
+        <div class="buttons_container">
+          <button class="clean-cart clean-cart-button">Eliminar productos</button>
+          <a href="./cartDetail.html" class="clean-cart">Ver detalle</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="main">
+    <section class="login">
+      <div id="popup-login" class="overlay">
+        <div id="popupBody">
+          <a id="cerrar" href="#">&times;</a>
+          <h2 class="title-login">Ingresar</h2>
+          <div class="popupContent">
+            <form action="" class="form-login">
+              <label for="email">Email: </label>
+              <input type="email" name="email" id="email" placeholder=" Ingresar email">
+              <label for="password">Contraseña: </label>
+              <input type="password" name="password" id="password" placeholder=" Ingresar contraseña">
+              <div class="container-check">
+                <input type="checkbox" name="remember" id="remeber">
+                <label for="remeber">No cerrar sesión</label>
+              </div>
+              <div class="container-icons">
+                <img src="https://img.icons8.com/color/48/null/google-logo.png" />
+                <img src="https://img.icons8.com/ios-glyphs/48/null/mac-os.png" />
+                <img src="https://img.icons8.com/color/48/null/facebook.png" />
+              </div>
+            </form>
+            <div class="container-btn-login">
+              <a href="#"><button type="submit" class="btn-login">Iniciar sesión</button></a>
+            </div>
+            <p class="forgot-pass">¿Olvido su contraseña?</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="detail-container">
+
+    </div>
+    <div id="popup-add-cart" class="overlay-add-cart">
+      <div id="popupBody-add-cart">
+        <a id="cerrar-add-cart" href="#overlay-add-cart">&times;</a>
+        <div class="popupContent-add-to-cart">
+          <p class="title-add-to-cart">Vino agregado al carrito</p>
+          <img src="../assets/iconOk.gif" alt="img" class="img-add-to-cart">
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-top">
+      <div class="footer-direccion">
+        <h2>DIRECCIÓN</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2489.6071579460126!2d-0.4054160848940863!3d51.39189772696368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487674e11489e2f9%3A0x1cd5b057e7ac0772!2sViners%20Cl%2C%20Walton-on-Thames%2C%20Reino%20Unido!5e0!3m2!1ses!2sar!4v1672272956123!5m2!1ses!2sar"
+          width="200" height="200" style="border: 0" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+      <div class="circular-image fade-out">
+        <a href="" class="circular-image-inner">
+          <video autoplay muted loop playsinline id="descubre_video" src="../assets/video/descubre_video.mp4"></video>
         </a>
-        <nav>
-            <div class="nav-container">
-                <ul>
-                    <li>
-                        <!-- <img src="https://img.icons8.com/external-tanah-basah-glyph-tanah-basah/48/FFFFFF/external-profile-social-media-ui-tanah-basah-glyph-tanah-basah.png"/> -->
-                        <a href="#popup-login" rel="noopener noreferrer" class="link">
-                        <i class="fa-solid fa-user fa-xl"></i>
-                        </a>
-                    </li>
-                    <li class="shopping-cart-image-container">
-                        <!-- <img src="https://img.icons8.com/ios-filled/50/FFFFFF/shopping-cart.png"/> -->
-                        <i class="fa-solid fa-cart-shopping fa-xl"></i>
-                        <div class="cart_products_total">0</div>
-                    </li>
-                </ul>
-            </div>
-            <div class="cart-resume-container hidden">
-                <div class="products_container_resume"></div>
-                <div class="empty_cart" id="empty-cart">
-                  <img src="../assets/empty-cart.png" alt="empty-cart" class="empty_img">
-                  <h2 class="empty_title">Your Cart es Empty!</h2>
-                  <p>Let's go buy something!</p>
-                </div>
-                <div class="buttons_container">
-                    <button class="clean-cart clean-cart-button">Clean Cart</button>
-                    <a href="./cartDetail.html" class="clean-cart">More Details</a>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <main class="main">
-        <section class="login">        
-            <div id="popup-login" class="overlay">
-              <div id="popupBody">
-                <a id="cerrar" href="#">&times;</a>
-                <h2 class="title-login">Sign in</h2>
-                <div class="popupContent">
-                  <form action="" class="form-login">
-                    <label for="email">Email address: </label>
-                    <input type="email" name="email" id="email" placeholder=" Enter email">
-                    <label for="password">Password: </label>
-                    <input type="password" name="password" id="password" placeholder=" Enter password"> 
-                    <div class="container-check">
-                      <input type="checkbox" name="remember" id="remeber">
-                      <label for="remeber">Remember me</label>
-                    </div>
-                    <div class="container-icons">
-                      <img src="https://img.icons8.com/color/48/null/google-logo.png"/>
-                      <img src="https://img.icons8.com/ios-glyphs/48/null/mac-os.png"/>
-                      <img src="https://img.icons8.com/color/48/null/facebook.png"/>
-                    </div>   
-                  </form>
-                  <div class="container-btn-login">
-                    <a href="#"><button type="submit" class="btn-login">Login</button></a>
-                  </div>           
-                  <p class="forgot-pass">Forgot your password?</p>   
-                </div>
-              </div>
-            </div>
-          </section>
-        <div class="detail-container">
-            
+        <a href="">
+          <p class="white-text"><span class="serif-text">Viners</p>
+        </a>
+      </div>
+
+      <div class="footer-contacto">
+        <h2>CONTACTO</h2>
+        <div class="contacto-mail">
+          <a href="mailto:info_viners@protonmail.com" target="_blank">info_viners@protonmail.com</a>
+          <a href="https://api.whatsapp.com/send?phone=543777230026" target="_blank">+54 3777 230026</a>
         </div>
-        <div id="popup-add-cart" class="overlay-add-cart">
-            <div id="popupBody-add-cart">
-              <a id="cerrar-add-cart" href="#overlay-add-cart">&times;</a>
-              <div class="popupContent-add-to-cart">
-                <p class="title-add-to-cart">The wine has been added</p>
-                <img src="../assets/iconOk.gif" alt="img" class="img-add-to-cart">
-              </div>
-            </div>
-          </div>
-    </main>
-    <footer>
-        <div class="footer-top">
-          <div class="footer-direccion">
-            <h2>DIRECCIÓN</h2>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2489.6071579460126!2d-0.4054160848940863!3d51.39189772696368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487674e11489e2f9%3A0x1cd5b057e7ac0772!2sViners%20Cl%2C%20Walton-on-Thames%2C%20Reino%20Unido!5e0!3m2!1ses!2sar!4v1672272956123!5m2!1ses!2sar"
-              width="250"
-              height="250"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
-  
-          <div class="circular-image fade-out">
-            <a href="" class="circular-image-inner">
-              <video
-                autoplay
-                muted
-                loop
-                playsinline
-                id="descubre_video"
-                src="../assets/video/descubre_video.mp4"
-              ></video>
-            </a>
-            <a href="./about.html">
-              <p class="white-text"><span class="serif-text">Viners</p>
-            </a>
-          </div>
-  
-          <div class="footer-contacto">
-              <h2>CONTACTO</h2>
-              <div class="contacto-mail">
-                <a href="mailto:info_viners@protonmail.com" target="_blank">info_viners@protonmail.com</a>
-                <a href="https://api.whatsapp.com/send?phone=543777230026" target="_blank">+54 3777 230026</a>
-              </div>
-  
-              <h2>REDES SOCIALES</h2>
-              <div class="contacto-redes">
-                <a href="https://www.facebook.com/people/Viners/100089285313073/?mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                <a href="https://twitter.com/InfoViners" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                <a href="https://www.instagram.com/info_viners/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-              </div>
-          </div>
-  
-          
+
+        <h2>REDES SOCIALES</h2>
+        <div class="contacto-redes">
+          <a href="https://www.facebook.com/people/Viners/100089285313073/?mibextid=ZbWKwL" target="_blank"><i
+              class="fa-brands fa-facebook"></i></a>
+          <a href="https://twitter.com/InfoViners" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://www.instagram.com/info_viners/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
         </div>
-        <div class="footer-bootom">
-          <p>Todos los derechos reservados © 2023</p>
-          <div class="footer-developers" id="footer-container"></div>
-        </div>
-  
-        <!-- <div class="wave" id="footer-container"></div> -->
-      </footer>
+      </div>
+
+
+    </div>
+    <div class="footer-bootom">
+      <div class="footer-developers" id="footer-container"></div>
+      <p>Todos los derechos reservados © 2023</p>
+    </div>
+
+    <!-- <div class="wave" id="footer-container"></div> -->
+  </footer>
 </body>
-<script src="../js/fotter.js"></script>
+<script src="../js/footer.js"></script>
 <script src="../js/cartResume.js"></script>
 <script src="../js/detail.js"></script>
+
 </html>
