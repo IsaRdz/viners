@@ -109,7 +109,21 @@ a {
 }
 
 .error {
-  color: red;
+  opacity: 0.9;
+  width: 100%;
+  margin: auto;
+  padding: 1vh 5vw 3vh 5vw;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.error img {
+  max-width: 70%;
+}
+
+.error p {
+  color: var(--white);
+  font-size: 1.5em;
 }
 
 main p {
@@ -569,11 +583,11 @@ main p {
     border-radius: 10px;
     /* filter: brightness(1.1);
     mix-blend-mode: multiply; */
+    transition: all 300ms;
 }
 
 .card__img img:hover {
   transform: rotate(10deg);
-  transition: all 0.5s ease;
 }
 
 .card__info {
@@ -621,16 +635,17 @@ main p {
     display: flex;
     flex-wrap: wrap;
     padding: 3vh 10%;
+    justify-content: space-between;
     /* margin-bottom: 2vh; */
     
 }
 .iframe-container{
-    width: 50%;
+    width: 45%;
     align-items: stretch;
     opacity: 0.8;
 }
 .iframe-container > iframe {
-  width: 90%;
+  width: 100%;
   height: 100%;
   box-shadow: 2px 2px 5px black;
   align-self: center;
@@ -638,7 +653,7 @@ main p {
 }
 
 .form-container {
-  width: 50%;
+  width: 45%;
   border-radius: 10px;
   background-color: var(--white);
   box-shadow: 2px 2px 5px black;

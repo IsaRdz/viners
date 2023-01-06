@@ -146,9 +146,11 @@ inputSearch.addEventListener("keyup", (event) => {
   )
   vinosFiltradosPorBusqueda.length === 0
     ? (document.querySelector(".error").classList.remove("hidden"),
-      (document.querySelector(".cards-container").style.display = "none"))
+      (document.querySelector(".cards-container").style.display = "none")) && 
+      (document.querySelector(".title-container").classList.add("hidden"))
     : (document.querySelector(".error").classList.add("hidden"),
-      (document.querySelector(".cards-container").style.display = "flex"))
+      (document.querySelector(".cards-container").style.display = "flex")) &&
+      (document.querySelector(".title-container").classList.remove("hidden"))
   renderWinesPorTipoYbusqueda(vinosFiltradosPorBusqueda)
   cardButtonListeners()
 })
