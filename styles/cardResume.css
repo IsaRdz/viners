@@ -147,6 +147,7 @@
 
 .cupon-container{
   border-radius: 15px;
+
   display: flex;
   /* flex-direction: column; */
   justify-content: space-around;

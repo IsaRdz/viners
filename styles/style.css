@@ -904,6 +904,7 @@ footer a:hover{
 
 .footer-contacto .contacto-mail a:nth-child(1){
     margin-bottom: 1em;
+    font-size: 13px;
 }
 
 .footer-contacto .contacto-redes{
