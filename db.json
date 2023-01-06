@@ -2,7 +2,7 @@
     {
       "id": 1,
       "marca": "Vega Sicilia Unico",
-      "img": "Vega Sicilia Unico.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FVega%20Sicilia%20Unico.png?alt=media&token=f26ac4c3-149f-41b4-9a2f-01d9429e931e",
       "bodega": "Vega Sicilia",
       "denominacion": "Ribera del Duero",
       "tipo": "Tinto",
@@ -17,7 +17,7 @@
     {
       "id": 2,
       "marca": "El Grifo Canari",
-      "img": "El Grifo Canari.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FEl%20Grifo%20Canari.png?alt=media&token=db2c5af9-ab85-4421-9193-4017fdec53fe",
       "bodega": "El Grifo",
       "denominacion": "Lanzarote",
       "tipo": "Blanco dulce",
@@ -32,7 +32,7 @@
     {
       "id": 3,
       "marca": "Extrem de Bonaval",
-      "img": "Extrem de Bonaval.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FExtrem%20de%20Bonaval.png?alt=media&token=f7f3ea54-59be-4984-b20b-c5b08d0d16bf",
       "bodega": "Bodegas Valdeorite",
       "denominacion": "Cava",
       "tipo": "Cava",
@@ -47,7 +47,7 @@
     {
       "id": 4,
       "marca": "Gallaecia",
-      "img": "Gallaecia.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FGallaecia.png?alt=media&token=b07b8a5d-044e-40db-86df-ffb5fe18cb0f",
       "bodega": "Martín Códax",
       "denominacion": "Rías Baixas",
       "tipo": "Blanco",
@@ -62,7 +62,7 @@
     {
       "id": 5,
       "marca": "Malkoa Private Collection",
-      "img": "Malkoa Private Collection.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FMalkoa%20Private%20Collection.png?alt=media&token=2bcf19a8-b65d-4b04-b73d-4965dfce7bbf",
       "bodega": "Astobiza",
       "denominacion": "Txakoli de Álava",
       "tipo": "Blanco",
@@ -77,7 +77,7 @@
     {
       "id": 6,
       "marca": "Finca Malaveina",
-      "img": "Finca Malaveina.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FFinca%20Malaveina.png?alt=media&token=0c2c153c-e7ac-49de-ba28-879febeedb58",
       "bodega": "Castillo de Perelada",
       "denominacion": "Empordà",
       "tipo": "Tinto",
@@ -92,7 +92,7 @@
     {
       "id": 7,
       "marca": "Remirez de Ganuza Reserva",
-      "img": "Remirez de Ganuza Reserva.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FRemirez%20de%20Ganuza%20Reserva.png?alt=media&token=8545bede-b01b-4180-9e6a-28e73a927d59",
       "bodega": "Bodegas Remírez de Ganuza",
       "denominacion": "Rioja",
       "tipo": "Tinto Reserva",
@@ -107,7 +107,7 @@
     {
       "id": 8,
       "marca": "Guimaro Finca Capelinos",
-      "img": "Guimaro Finca Capelinos.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FGuimaro%20Finca%20Capelinos.png?alt=media&token=cad75706-ab30-4c05-987d-6fe3da44ebc2",
       "bodega": "Guímaro",
       "denominacion": "Ribeira Sacra",
       "tipo": "Tinto",
@@ -122,7 +122,7 @@
     {
       "id": 9,
       "marca": "La Poza de Ballesteros",
-      "img": "La Poza de Ballesteros.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FLa%20Poza%20de%20Ballesteros.png?alt=media&token=021e59d8-e2f6-4e00-ab43-e9fb7f1291d9",
       "bodega": "Bodegas y viñedos Artadi",
       "denominacion": "Vino de España",
       "tipo": "Tinto",
@@ -136,23 +136,8 @@
     },
     {
       "id": 10,
-      "marca": "Remirez de Ganuza Reserva 2014",
-      "img": "Remirez de Ganuza Reserva2017.jpg",
-      "bodega": "Bodegas Remírez de Ganuza",
-      "denominacion": "denominacion",
-      "tipo": "Tinto Reserva",
-      "añada": "2014",
-      "grado": "14.5% vol.",
-      "variedad": "93% Tempranillo, 4% Graciano, 3% Viura, Malvasía",
-      "precio": 500,
-      "cantidad": 1,
-      "descripcion": "El Reserva de Remírez de Ganuza refleja la esencia de la bodega. Está elaborado a partir de los hombros despalillados de los mejores racimos, solo aquellos procedentes de viñedos con una edad media de 60 años. Tanto la maloláctica como su crianza se lleva a cabo en barrica nueva. Añada tras añada logra altas puntaciones e importantes reconocimientos como su designación como el Mejor vino de Rioja de 2020 por The Drinks Business, y es un habitual entre los vinos mejor valorados por nuestra comunida",
-      "maridaje": "Ideal con carnes rojas, con civet y con cerdo asado."
-    },
-    {
-      "id": 11,
       "marca": "Viña Muriel",
-      "img": "Viña Muriel Gran Reserva Tempranillo.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FVi%C3%B1a%20Muriel%20Gran%20Reserva%20Tempranillo.png?alt=media&token=372b6e00-b579-4024-85a5-af881f7a5ede",
       "bodega": "Muriel Wines",
       "denominacion": "Rioja",
       "tipo": "Tinto",
@@ -165,9 +150,24 @@
       "maridaje": "Ideal con carnes rojas, con civet y con cerdo asado."
     },
     {
+      "id": 11,
+      "marca": "Basa",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FBasa.png?alt=media&token=f55b9639-1976-4b22-b156-17e303b45cc7",
+      "bodega": "Compañía de Vinos Telmo Rodriguez",
+      "denominacion": "Rueda",
+      "tipo": "Blanco",
+      "añada": "2019",
+      "grado": "13% vol.",
+      "variedad": "90% Verdejo, 10% Viura",
+      "precio": 600,
+      "cantidad": 1,
+      "descripcion": "Basa es junto con El Transistor el único vino que Telmo Rodríguez elabora en la D.O Rueda. En la elaboración de Basa interviene además de Verdejo un pequeño porcentaje de Viura. Su viticultura es razonada, solamente se usan pesticidas en el viñedo bajo control. Blanco con los elementos aromáticos característicos de la uva reina de Rueda y con una buena acidez y estructura. Es un blanco directo, fresco y expresivo.En esta añada 2019 4 la botella se presenta con 4 etiquetas especiales diseñadas por destacados artistas internacionales, como homenaje al 20 aniversario de Basa. La recepción de las mismas es totalmente aleatorio.",
+      "maridaje": "Ideal con sushi, con comida oriental, con pescados, con ahumados y con quesos de pasta blanda."
+    },
+    {
       "id": 12,
       "marca": "F de Fuentespina Reserva Especial",
-      "img": "F de Fuentespina Reserva Especial.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FF%20de%20Fuentespina%20Reserva%20Especial.png?alt=media&token=9de021f3-2506-4737-a854-b15cfd0c0166",
       "bodega": "Avelino Vegas",
       "denominacion": "Ribera del Duero",
       "tipo": "Tinto",
@@ -182,7 +182,7 @@
     {
       "id": 13,
       "marca": "Pago de los Capellanes Reserva",
-      "img": "Pago de los Capellanes Reserva.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FPago%20de%20los%20Capellanes%20Reserva.png?alt=media&token=330438db-6484-48f8-833e-1536c6827ca5",
       "bodega": "Pago de los Capellanes",
       "denominacion": "Ribera del Duero",
       "tipo": "Tinto Reserva",
@@ -197,7 +197,7 @@
     {
       "id": 14,
       "marca": "Legaris Reserva",
-      "img": "Legaris Reserva.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FLegaris%20Reserva.png?alt=media&token=11019afc-c3a2-47eb-aa22-fcb9600b0501",
       "bodega": "Legaris",
       "denominacion": "Ribera del Duero",
       "tipo": "Tinto Reserva",
@@ -212,7 +212,7 @@
     {
       "id": 15,
       "marca": "Vina Pomal Crianza",
-      "img": "Vina Pomal Crianza.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FVina%20Pomal%20Crianza.png?alt=media&token=0c70a9a6-e17a-4f06-a6e0-3559d5829c3e",
       "bodega": "Bodegas Bilbaínas",
       "denominacion": "Rioja",
       "tipo": "Tinto Crianza",
@@ -227,7 +227,7 @@
     {
       "id": 16,
       "marca": "Granbazan Limousin",
-      "img": "Granbazan Limousin.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FGranbazan%20Limousin.png?alt=media&token=b36677fe-c78c-46b6-b306-a91d9c60b713",
       "bodega": "Bodega Granbazán",
       "denominacion": "Rías Baixas",
       "tipo": "Blanco",
@@ -242,7 +242,7 @@
     {
       "id": 17,
       "marca": "Shaya Habis",
-      "img": "Shaya Habis.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FShaya%20Habis.png?alt=media&token=6dd905fd-68d0-4258-a341-e68addff3862",
       "bodega": "Shaya",
       "denominacion": "Rueda",
       "tipo": "Blanco",
@@ -257,7 +257,7 @@
     {
       "id": 18,
       "marca": "Finca Vinoa Paraje Penaboa",
-      "img": "Finca Vinoa Paraje Penaboa.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FFinca%20Vinoa%20Paraje%20Penaboa.png?alt=media&token=7f7bdf62-2b3a-4b31-bbf7-9bd32608d581",
       "bodega": "Bodega y Viñedos Pazo Casanova",
       "denominacion": "Ribeiro",
       "tipo": "Blanco",
@@ -272,7 +272,7 @@
     {
       "id": 19,
       "marca": "Astobiza",
-      "img": "Astobiza.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FAstobiza.png?alt=media&token=002528cc-f650-44ad-b4a7-228dd220b0f2",
       "bodega": "Astobiza",
       "denominacion": "Txakoli de Álava",
       "tipo": "Blanco",
@@ -287,7 +287,7 @@
     {
       "id": 20,
       "marca": "Blanc del Terrer",
-      "img": "Blanc del Terrer.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FBlanc%20del%20Terrer.png?alt=media&token=3a52d9b1-701b-46a3-95e5-f683c6c9ccd7",
       "bodega": "Vinyes del Terrerbodega",
       "denominacion": "Cataluña",
       "tipo": "Blanco",
@@ -302,7 +302,7 @@
     {
       "id": 21,
       "marca": "Estrany",
-      "img": "Estrany.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FEstrany.png?alt=media&token=925b3f6e-8367-4ed3-9288-c9882a377c10",
       "bodega": "Celler Credo",
       "denominacion": "Penedés",
       "tipo": "Blanco",
@@ -317,7 +317,7 @@
     {
       "id": 22,
       "marca": "Silice Blanco",
-      "img": "Silice Blanco.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FSilice%20Blanco.png?alt=media&token=be46d7fe-f4ff-44b9-99d3-97a6fde0e198",
       "bodega": "Sílice Viticultores",
       "denominacion": "Vino de España",
       "tipo": "Blanco",
@@ -332,7 +332,7 @@
     {
       "id": 23,
       "marca": "Vidonia",
-      "img": "Vidonia.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FVidonia.png?alt=media&token=bf6e1ab1-2a67-41ad-8be4-2dda63bd6ca5",
       "bodega": "Suertes del Marqués",
       "denominacion": "Valle de la Orotava",
       "tipo": "Blanco Fermentado en Barrica",
@@ -347,7 +347,7 @@
     {
       "id": 24,
       "marca": "Pazo Barrantes Magnum",
-      "img": "Pazo Barrantes Magnum.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FPazo%20Barrantes%20Magnum.png?alt=media&token=9855fd8a-635a-4627-a51d-28c5d4f683f7",
       "bodega": "Pazo de Barrantes",
       "denominacion": "Rías Baixas",
       "tipo": "Blanco",
@@ -362,7 +362,7 @@
     {
       "id": 25,
       "marca": "O Santo do Mar Blanco",
-      "img": "O Santo do Mar Blanco.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FO%20Santo%20do%20Mar%20Blanco.png?alt=media&token=da3946bf-c19f-43b0-8724-102659588406",
       "bodega": "Rodrigo Méndez",
       "denominacion": "Vino de España",
       "tipo": "Blanco Fermentado en Barrica",
@@ -377,7 +377,7 @@
     {
       "id": 26,
       "marca": "Sameiras Blanco",
-      "img": "Sameiras Blanco.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FSameiras%20Blanco.png?alt=media&token=905a9ecf-1491-4742-b33a-a05d9e1504cf",
       "bodega": "Adega Sameirás",
       "denominacion": "Ribeiro",
       "tipo": "Blanco",
@@ -392,7 +392,7 @@
     {
       "id": 27,
       "marca": "Montes Obarenes",
-      "img": "Montes Obarenes.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FMontes%20Obarenes.png?alt=media&token=d8196e2a-de03-4ee3-8561-a2176925e4df",
       "bodega": "Gómez Cruzado",
       "denominacion": "Rioja",
       "tipo": "Blanco Fermentado en Barrica",
@@ -407,7 +407,7 @@
     {
       "id": 28,
       "marca": "Marina Alta Coleccion",
-      "img": "Marina Alta Coleccion.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FMarina%20Alta%20Coleccion.png?alt=media&token=20591087-6194-4437-9d2d-b0c97c9bc010",
       "bodega": "Bocopa",
       "denominacion": "Alicante",
       "tipo": "Blanco",
@@ -422,7 +422,7 @@
     {
       "id": 29,
       "marca": "Sketch",
-      "img": "Sketch.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FSketch.png?alt=media&token=587b6a49-fb41-4040-a994-f286ee0e0b1a",
       "bodega": "Raúl Pérez Bodegas y Viñedos",
       "denominacion": "Vino de España",
       "tipo": "Blanco Fermentado en Barrica",
@@ -437,7 +437,7 @@
     {
       "id": 30,
       "marca": "Rolland Galarreta Rueda Barrica",
-      "img": "Rolland Galarreta Rueda Barrica.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FRolland%20Galarreta%20Rueda%20Barrica.png?alt=media&token=3953377f-152f-426d-b9ec-9a7f34b0bec4",
       "bodega": "Rolland y Galarreta",
       "denominacion": "Rueda",
       "tipo": "Blanco Fermentado en Barrica",
@@ -452,7 +452,7 @@
     {
       "id": 31,
       "marca": "Finca Montico",
-      "img": "Finca Montico.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FFinca%20Montico.png?alt=media&token=0c9acbf6-a5fa-494f-8639-455d13857779",
       "bodega": "Marqués de Riscal",
       "denominacion": "Rueda",
       "tipo": "Blanco",
@@ -467,7 +467,7 @@
     {
       "id": 32,
       "marca": "Altos de Torona Godello",
-      "img": "Altos de Torona Godello.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FAltos%20de%20Torona%20Godello.png?alt=media&token=58496d7d-b190-420a-96cf-20366f733e22",
       "bodega": "Altos de Torona",
       "denominacion": "Rías Baixas",
       "tipo": "Blanco",
@@ -482,7 +482,7 @@
     {
       "id": 33,
       "marca": "Uxia da Ponte",
-      "img": "Uxia da Ponte.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FUxia%20da%20Ponte.png?alt=media&token=e85c3d8a-2d59-4d71-b958-8665b0b85f54",
       "bodega": "Mauro Estévez",
       "denominacion": "Ribeiro",
       "tipo": "Blanco",
@@ -497,7 +497,7 @@
     {
       "id": 34,
       "marca": "Pazo Senorans Coleccion",
-      "img": "Pazo Senorans Coleccion.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FPazo%20Senorans%20Coleccion.png?alt=media&token=73f983fe-9cbb-47aa-a54e-e1eefd7f7c64",
       "bodega": "Pazo de Señorans",
       "denominacion": "Rías Baixas",
       "tipo": "Blanco",
@@ -512,7 +512,7 @@
     {
       "id": 35,
       "marca": "Les Freses",
-      "img": "Les Freses.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FLes%20Freses.png?alt=media&token=69c85e89-f928-4704-833c-14bb2277d8c5",
       "bodega": "Les Freses",
       "denominacion": "Vino de España",
       "tipo": "Blanco",
@@ -527,7 +527,7 @@
     {
       "id": 36,
       "marca": "Coleccion Comenge Verdejo",
-      "img": "Coleccion Comenge Verdejo.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FColeccion%20Comenge%20Verdejo.png?alt=media&token=656c18bd-bd16-4a77-9e74-6df6f256e723",
       "bodega": "Bodegas Comenge",
       "denominacion": "Rueda",
       "tipo": "Blanco",
@@ -542,7 +542,7 @@
     {
       "id": 37,
       "marca": "Noelia Bebelia Albarino",
-      "img": "Noelia Bebelia Albarino.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FNoelia%20Bebelia%20Albarino.png?alt=media&token=f665ede9-f49b-43b6-baa9-ceb2bbe7fb47",
       "bodega": "Noelia Bebelia",
       "denominacion": "Rías Baixas",
       "tipo": "Blanco",
@@ -557,7 +557,7 @@
     {
       "id": 38,
       "marca": "Altos de Torona Rosal",
-      "img": "Altos de Torona Rosal.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FAltos%20de%20Torona%20Rosal.png?alt=media&token=0f90834a-5a7b-4444-9040-df6f3b54d55a",
       "bodega": "Altos de Torona",
       "denominacion": "Rías Baixas",
       "tipo": "Blanco",
@@ -572,7 +572,7 @@
     {
       "id": 39,
       "marca": "La Comtesse",
-      "img": "La Comtesse.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FLa%20Comtesse.png?alt=media&token=4cff5c54-fea9-4735-82fb-de73f8b48243",
       "bodega": "Pazo de Barrantes",
       "denominacion": "Rías Baixas",
       "tipo": "Blanco Fermentado en Barrica",
@@ -587,7 +587,7 @@
     {
       "id": 40,
       "marca": "Granbazan Etiqueta Ambar",
-      "img": "Granbazan Etiqueta Ambar.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FGranbazan%20Etiqueta%20Ambar.png?alt=media&token=23d2dbd1-bf7e-42a7-afb7-30ed52cca502",
       "bodega": "Bodega Granbazán",
       "denominacion": "Rías Baixas",
       "tipo": "Blanco",
@@ -602,7 +602,7 @@
     {
       "id": 41,
       "marca": "Castellroig Reserva Brut",
-      "img": "Castellroig Reserva Brut.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FCastellroig%20Reserva%20Brut.png?alt=media&token=86ed9f26-d310-41c1-aef0-e511552f3897",
       "bodega": "Sabaté i Coca",
       "denominacion": "Vino de España",
       "tipo": "Cava",
@@ -617,7 +617,7 @@
     {
       "id": 42,
       "marca": "Jaume Codorniu Gran Reserva",
-      "img": "Jaume Codorniu Gran Reserva.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FJaume%20Codorniu%20Gran%20Reserva.png?alt=media&token=3b10aa2a-303c-4d9a-8f1c-427e70464748",
       "bodega": "Ars Collecta",
       "denominacion": "Cava",
       "tipo": "Cava",
@@ -632,7 +632,7 @@
     {
       "id": 43,
       "marca": "Lumen Brut Reserva",
-      "img": "Lumen Brut Reserva.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FLumen%20Brut%20Reserva.png?alt=media&token=843850aa-addf-4c55-99e0-92e97f59896b",
       "bodega": "Bodegas Bilbaínas",
       "denominacion": "Rioja",
       "tipo": "Espumoso",
@@ -647,7 +647,7 @@
     {
       "id": 44,
       "marca": "Llopart Llegat Familiar",
-      "img": "Llopart Llegat Familiar.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FLlopart%20Llegat%20Familiar.png?alt=media&token=2b67b154-577e-40aa-9b01-9dac11f97597",
       "bodega": "Llopart",
       "denominacion": "Vino de España",
       "tipo": "Espumoso",
@@ -662,7 +662,7 @@
     {
       "id": 45,
       "marca": "Ars Collecta Grand Rose",
-      "img": "Ars Collecta Grand Rose.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FArs%20Collecta%20Grand%20Rose.png?alt=media&token=150340d7-a9f4-44d3-a508-69e7fab8d654",
       "bodega": "Ars Collecta",
       "denominacion": "denominacion",
       "tipo": "Cava",
@@ -677,7 +677,7 @@
     {
       "id": 46,
       "marca": "AUS Bruant",
-      "img": "AUS Bruant.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FAUS%20Bruant.png?alt=media&token=645a475d-d571-4a34-b883-6347dae14a43",
       "bodega": "Alta Alella",
       "denominacion": "Cava",
       "tipo": "Cava",
@@ -692,7 +692,7 @@
     {
       "id": 47,
       "marca": "Tharsys Unico",
-      "img": "Tharsys Unico.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FTharsys%20Unico.png?alt=media&token=15b33bdd-baf2-4f9a-ba6b-c5d41b8a113a",
       "bodega": "Pago de Tharsys",
       "denominacion": "Utiel - Requena",
       "tipo": "Espumoso",
@@ -707,7 +707,7 @@
     {
       "id": 48,
       "marca": "Raimat Lo Fred de Ponent",
-      "img": "Raimat Lo Fred de Ponent.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FRaimat%20Lo%20Fred%20de%20Ponent.png?alt=media&token=8c15b458-0e62-46ed-92a4-fafa0eac23d4",
       "bodega": "Raimat",
       "denominacion": "Cava",
       "tipo": "Cava",
@@ -722,7 +722,7 @@
     {
       "id": 49,
       "marca": "Descregut Brut Nature Reserva",
-      "img": "Descregut Brut Nature Reserva.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FDescregut%20Brut%20Nature%20Reserva.png?alt=media&token=81f21993-0361-4995-a632-f5335c65694c",
       "bodega": "Can Descregut",
       "denominacion": "Vino de España",
       "tipo": "Cava",
@@ -737,7 +737,7 @@
     {
       "id": 50,
       "marca": "Taanug Cava Brut",
-      "img": "Taanug Cava Brut.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FTaanug%20Cava%20Brut.png?alt=media&token=ba552a72-be1e-44ef-845a-99b8013c792b",
       "bodega": "Pinord",
       "denominacion": "Cava",
       "tipo": "Cava",
@@ -752,7 +752,7 @@
     {
       "id": 51,
       "marca": "Visol Brut Nature Gran Reserva",
-      "img": "Visol Brut Nature Gran Reserva.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FVisol%20Brut%20Nature%20Gran%20Reserva.png?alt=media&token=01babaa0-736e-4fea-869c-463a1ee55723",
       "bodega": "Mestres",
       "denominacion": "Cava",
       "tipo": "Cava",
@@ -767,7 +767,7 @@
     {
       "id": 52,
       "marca": "Raimat El Cim del Turo",
-      "img": "Raimat El Cim del Turo.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FRaimat%20El%20Cim%20del%20Turo.png?alt=media&token=58c05d61-85c7-42be-8343-30688ddf12e4",
       "bodega": "Raimat",
       "denominacion": "Cava",
       "tipo": "Cava",
@@ -782,7 +782,7 @@
     {
       "id": 53,
       "marca": "Juve Camps Reserva de la Familia",
-      "img": "Juve Camps Reserva de la Familia.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FJuve%20Camps%20Reserva%20de%20la%20Familia.png?alt=media&token=3aca9f81-832e-4836-9396-0421afb5f770",
       "bodega": "Juvé & Camps",
       "denominacion": "Cava",
       "tipo": "Cava",
@@ -797,7 +797,7 @@
     {
       "id": 54,
       "marca": "Parxet Cuvée 21 Eco 2018",
-      "img": "Parxet Cuvée 21 Eco 2018.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FParxet%20Cuv%C3%A9e%2021%20Eco%202018.png?alt=media&token=d4c26f9c-0c4a-46ea-953c-16879650ae65",
       "bodega": "Parxet",
       "denominacion": "Cava",
       "tipo": "Cava",
@@ -812,7 +812,7 @@
     {
       "id": 55,
       "marca": "Marta",
-      "img": "Marta.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FMarta.png?alt=media&token=443b3a61-d74d-4833-83bf-d7d1b7452bf3",
       "bodega": "Torre del Veguer",
       "denominacion": "Penedés",
       "tipo": "Espumoso",
@@ -827,7 +827,7 @@
     {
       "id": 56,
       "marca": "Castellroig Xarel.lo Vermell Brut",
-      "img": "Castellroig Xarel.lo Vermell Brut.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FCastellroig%20Xarel.lo%20Vermell%20Brut.png?alt=media&token=fc2a497b-d1f7-475d-95d3-475651e1beef",
       "bodega": "Sabaté i Coca",
       "denominacion": "Vino de España",
       "tipo": "Espumoso",
@@ -842,7 +842,7 @@
     {
       "id": 57,
       "marca": "Esparter",
-      "img": "Esparter.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FEsparter.png?alt=media&token=ce5152a9-27ca-45d4-9308-41b52fb9ac2d",
       "bodega": "At Roca",
       "denominacion": "Penedés",
       "tipo": "Espumoso",
@@ -857,7 +857,7 @@
     {
       "id": 58,
       "marca": "Pago de Tharsys Millesime Rose",
-      "img": "Pago de Tharsys Millesime Rose Brut Reserva.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FPago%20de%20Tharsys%20Millesime%20Rose%20Brut%20Reserva.png?alt=media&token=b9088e43-7616-4a06-ab45-79064a721d9f",
       "bodega": "Pago de Tharsys",
       "denominacion": "Cava",
       "tipo": "Cava",
@@ -872,7 +872,7 @@
     {
       "id": 59,
       "marca": "Núria Claverol Homenatge",
-      "img": "Núria Claverol Homenatge Gran Reserva.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FN%C3%BAria%20Claverol%20Homenatge%20Gran%20Reserva.png?alt=media&token=a3a04006-68ba-4ac9-83df-5d918d10a7d4",
       "bodega": "Sumarroca",
       "denominacion": "Cava",
       "tipo": "Cava",
@@ -887,7 +887,7 @@
     {
       "id": 60,
       "marca": "Alta Alella Mirgin Opus",
-      "img": "Alta Alella Mirgin Opus.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FAlta%20Alella%20Mirgin%20Opus.png?alt=media&token=389a7a34-a5c2-443e-807d-c9987a42fa2b",
       "bodega": "Alta Alella",
       "denominacion": "Cava",
       "tipo": "Cava",
@@ -902,7 +902,7 @@
     {
       "id": 61,
       "marca": "Hacienda Lopez de Haro Reserva",
-      "img": "Hacienda Lopez de Haro Reserva.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FHacienda%20Lopez%20de%20Haro%20Reserva.png?alt=media&token=065dc35b-850f-4c4f-bec9-f94f2f6f31f6",
       "bodega": "Bodega Hacienda López de Haro",
       "denominacion": "Rioja",
       "tipo": "Tinto Reserva",
@@ -917,7 +917,7 @@
     {
       "id": 62,
       "marca": "Coto de Imaz Reserva",
-      "img": "Coto de Imaz Reserva.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FCoto%20de%20Imaz%20Reserva.png?alt=media&token=707d8ee1-17d7-4cfa-8e9e-0ee9eaed4cc1",
       "bodega": "El Coto de Rioja",
       "denominacion": "Rioja",
       "tipo": "Tinto Reserva",
@@ -932,7 +932,7 @@
     {
       "id": 63,
       "marca": "Campo Viejo Gran Reserva",
-      "img": "Campo Viejo Gran Reserva.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FCampo%20Viejo%20Gran%20Reserva.png?alt=media&token=69748bc8-244a-4b34-aa99-2116d21c2b37",
       "bodega": "Campo Viejo",
       "denominacion": "Rioja",
       "tipo": "Tinto Gran Reserva",
@@ -947,7 +947,7 @@
     {
       "id": 64,
       "marca": "Arienzo Crianza",
-      "img": "Arienzo Crianza.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FArienzo%20Crianza.png?alt=media&token=bcbd3048-13c9-4caa-9f2f-acd2b19efcda",
       "bodega": "Marqués de Riscal",
       "denominacion": "denominacion",
       "tipo": "Rioja",
@@ -962,7 +962,7 @@
     {
       "id": 65,
       "marca": "Viña Lanciano Reserva",
-      "img": "Viña Lanciano Reserva.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FVi%C3%B1a%20Lanciano%20Reserva.png?alt=media&token=d4635c44-93d6-4f60-b3cf-81362275068d",
       "bodega": "LAN",
       "denominacion": "Rioja",
       "tipo": "Tinto Reserva",
@@ -977,7 +977,7 @@
     {
       "id": 66,
       "marca": "Vina Cumbrero Crianza",
-      "img": "Vina Cumbrero Crianza.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FVina%20Cumbrero%20Crianza.png?alt=media&token=359040ef-3310-4c43-a448-ce9abc6aa081",
       "bodega": "Bodegas Osborne",
       "denominacion": "Rioja",
       "tipo": "Tinto Crianza",
@@ -992,7 +992,7 @@
     {
       "id": 67,
       "marca": "Tierra Crianza",
-      "img": "Tierra Crianza.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FTierra%20Crianza.png?alt=media&token=e20bd746-79e2-4203-b1e5-b646a1aa3d5f",
       "bodega": "Bodegas Tierra",
       "denominacion": "Rioja",
       "tipo": "Tinto Crianza",
@@ -1007,7 +1007,7 @@
     {
       "id": 68,
       "marca": "Pradorey Reserva Finca La Mina",
-      "img": "Pradorey Reserva Finca La Mina.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FPradorey%20Reserva%20Finca%20La%20Mina.png?alt=media&token=9943bc32-a9d5-46d5-bcc6-8cb2d1828a14",
       "bodega": "Bodega y viñedos Pradorey",
       "denominacion": "Ribera del Duero",
       "tipo": "Tinto Reserva",
@@ -1022,7 +1022,7 @@
     {
       "id": 69,
       "marca": "Emilio Moro",
-      "img": "Emilio Moro.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FEmilio%20Moro.png?alt=media&token=a911c98e-ca21-46a1-9651-aea399f241c6",
       "bodega": "Emilio Moro",
       "denominacion": "Ribera del Duero",
       "tipo": "Tinto",
@@ -1036,23 +1036,23 @@
     },
     {
       "id": 70,
-      "marca": "Coto de Imaz Reserva",
-      "img": "Coto de Imaz Reserva.jpg",
-      "bodega": "El Coto de Rioja",
-      "denominacion": "Rioja",
-      "tipo": "Tinto Reserva",
-      "añada": "2017",
-      "grado": "13% vol.",
-      "variedad": "100% Tempranillo",
-      "precio": 500,
+      "marca": "Beronia Rueda",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FBeronia%20Rueda.png?alt=media&token=2b53b93e-b425-4cb7-af2c-d57acec382c7",
+      "bodega": "Beronia",
+      "denominacion": "Rueda",
+      "tipo": "Blanco",
+      "añada": "2021",
+      "grado": "13.5% vol.",
+      "variedad": "100% Verdejo",
+      "precio": 300,
       "cantidad": 1,
-      "descripcion": "Este reserva es uno de los vinos más reconocidos de El Coto de Rioja, una de las grandes bodegas de la prestigiosa región. Se trata de un tinto complejo y equilibrado que seduce al paladar gracias a la calidad de sus uvas y su extensa y cuidada crianza. Un rioja tan clásico como versátil. ",
-      "maridaje": "Ideal con carne de caza, con carne roja a la parrilla o guisada y con quesos curados de oveja"
+      "descripcion": "Blanco elaborado con Verdejo procedente de una selección de los viñedos de Rueda y La Seca. Una de las caracteristicas diferenciales de Beronia Rueda es la capacidad de almacenar mosto retrasando la fermentación alcohólica de una parte de la cosecha hasta la primavera del año siguiente para dar vinos recién fermentados y llenos de frescura. El resultado es un blanco equilibrado, armonioso y muy versátil.",
+      "maridaje": "Ideal con sushi, con comida oriental, con pescados, con ahumados y con quesos de pasta blanda."
     },
     {
       "id": 71,
       "marca": "Finca Resalso",
-      "img": "Finca Resalso.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FFinca%20Resalso.png?alt=media&token=32a37ad0-b4c9-4be1-9f66-6039ceeba0c8",
       "bodega": "Emilio Moro",
       "denominacion": "Ribera del Duero",
       "tipo": "tinto",
@@ -1067,7 +1067,7 @@
     {
       "id": 72,
       "marca": "Rolland Galarreta Ribera del Duero",
-      "img": "Rolland Galarreta Ribera del Duero.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FRolland%20Galarreta%20Ribera%20del%20Duero.png?alt=media&token=85955a10-3d08-4f76-a7d6-c3f47d8a6c64",
       "bodega": "Rolland y Galarreta",
       "denominacion": "Ribera del Duero",
       "tipo": "Tinto",
@@ -1081,8 +1081,8 @@
     },
     {
       "id": 73,
-      "marca": "Ausas Interpretacion",
-      "img": "Ausas Interpretacion.jpg",
+      "marca": "Ausas Interpretación",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FAusas%20Interpretacion.png?alt=media&token=9b832d61-335f-4611-8a27-45ad693ba115",
       "bodega": "Ausàs Bodegas y Viñedos",
       "denominacion": "Ribera del Duero",
       "tipo": "Tinto",
@@ -1091,13 +1091,13 @@
       "variedad": "100% Tinto fino",
       "precio": 3000,
       "cantidad": 1,
-      "descripcion": "desTercera añada de este coloso con el que Xavier Ausàs reinterpreta la Ribera del Duero tras 30 años de experiencia. Tres son los pilares clave de este monovarietal de Tinto fino: su pureza aromática, frescura y una manifestación tánica elegante. Un tinto, en suma, que muestra el cáracter ribereño, apuntalado en una espina dorsal caliza de taninos de grano fino y roble perfectamente integrados. Sublime. cripcion",
+      "descripcion": "desTercera añada de este coloso con el que Xavier Ausàs reinterpreta la Ribera del Duero tras 30 años de experiencia. Tres son los pilares clave de este monovarietal de Tinto fino: su pureza aromática, frescura y una manifestación tánica elegante. Un tinto, en suma, que muestra el carácter ribereño, apuntalado en una espina dorsal caliza de taninos de grano fino y roble perfectamente integrados.",
       "maridaje": "Carnes a la brasa, parrillas, embutidos, jamón, platos condimentados, rabo de toro."
     },
     {
       "id": 74,
       "marca": "Viore Ribera del Duero Crianza",
-      "img": "Viore Ribera del Duero Crianza.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FViore%20Ribera%20del%20Duero%20Crianza.png?alt=media&token=6c269ae3-f1bc-40e2-8820-3de3f2aabf85",
       "bodega": "bodega",
       "denominacion": "Ribera del Duero",
       "tipo": "Tinto Crianza",
@@ -1112,7 +1112,7 @@
     {
       "id": 75,
       "marca": "Pago de los Capellanes El Nogal",
-      "img": "Pago de los Capellanes El Nogal.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FPago%20de%20los%20Capellanes%20El%20Nogal.png?alt=media&token=7573a1dd-3951-4e87-8320-40f0256cc87b",
       "bodega": "Pago de los Capellanes",
       "denominacion": "Ribera del Duero",
       "tipo": "Tinto",
@@ -1127,7 +1127,7 @@
     {
       "id": 76,
       "marca": "Palacio de Bornos Brut",
-      "img": "Palacio de Bornos Brut.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FPalacio%20de%20Bornos%20Brut.png?alt=media&token=bfb601a6-518e-4ac9-8d23-8823e856df85",
       "bodega": "Bornos Bodegas y Viñedos",
       "denominacion": "Rueda",
       "tipo": "Espumoso",
@@ -1142,7 +1142,7 @@
     {
       "id": 77,
       "marca": "Elivo Espumoso",
-      "img": "Elivo Espumoso.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FElivo%20Espumoso.png?alt=media&token=043da39f-f51b-4ecc-a0d3-9ad67ab324dc",
       "bodega": "Grupo Élivo",
       "denominacion": "Vino de España",
       "tipo": "Espumoso",
@@ -1157,7 +1157,7 @@
     {
       "id": 78,
       "marca": "Kimera Espumoso Ancestral",
-      "img": "Kimera Espumoso Ancestral Rosado.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FKimera%20Espumoso%20Ancestral%20Rosado.png?alt=media&token=77ce988f-fa9b-4939-ba11-f1fb6bddbff9",
       "bodega": "LMT Wines",
       "denominacion": "Vino de España",
       "tipo": "Espumoso",
@@ -1172,7 +1172,7 @@
     {
       "id": 79,
       "marca": "Llopart Leopardi",
-      "img": "Llopart Leopardi.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FLlopart%20Leopardi.png?alt=media&token=7dcabbc8-89eb-44ed-9255-4778d67a59db",
       "bodega": "Llopart",
       "denominacion": "Vino de España",
       "tipo": "Espumoso",
@@ -1187,7 +1187,7 @@
     {
       "id": 80,
       "marca": "Torello Rose Reserva",
-      "img": "Torello Rose Reserva.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FTorello%20Rose%20Reserva.png?alt=media&token=27941db2-ffba-4e50-bfe0-b6474b7558e8",
       "bodega": "Torelló Viticultors",
       "denominacion": "Vino de España",
       "tipo": "Espumoso",
@@ -1202,7 +1202,7 @@
     {
       "id": 81,
       "marca": "Espuma de Otazu",
-      "img": "Espuma de Otazu.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FEspuma%20de%20Otazu.png?alt=media&token=0e74fefc-329e-4a47-8843-c11c7bf8abfb",
       "bodega": "Espuma de Otazu",
       "denominacion": "Vino de España",
       "tipo": "Espumoso",
@@ -1217,7 +1217,7 @@
     {
       "id": 82,
       "marca": "Campo Eliseo Blanco",
-      "img": "Campo Eliseo Blanco.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FCampo%20Eliseo%20Blanco.png?alt=media&token=2b117d1b-6c65-4a8d-a2ab-5aeb7da2bbd7",
       "bodega": "Campo Elíseo en Rueda",
       "denominacion": "Rueda",
       "tipo": "Blanco",
@@ -1232,7 +1232,7 @@
     {
       "id": 83,
       "marca": "Emina Verdejo",
-      "img": "Emina Verdejo.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FEmina%20Verdejo.png?alt=media&token=af81b3a8-a7f9-471a-a9d1-4b6b56955def",
       "bodega": "Emina Rueda",
       "denominacion": "Rueda",
       "tipo": "Blanco",
@@ -1247,7 +1247,7 @@
     {
       "id": 84,
       "marca": "Cvne Rueda",
-      "img": "Cvne Rueda.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FCvne%20Rueda.png?alt=media&token=b13c61fc-28b3-4ffa-9599-e47eb6c10b79",
       "bodega": "CVNE",
       "denominacion": "Rueda",
       "tipo": "Blanco",
@@ -1258,37 +1258,6 @@
       "cantidad": 1,
       "descripcion": "Cvne, a pesar de ser una marca asociada tradicionalmente al vino de Rioja, elabora también un monovarietal de Verdejo en los límites de la D.O. Rueda. Se trata de un blanco joven y fresco que representa fielmente las mejores cualidades de los vinos de la zona, con sus característicos toques frutales y florales.",
       "maridaje": "Perfecto tanto solo como en aperitivos o acompañado con mariscos, pescados e incluso con salsas exóticas."
-    },
-    {
-      "id": 85,
-      "marca": "Beronia Rueda",
-      "img": "Beronia Rueda.jpg",
-      "bodega": "Beronia",
-      "denominacion": "Rueda",
-      "tipo": "Blanco",
-      "añada": "2021",
-      "grado": "13.5% vol.",
-      "variedad": "100% Verdejo",
-      "precio": 300,
-      "cantidad": 1,
-      "descripcion": "Blanco elaborado con Verdejo procedente de una selección de los viñedos de Rueda y La Seca. Una de las caracteristicas diferenciales de Beronia Rueda es la capacidad de almacenar mosto retrasando la fermentación alcohólica de una parte de la cosecha hasta la primavera del año siguiente para dar vinos recién fermentados y llenos de frescura. El resultado es un blanco equilibrado, armonioso y muy versátil.",
-      "maridaje": "Ideal con sushi, con comida oriental, con pescados, con ahumados y con quesos de pasta blanda."
-    },
-    {
-      "id": 86,
-      "marca": "Basa",
-      "img": "Basa.jpg",
-      "bodega": "Compañía de Vinos Telmo Rodriguez",
-      "denominacion": "Rueda",
-      "tipo": "Blanco",
-      "añada": "2019",
-      "grado": "13% vol.",
-      "variedad": "90% Verdejo, 10% Viura",
-      "precio": 600,
-      "cantidad": 1,
-      "descripcion": "Basa es junto con El Transistor el único vino que Telmo Rodríguez elabora en la D.O Rueda. En la elaboración de Basa interviene además de Verdejo un pequeño porcentaje de Viura. Su viticultura es razonada, solamente se usan pesticidas en el viñedo bajo control. Blanco con los elementos aromáticos característicos de la uva reina de Rueda y con una buena acidez y estructura. Es un blanco directo, fresco y expresivo.En esta añada 2019 4 la botella se presenta con 4 etiquetas especiales diseñadas por destacados artistas internacionales, como homenaje al 20 aniversario de Basa. La recepción de las mismas es totalmente aleatorio",
-      "maridaje": "Ideal con sushi, con comida oriental, con pescados, con ahumados y con quesos de pasta blanda."
     }
   ]
 }
-  

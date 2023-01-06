@@ -1,7 +1,7 @@
 const renderDetail = (wine) => {
     return `<div id="Container${wine.id}" class="item-cart">
                 <div class="item-image">
-                    <img src="../assets/img/wines/${wine.img}" alt="">
+                    <img src="${wine.img}" alt="${wine.marca}">
                 </div>
                 <div class="item-name">
                     <p>${wine.marca}</p>
@@ -122,6 +122,7 @@ addListener()
 
 const renderTotalPrice = () => {
     const totalPriceContainer = document.querySelector('.total-product-price')
+    const price = document.getElementById("price");
     var CartProducts = JSON.parse(localStorage.getItem('CartProducts'))
 
     let preciototal = CartProducts.reduce((accumulator, product) => 
@@ -129,6 +130,7 @@ const renderTotalPrice = () => {
     ,0)
 
     totalPriceContainer.innerHTML = `Total: $${preciototal}`
+    price.innerHTML = `${preciototal}`
 }
 
 renderTotalPrice()
@@ -170,3 +172,42 @@ const renderTotalProductNumber = () => {
 }
 
 renderTotalProductNumber()
+
+
+function copyCoupon() {
+    let copyTxt = document.getElementById("input1");
+    let btnTxt = document.getElementById("btn1");
+
+    copyTxt.select();
+    copyTxt.setSelectionRange(0,99999);
+
+    navigator.clipboard.writeText(copyTxt.value);
+
+    if (btnTxt.innerHTML === "copiar cupon") {
+        btnTxt.innerHTML = "cupon copiado";
+    }
+}
+
+function canjearCoupon() {
+    let canjearTxt = document.getElementById("input2").value;
+    let canjearBtn = document.getElementById("btn2");
+
+    let number = document.getElementById("price").innerHTML;
+    let discount = document.getElementById("discount");
+
+    function getPercent(percent) { return number / 100 * percent; }
+    let percentResult = getPercent(90); //VOY A OBTENER EL 90 PORCIENTO DE 200.
+
+    if (canjearTxt === "54ldqwer23") {
+        canjearBtn.innerHTML = "cupon canjeado";
+
+        discount.innerHTML = `<h3 id="number2">${percentResult}</h3><h3>$</h3><span>${number}$</span>`;
+
+    } else if (canjearTxt === "") {
+
+        discount.innerHTML = '<h3 style="font-size: 15px; width: 300px;">Aún no has pegado el código 🤔</h3>';
+         
+    } else if (canjearTxt !== "54ldqwer23") {
+        discount.innerHTML = '<h3 style="font-size: 15px; width: 300px;">El cupón no es válido 🥲</h3>';
+    } 
+}

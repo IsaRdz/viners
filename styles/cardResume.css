@@ -1,12 +1,12 @@
-:root{
-    --green: #335c67;
-    --yellow: #fff3b0;
-    --orange: #e09f3e;
-    --red:#9e2a2b;
-    --mahogany: #540b0e;
-    --white: #ffffff;
-    --black: #000000;
-    --gray: #25282a;
+:root {
+  --green: #335c67;
+  --yellow: #fff3b0;
+  --orange: #e09f3e;
+  --red: #9e2a2b;
+  --mahogany: #540b0e;
+  --white: #ffffff;
+  --black: #000000;
+  --gray: #25282a;
 }
 
 .cart-resume-container {
@@ -44,29 +44,80 @@
     padding-left: 0.3vw; 
 }
 
-.product-resume, .buttons-container {
-    display: flex;
-    justify-content: space-between;
-    margin: 10% 5%;
+.products_container_resume {
+  overflow-y: scroll;
 }
-.product-name{
-    width: 200px;
-    text-overflow: ellipsis;
+
+.buttons_container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 2vh;
 }
-.clean-cart{
-    background-color: var(--green);
-    padding: 1vh 5vh 1vh 5vh;
-    color: var(--yellow);
-    border-radius: 3px;
-    font-size: medium;
-    cursor: pointer;
-    border: none;
+.product-resume {
+  padding-bottom: 2vh;
+  border-bottom: 1px solid rgb(200, 200, 200);
 }
-.fa-trash-can{
-    color: var(--green);
-    padding-left: 0.3vw;
+.product-units {
+  padding-left: 0.3vw;
+}
+.product-price {
+  padding-left: 0.3vw;
+}
+
+.product-resume,
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 10% 5%;
+}
+.product-name {
+  width: 200px;
+  text-overflow: ellipsis;
+}
+.clean-cart {
+  background-color: var(--green);
+  padding: 1vh 5vh 1vh 5vh;
+  color: var(--yellow);
+  border-radius: 3px;
+  font-size: medium;
+  cursor: pointer;
+  border: none;
+}
+.fa-trash-can {
+  color: var(--green);
+  padding-left: 0.3vw;
+}
+.fa-trash-can:hover {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  z-index: 5;
+  cursor: pointer;
+}
+
+.empty_cart {
+  width: 100%;
+  margin: auto;
+  padding: 1vh 5vw 3vh 5vw;
+  background-color: var(--white);
+  border-radius: 10px;
+  text-align: center;
+}
+.empty_img {
+  width: 70%;
+}
+.empty_title {
+  color: var(--red);
+  margin: 1vh;
 }
 .fa-trash-can:hover{
+    transform: scale(1.2);
     -webkit-transform:scale(1.2);
     -moz-transform:scale(1.2);
     -o-transform:scale(1.2);
@@ -92,4 +143,107 @@
 .empty_title{
     color: var(--red);
     margin: 1vh;
+}
+
+.cupon-container{
+  border-radius: 15px;
+
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 2em;
+}
+
+.copiar_coupon h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333; }
+h3{
+  font-size: 40px;
+  font-weight: bold;
+  color: #7e57c2;
+}
+
+span{
+  font-size: 20px;
+  font-weight: bold;
+  color: #c25757;
+}
+
+.copiar_cupon{
+  width: 360px;
+  height: 200px;
+  background-color: var(--white);
+  /* background-color: #e6d8ff; */
+  box-shadow: 0px 5px 5px #00000030;
+  border-radius: 10px;
+
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.canjear_cupon {
+  width: 360px;
+  height: 200px;
+  background-color: var(--white);
+  /* background-color: #e6d8ff; */
+  box-shadow: 0px 5px 5px #00000030;
+  border-radius: 10px;
+
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.txt_cont{
+  width: 100%;
+  height: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.price_cont{
+  width: 100%;
+  height: 80px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.action_cont{
+  width: 100%;
+  height: 80px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.action_cont input{
+  width: 160px;
+  height: 40px;
+
+  outline: none;
+  border: none;
+  border-radius: 5px 0px 0px 5px;
+
+  color: #333;
+
+  font-size: 18px;
+  font-weight: bold;
+}
+.action_cont button{
+  width: 160px;
+  height: 40px;
+
+  background-color: #333;
+  background-color: var(--orange);
+  border-radius: 0px 5px 5px 0px;
+  border: none;
+
+  font-size: 18px;
+  font-weight: bold;
+
+  cursor: pointer;
 }

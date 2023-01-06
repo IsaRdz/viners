@@ -1,7 +1,7 @@
 var CartProducts = []
 
 const productRender = (wine) => {
-    return `<div id="Container${wine.id}" class="product-resume">
+  return `<div id="Container${wine.id}" class="product-resume">
                 <p class="product-name">${wine.marca}</p>
                 <p class="product-units">Cant. x${wine.cantidad}</p>
                 <p class="product-price">$ ${wine.precio}</p>
@@ -23,6 +23,7 @@ const showProducts = () => {
     CartProducts.map(product => {
         cartResumeContainer.insertAdjacentHTML('afterbegin', productRender(product))
     })
+
 }
 
 const showCartResume = () => {
