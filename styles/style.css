@@ -112,9 +112,9 @@ a {
   color: red;
 }
 
-main p {
+/*main p {
   margin: 2em;
-}
+}*/
 
 /** -----LOGIN----- **/
 
@@ -625,6 +625,7 @@ main p {
   position: absolute;
   top: 10em;
   color: var(--white);
+  text-shadow: 1px 1px 2px gray;
   font-size: large;
   width: 90%;
   padding: 1em;
@@ -722,7 +723,7 @@ textarea {
     /* height: 100%; */
     min-height: 70vh;
     margin: 0;
-    padding-top: 10vh;
+    padding-top: 5vh;
     padding-bottom: 10vh;
 }
 
@@ -790,40 +791,56 @@ textarea {
     }
 }
 .total-price{
+  width: 100%;
     font-size: x-large;
     display: flex;
     justify-content: flex-end;
-    margin: 2% 25%;
+    align-items: center;
+    margin-top: 2em;
     color: var(--white);
 }
+.total-product-price{
+  margin-right: 2em;
+}
 .btns-container{
-    display: flex;
-    justify-content: space-around;
+    padding: 3em 0 0 7em;
+    
   }
-  .btn-limpiar, .btn-finalizar{
+/*.btn-limpiar, .btn-finalizar{
     padding: 10px 20px 10px 20px;
     border-radius: 5px;
     border: none;
     box-shadow: 2px 2px 2px var(--gray);
-}
+}*/
 .btn-limpiar{
-    background-color: var(--white);
+    color: var(--white);
+    border: none;
+    font-size: large;
+    background-color: transparent;
+    cursor: pointer;
 }
-.btn-limpiar:hover{
+.fa-delete-all{
+  position: relative;
+  color: var(--white);
+  font-weight:100;
+  }
+/*.btn-limpiar:hover{
     background-color: var(--green);
     color: var(--white);
-}
+}*/
 .btn-finalizar{
     background-color: var(--green);
     color: var(--white);
-    padding: 10px 20px 10px 20px;
+    font-size: large;
+    padding: 1em 3em;
     border-radius: 5px;
     border: none;
     box-shadow: 2px 2px 2px var(--gray);
+    margin-right: 8em;
 }
 .btn-finalizar:hover{
-    background-color: var(--white);
-    color: var(--black);
+    background-color: #266779;
+    /*color: var(--black);*/
   }
   .empty-cart{
     width: 40%;
@@ -843,11 +860,13 @@ textarea {
   }
   .empty-button{
     background-color: var(--mahogany);
-    padding: 1vh 2vw 1vh 2vw;
+    padding: 1.5vh 3vw 1.5vh 3vw;
+    font-size: large;
     color: var(--white);
     border-radius: 5px;
     border: none;
     margin: 2vh;
+    cursor: pointer;
   }
   .empty-button:active{
     background-color: var(--gray);

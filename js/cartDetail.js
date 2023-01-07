@@ -170,3 +170,21 @@ const renderTotalProductNumber = () => {
 }
 
 renderTotalProductNumber()
+
+const checkouttListener = () => {
+    const checkoutContainer = document.querySelector('.btn-finalizar')
+    const ProductCartContainer = document.querySelectorAll('.item-cart')
+    
+    checkoutContainer.addEventListener('click', () => {
+        console.log(checkoutContainer)
+        console.log("click")
+        ProductCartContainer.forEach(product => product.remove())
+        localStorage.setItem('CartProducts', JSON.stringify([]))
+        document.querySelector('.cart_products_total').innerHTML = 0
+        window.open("./confirmation.html","Confirmation","")
+        renderProducts()
+        renderTotalPrice()
+    })
+  }
+  
+  checkouttListener()
