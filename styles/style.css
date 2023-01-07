@@ -262,12 +262,12 @@ main p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 100%;
-    padding: 3vh 2vw;
+    width: 250px;
+    padding: 1vh 1vh;
     color: var(--black);
     background: var(--white);
     opacity: 0.9;
-    margin: 0 auto;
+    margin: 0;
     margin-bottom: 0;
     transition: all 1s ease-in-out;
     border-radius: 5px;
@@ -783,7 +783,7 @@ textarea {
     font-size: x-large;
     display: flex;
     justify-content: flex-end;
-    margin: 2% 25%;
+    margin: 2% 10%;
     color: var(--white);
 }
 .btns-container{
