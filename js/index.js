@@ -10,8 +10,10 @@ const getWines = async () => {
 
 const wineCard = (wine) => {
   return `<div id="wine${wine.id}" class="card">
+
                 <div class="card__body">
-                    <div class="card__img">
+                <div class="card__img">
+                  <a href="./pages/detail.html"><button value='${wine.marca}' class="card__button view_more">Ver más</button></a>
                         <img
                         src="${wine.img}"
                         alt="${wine.marca}"
@@ -23,7 +25,7 @@ const wineCard = (wine) => {
                     </div>
                     <div class="button-card-container">
                         <a href="#popup-add-cart" rel="noopener noreferrer" class="link"><button value='${wine.marca}' class="card__button add_to_cart">Agregar al carrito</button></a>
-                        <a href="./pages/detail.html"><button value='${wine.marca}' class="card__button">Ver producto</button></a>
+                        <!--<a href="./pages/detail.html"><button value='${wine.marca}' class="card__button view_more">Ver más</button></a>-->
                     </div>
                 </div>
             </div>`

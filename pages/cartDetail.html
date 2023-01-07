@@ -28,21 +28,82 @@
             <!-- <img src="https://img.icons8.com/external-tanah-basah-glyph-tanah-basah/48/FFFFFF/external-profile-social-media-ui-tanah-basah-glyph-tanah-basah.png"/> -->
             <a href="#popup-login" rel="noopener noreferrer" class="link">
               <i class="fa-solid fa-user fa-xl"></i>
-            </a>
-          </li>
-          <li class="shopping-cart-image-container">
-            <!-- <img src="https://img.icons8.com/ios-filled/50/FFFFFF/shopping-cart.png"/> -->
-            <i class="fa-solid fa-cart-shopping fa-xl"></i>
-            <div class="cart_products_total">0</div>
-          </li>
-        </ul>
-      </div>
-      <div class="cart-resume-container hidden">
-        <div class="buttons-container">
-          <button class="clean-cart clean-cart-button">Eliminar productos</button>
-          <a href="./pages/cartDetail.html" class="clean-cart">Ver detalle</a>
+              </a>
+            </li>
+            <li class="shopping-cart-image-container">
+              <!-- <img src="https://img.icons8.com/ios-filled/50/FFFFFF/shopping-cart.png"/> -->
+              <i class="fa-solid fa-cart-shopping fa-xl"></i>
+              <div class="cart_products_total">0</div>
+            </li>
+          </ul>
         </div>
+        <div class="cart-resume-container hidden">
+          <div class="buttons-container">
+              <button class="clean-cart clean-cart-button">Vaciar carrito</button>
+              <a href="./pages/cartDetail.html" class="clean-cart">Ver detalle</a>
+          </div>
       </div>
+      </nav>
+    </header>
+    <main>
+      <div class="btns-container">
+        <button class="btn-limpiar">Eliminar todos los productos <i class="fa-regular fa-trash-can fa-xl fa-delete-all"></i></button>
+      </div>  
+    <div class="cart-detail-container">
+      <section class="login">        
+        <div id="popup-login" class="overlay">
+          <div id="popupBody">
+            <a id="cerrar" href="#">&times;</a>
+            <h2 class="title-login">Ingresar</h2>
+            <div class="popupContent">
+              <form action="" class="form-login">
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" placeholder=" Ingresar email">
+                <label for="password">Contraseña: </label>
+                <input type="password" name="password" id="password" placeholder=" Ingresar contraseña"> 
+                <div class="container-check">
+                  <input type="checkbox" name="remember" id="remeber">
+                  <label for="remeber">No cerrar sesión</label>
+                </div>
+                <div class="container-icons">
+                  <img src="https://img.icons8.com/color/48/null/google-logo.png"/>
+                  <img src="https://img.icons8.com/ios-glyphs/48/null/mac-os.png"/>
+                  <img src="https://img.icons8.com/color/48/null/facebook.png"/>
+                </div>   
+              </form>
+              <div class="container-btn-login">
+                <a href="#"><button type="submit" class="btn-login">Iniciar sesión</button></a>
+              </div>           
+              <p class="forgot-pass">¿Olvido su contraseña?</p>   
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="empty-cart hidden" id="empty-cart">
+        <img src="../assets/empty-cart.png" alt="empty-cart" class="empty-img">
+        <h2 class="empty-title">¡Carrito vacío!</h2>
+        <p>Empieza a comprar</p>
+        <a href="../index.html"><button class="empty-button">Volver a la tienda</button></a>
+      </section>
+        <div class="total-price">
+            <p class="total-product-price"></p>
+            <button class="btn-finalizar">Finalizar Compra</button>
+        </div>
+    </div>
+    <footer>
+      <div class="footer-top">
+        <div class="footer-direccion">
+          <h2>DIRECCIÓN</h2>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2489.6071579460126!2d-0.4054160848940863!3d51.39189772696368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487674e11489e2f9%3A0x1cd5b057e7ac0772!2sViners%20Cl%2C%20Walton-on-Thames%2C%20Reino%20Unido!5e0!3m2!1ses!2sar!4v1672272956123!5m2!1ses!2sar"
+            width="250"
+            height="250"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
     </nav>
   </header>
   <main class="cart-detail-container">

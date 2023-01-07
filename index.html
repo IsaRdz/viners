@@ -1,130 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
-  <link rel="stylesheet" href="./styles/style.css" />
-  <link rel="stylesheet" href="./styles/mediaqueries.css" />
-  <link rel="stylesheet" href="./styles/cardResume.css" />
-  <link rel="shortcut icon" href="./assets/img/viners-logo.png" type="image/x-icon" />
-  <title>Viners</title>
-</head>
-
-<body>
-  <header>
-    <a href="#" class="logo">
-      <img src="./assets/img/viners-logo1.png" alt="" />
-    </a>
-    <nav>
-      <div class="nav-container">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/mediaqueries.css" />
+    <link rel="stylesheet" href="./styles/cardResume.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/viners-logo.png"
+      type="image/x-icon"
+    />
+    <title>Viners</title>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">
+        <img src="./assets/img/viners-logo1.png" alt="" />
+      </a>
+      <nav>
+          <div class="nav-container">
+              <ul>
+                  <li>
+                      <!-- <img src="https://img.icons8.com/external-tanah-basah-glyph-tanah-basah/48/FFFFFF/external-profile-social-media-ui-tanah-basah-glyph-tanah-basah.png"/> -->
+                      <!--<i class="fa-solid fa-user fa-xl"></i>-->
+                      <a href="#popup-login" rel="noopener noreferrer" class="link">
+                        <i class="fa-solid fa-user fa-xl"></i>          
+                      </a>
+                  </li>
+                  <li class="shopping-cart-image-container">
+                      <!-- <img src="https://img.icons8.com/ios-filled/50/FFFFFF/shopping-cart.png"/> -->
+                      <i class="fa-solid fa-cart-shopping fa-xl"></i>
+                      <div class="cart_products_total">0</div>
+                  </li>
+              </ul>
+              
+          </div>
+          <div class="cart-resume-container hidden">
+              <div class="products_container_resume"></div>
+              <div class="empty_cart" id="empty-cart">
+                <img src="./assets/empty-cart.png" alt="empty-cart" class="empty_img">
+                <h2 class="empty_title">¡Carrito vacío!</h2>
+                <!--<p>Let's go buy something!</p>-->
+              </div>
+              <div class="buttons_container">
+                  <button class="clean-cart clean-cart-button">Vaciar carrito</button>
+                  <a href="./pages/cartDetail.html" class="clean-cart">Ver detalle</a>
+              </div>
+          </div>
+      </nav>
+    </header>
+    <main>
+      <section class="login">        
+        <div id="popup-login" class="overlay">
+          <div id="popupBody">
+            <a id="cerrar" href="#">&times;</a>
+            <h2 class="title-login">Ingresar</h2>
+            <div class="popupContent">
+              <form action="" class="form-login">
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" placeholder=" Ingresar email">
+                <label for="password">Contraseña: </label>
+                <input type="password" name="password" id="password" placeholder=" Ingresar contraseña"> 
+                <div class="container-check">
+                  <input type="checkbox" name="remember" id="remeber">
+                  <label for="remeber">No cerrar sesión</label>
+                </div>
+                <div class="container-icons">
+                  <img src="https://img.icons8.com/color/48/null/google-logo.png"/>
+                  <img src="https://img.icons8.com/ios-glyphs/48/null/mac-os.png"/>
+                  <img src="https://img.icons8.com/color/48/null/facebook.png"/>
+                </div>   
+              </form>
+              <div class="container-btn-login">
+                <a href="#"><button type="submit" class="btn-login">Iniciar Sesión</button></a>
+              </div>           
+              <p class="forgot-pass">¿Olvido su contraseña?</p>   
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="slider-frame">
         <ul>
           <li>
-            <!-- <img src="https://img.icons8.com/external-tanah-basah-glyph-tanah-basah/48/FFFFFF/external-profile-social-media-ui-tanah-basah-glyph-tanah-basah.png"/> -->
-            <!--<i class="fa-solid fa-user fa-xl"></i>-->
-            <a href="#popup-login" rel="noopener noreferrer" class="link">
-              <i class="fa-solid fa-user fa-xl"></i>
-            </a>
+            <div class="slider-img">
+              <img src="./assets/img/vino-portada1.jpg" alt="" />
+            </div>
           </li>
-          <li class="shopping-cart-image-container">
-            <!-- <img src="https://img.icons8.com/ios-filled/50/FFFFFF/shopping-cart.png"/> -->
-            <i class="fa-solid fa-cart-shopping fa-xl"></i>
-            <div class="cart_products_total">0</div>
+          <li>
+            <div class="slider-img">
+              <img src="./assets/img/vino-portada2.jpg" alt="" />
+            </div>
+          </li>
+          <li>
+            <div class="slider-img">
+              <img src="./assets/img/vino-portada3.jpg" alt="" />
+            </div>
+          </li>
+          <li>
+            <div class="slider-img">
+              <img src="./assets/img/vino-portada4.jpg" alt="" />
+            </div>
+          </li>
+          <li>
+            <div class="slider-img">
+              <img src="./assets/img/vino-portada5.jpg" alt="" />
+            </div>
+          </li>
+          <li>
+            <div class="slider-img">
+              <img src="./assets/img/vino-portada6.jpg" alt="" />
+            </div>
           </li>
         </ul>
+      </div>
+      <!-- <img src="https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FCoto%20de%20Imaz%20Reserva.png?alt=media&token=707d8ee1-17d7-4cfa-8e9e-0ee9eaed4cc1" alt=""> -->
+      <section class="products">
+        <div class="container__background-triangle">
+          <div class="triangle triangle1"></div>
+          <div class="triangle triangle2"></div>
+          <div class="triangle triangle3"></div>
+        </div>
 
-      </div>
-      <div class="cart-resume-container hidden">
-        <div class="products_container_resume"></div>
-        <div class="empty_cart" id="empty-cart">
-          <img src="./assets/empty-cart.png" alt="empty-cart" class="empty_img">
-          <h2 class="empty_title">¡Carrito vacío!</h2>
-          <!--<p>Let's go buy something!</p>-->
+        <div class="filter">
+          <section class="filter__category" id="category-js">
+            <button id="Tinto" class="button-filter">
+              <i id="Tinto" class="fa-solid fa-wine-bottle"></i>
+              <h2 id="Tinto">Tinto</h2>
+            </button>
+            <button id="Blanco" class="button-filter">
+              <i id="Blanco" class="fa-solid fa-wine-bottle"></i>
+              <h2 id="Blanco">Blanco</h2>
+            </button>
+            <button id="Cava" class="button-filter">
+              <i id="Cava" class="fa-solid fa-wine-bottle"></i>
+              <h2 id="Cava">Cava</h2>
+            </button>
+            <button id="Espumoso" class="button-filter">
+              <i id="Espumoso" class="fa-solid fa-wine-bottle"></i>
+              <h2 id="Espumoso">Espumoso</h2>
+            </button>
+            <button id="all_wines" class="button-filter button-filter--active">
+              <i id="all_wines" class="fa-solid fa-wine-bottle"></i>
+              <h2 id="all_wines">Ver todo</h2>
+            </button>
+          </section>
+          <section class="filter__searchBar">
+            <input id="input-search" class="searchInput" type="text" />
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </section>
         </div>
-        <div class="buttons_container">
-          <button class="clean-cart clean-cart-button">Eliminar productos</button>
-          <a href="./pages/cartDetail.html" class="clean-cart">Ver detalle</a>
-        </div>
-      </div>
-    </nav>
-  </header>
-  <main>
-    <section class="login">
-      <div id="popup-login" class="overlay">
-        <div id="popupBody">
-          <a id="cerrar" href="#">&times;</a>
-          <h2 class="title-login">Ingresar</h2>
-          <div class="popupContent">
-            <form action="" class="form-login">
-              <label for="email">Email: </label>
-              <input type="email" name="email" id="email" placeholder=" Ingresar email">
-              <label for="password">Contraseña: </label>
-              <input type="password" name="password" id="password" placeholder=" Ingresar contraseña">
-              <div class="container-check">
-                <input type="checkbox" name="remember" id="remeber">
-                <label for="remeber">No cerrar sesión</label>
-              </div>
-              <div class="container-icons">
-                <img src="https://img.icons8.com/color/48/null/google-logo.png" />
-                <img src="https://img.icons8.com/ios-glyphs/48/null/mac-os.png" />
-                <img src="https://img.icons8.com/color/48/null/facebook.png" />
-              </div>
-            </form>
-            <div class="container-btn-login">
-              <a href="#"><button type="submit" class="btn-login">Iniciar Sesión</button></a>
-            </div>
-            <p class="forgot-pass">¿Olvido su contraseña?</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <div class="slider-frame">
-      <ul>
-        <li>
-          <div class="slider-img">
-            <img src="./assets/img/vino-portada1.jpg" alt="" />
-          </div>
-        </li>
-        <li>
-          <div class="slider-img">
-            <img src="./assets/img/vino-portada2.jpg" alt="" />
-          </div>
-        </li>
-        <li>
-          <div class="slider-img">
-            <img src="./assets/img/vino-portada3.jpg" alt="" />
-          </div>
-        </li>
-        <li>
-          <div class="slider-img">
-            <img src="./assets/img/vino-portada4.jpg" alt="" />
-          </div>
-        </li>
-        <li>
-          <div class="slider-img">
-            <img src="./assets/img/vino-portada5.jpg" alt="" />
-          </div>
-        </li>
-        <li>
-          <div class="slider-img">
-            <img src="./assets/img/vino-portada6.jpg" alt="" />
-          </div>
-        </li>
-      </ul>
-    </div>
-    <!-- <img src="https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Wines%2FCoto%20de%20Imaz%20Reserva.png?alt=media&token=707d8ee1-17d7-4cfa-8e9e-0ee9eaed4cc1" alt=""> -->
-    <section class="products">
-      <div class="container__background-triangle">
-        <div class="triangle triangle1"></div>
-        <div class="triangle triangle2"></div>
-        <div class="triangle triangle3"></div>
-      </div>
-
+        <p class="error hidden" id="errorP">Sin resultados</p>
       <div class="filter">
         <section class="filter__category" id="category-js">
           <button id="Tinto" class="button-filter">
