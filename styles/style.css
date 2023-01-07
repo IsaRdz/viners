@@ -126,9 +126,9 @@ a {
   font-size: 1.5em;
 }
 
-/*main p {
+main p {
   margin: 2em;
-}*/
+}
 
 /** -----LOGIN----- **/
 
@@ -587,9 +587,7 @@ a {
 }
 
 .card__img img:hover {
-  /*transform: rotate(10deg);*/
-  transition: all 0.5s ease;
-  /*opacity: 0.3;*/
+  transform: rotate(10deg);
 }
 
 .card__info {
@@ -608,14 +606,12 @@ a {
 .button-card-container{
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
 }
 
 .card__button{
     /*display: inline-block;*/
-    /*background-color: var(--gray);*/
-    font-size: large;
-    padding: 0.5em 3em;
+    background-color: var(--mahogany);
+    padding: 0.5em 1em;
     border-radius: 0.4em;
     cursor: pointer;
     border: none;
@@ -630,36 +626,8 @@ a {
     /*transform: translateX(-50%);*/
     /* margin-left: -1em; */
 }
-.view_more{
-  background-color: transparent;
-  display: none;
-  opacity: 1;
-}
-.card__img:hover .view_more{
-  display: block;
-  position: absolute;
-  top: 10em;
-  color: var(--white);
-  text-shadow: 1px 1px 2px gray;
-  font-size: large;
-  width: 90%;
-  padding: 1em;
-  background: rgba(225,225,225,0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  align-self: center;
-  align-items: center;
-}
-.view_more:hover{
-  opacity: 1;
-  z-index: 99;
-}
 .card__button:active{
     background-color: var(--gray);
-}
-.add_to_cart{
-  background-color: var(--mahogany);
-  color: var(--white);
 }
 /** -----CONTACT FORM----- **/
 
@@ -743,7 +711,7 @@ textarea {
     /* height: 100%; */
     min-height: 70vh;
     margin: 0;
-    padding-top: 5vh;
+    padding-top: 10vh;
     padding-bottom: 10vh;
 }
 
@@ -812,56 +780,40 @@ textarea {
     }
 }
 .total-price{
-  width: 100%;
     font-size: x-large;
     display: flex;
     justify-content: flex-end;
-    align-items: center;
-    margin-top: 2em;
+    margin: 2% 25%;
     color: var(--white);
 }
-.total-product-price{
-  margin-right: 2em;
-}
 .btns-container{
-    padding: 3em 0 0 7em;
-    
+    display: flex;
+    justify-content: space-around;
   }
-/*.btn-limpiar, .btn-finalizar{
+  .btn-limpiar, .btn-finalizar{
     padding: 10px 20px 10px 20px;
     border-radius: 5px;
     border: none;
     box-shadow: 2px 2px 2px var(--gray);
-}*/
-.btn-limpiar{
-    color: var(--white);
-    border: none;
-    font-size: large;
-    background-color: transparent;
-    cursor: pointer;
 }
-.fa-delete-all{
-  position: relative;
-  color: var(--white);
-  font-weight:100;
-  }
-/*.btn-limpiar:hover{
+.btn-limpiar{
+    background-color: var(--white);
+}
+.btn-limpiar:hover{
     background-color: var(--green);
     color: var(--white);
-}*/
+}
 .btn-finalizar{
     background-color: var(--green);
     color: var(--white);
-    font-size: large;
-    padding: 1em 3em;
+    padding: 10px 20px 10px 20px;
     border-radius: 5px;
     border: none;
     box-shadow: 2px 2px 2px var(--gray);
-    margin-right: 8em;
 }
 .btn-finalizar:hover{
-    background-color: #266779;
-    /*color: var(--black);*/
+    background-color: var(--white);
+    color: var(--black);
   }
   .empty-cart{
     width: 40%;
@@ -881,13 +833,11 @@ textarea {
   }
   .empty-button{
     background-color: var(--mahogany);
-    padding: 1.5vh 3vw 1.5vh 3vw;
-    font-size: large;
+    padding: 1vh 2vw 1vh 2vw;
     color: var(--white);
     border-radius: 5px;
     border: none;
     margin: 2vh;
-    cursor: pointer;
   }
   .empty-button:active{
     background-color: var(--gray);
