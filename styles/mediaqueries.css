@@ -92,4 +92,7 @@
   .clean-cart {
    padding: auto;
   }
+  .filter__searchBar > input {
+    width: 100%;
+  }
 }

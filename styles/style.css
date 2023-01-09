@@ -153,7 +153,7 @@ main p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 46%;
+  width: 56%;
   border-radius: 15px;
   box-shadow: 3px 3px 5px 2px var(--gray);
   color: var(--black);
@@ -238,7 +238,6 @@ main p {
 
 /** -----CONFIRM OF ADD TO CART----- **/
 .overlay-add-cart {
-    width: 25%;
     position: fixed;
     top: 100;
     bottom: 0;
