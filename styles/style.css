@@ -19,7 +19,8 @@
 body{
     min-height: 100vh;
     background-color: var(--green);
-    
+    /* overflow: hidden; */
+    overflow-x: hidden;
 }
 
 main{
@@ -270,12 +271,12 @@ main p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 100%;
-    padding: 3vh 2vw;
+    width: 250px;
+    padding: 1vh 1vh;
     color: var(--black);
     background: var(--white);
     opacity: 0.9;
-    margin: 0 auto;
+    margin: 0;
     margin-bottom: 0;
     transition: all 1s ease-in-out;
     border-radius: 5px;
@@ -398,9 +399,30 @@ main p {
   background-color: #397485;
 }
 
+.filter__searchBar{
+    height: 50px;
+    position: relative;
+    box-shadow: 0px 0px 11px 1px rgba(0,0,0,0.14),
+                0px 0px 19px 6px rgba(0,0,0,0.03),
+                0px 0px 26px 12px rgba(0,0,0,0.14),
+                0px 0px 29px 12px rgba(0,0,0,0.14);
+    border:	1px solid rgba(0,0,0,0);
+    border-radius:	4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .filter__searchBar>input{
     width: 20em;
+    height: 100%;
+    padding: 10px 25px;
+    border: none;
+    outline: none;
     opacity: 0.8;
+    font-size: 1.1em;
+    background: linear-gradient(#dbdae1, #a3aaba);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1), 15px 15px 15px rgba(0, 0, 0, 0.1), 20px 20px 15px rgba(0, 0, 0, 0.1), 30px 30px 15px rgba(0, 0, 0, 0.1), inset 1px 1px 2px var(--white);
 }
 
 .button-filter--active {
@@ -409,6 +431,12 @@ main p {
 
 .filter__searchBar > i {
   color: var(--white);
+    position: absolute;
+    /* padding: 10px 0; */
+    right: 20px;
+    /* color: #555; */
+    font-size: 1.5em;
+    cursor: pointer;
 }
 
 /** -----CARDS----- **/
@@ -595,7 +623,7 @@ main p {
 }
 
 .card__img img:hover {
-  transform: rotate(10deg);
+  transition: all 0.5s ease;
 }
 
 .card__info {
@@ -614,12 +642,14 @@ main p {
 .button-card-container{
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
 }
 
 .card__button{
-    /*display: inline-block;*/
-    background-color: var(--mahogany);
-    padding: 0.5em 1em;
+     /*display: inline-block;*/
+    /*background-color: var(--gray);*/
+    font-size: large;
+    padding: 0.5em 3em;
     border-radius: 0.4em;
     cursor: pointer;
     border: none;
@@ -634,8 +664,36 @@ main p {
     /*transform: translateX(-50%);*/
     /* margin-left: -1em; */
 }
+.view_more{
+  background-color: transparent;
+  display: none;
+  opacity: 1;
+}
+.card__img:hover .view_more{
+  display: block;
+  position: absolute;
+  top: 10em;
+  color: var(--white);
+  text-shadow: 1px 1px 2px gray;
+  font-size: large;
+  width: 90%;
+  padding: 1em;
+  background: rgba(225,225,225,0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  align-self: center;
+  align-items: center;
+}
+.view_more:hover{
+  opacity: 1;
+  z-index: 99;
+}
 .card__button:active{
     background-color: var(--gray);
+}
+.add_to_cart{
+  background-color: var(--mahogany);
+  color: var(--white);
 }
 /** -----CONTACT FORM----- **/
 
@@ -720,7 +778,7 @@ textarea {
     min-height: 70vh;
     margin: 0;
     padding-top: 10vh;
-    padding-bottom: 10vh;
+    padding-bottom: 2vh;
 }
 
 .item-cart {
@@ -788,40 +846,46 @@ textarea {
     }
 }
 .total-price{
-    font-size: x-large;
-    display: flex;
-    justify-content: flex-end;
-    margin: 2% 25%;
-    color: var(--white);
+  width: 100%;
+  font-size: x-large;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 2em;
+  color: var(--white);
+}
+.total-product-price{
+  margin-right: 2em;
 }
 .btns-container{
-    display: flex;
-    justify-content: space-around;
+  padding: 3em 0 0 7em;
   }
-  .btn-limpiar, .btn-finalizar{
-    padding: 10px 20px 10px 20px;
-    border-radius: 5px;
-    border: none;
-    box-shadow: 2px 2px 2px var(--gray);
-}
+
 .btn-limpiar{
-    background-color: var(--white);
+  color: var(--white);
+  border: none;
+  font-size: large;
+  background-color: transparent;
+  cursor: pointer;
 }
-.btn-limpiar:hover{
-    background-color: var(--green);
-    color: var(--white);
-}
+.fa-delete-all{
+  position: relative;
+  color: var(--white);
+  font-weight:100;
+  }
+
 .btn-finalizar{
-    background-color: var(--green);
-    color: var(--white);
-    padding: 10px 20px 10px 20px;
-    border-radius: 5px;
-    border: none;
-    box-shadow: 2px 2px 2px var(--gray);
+  background-color: var(--green);
+  color: var(--white);
+  font-size: large;
+  padding: 1em 3em;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 2px 2px 2px var(--gray);
+  margin-right: 8em;
 }
 .btn-finalizar:hover{
-    background-color: var(--white);
-    color: var(--black);
+  background-color: #266779;
   }
   .empty-cart{
     width: 40%;
@@ -841,11 +905,13 @@ textarea {
   }
   .empty-button{
     background-color: var(--mahogany);
-    padding: 1vh 2vw 1vh 2vw;
+    padding: 1.5vh 3vw 1.5vh 3vw;
+    font-size: large;
     color: var(--white);
     border-radius: 5px;
     border: none;
     margin: 2vh;
+    cursor: pointer;
   }
   .empty-button:active{
     background-color: var(--gray);
@@ -896,7 +962,7 @@ footer a:hover{
 .footer-top{
     display: flex;
     justify-content: space-around;
-    margin-top: 8em;
+    margin-top: 9em;
     padding-bottom: 2em;
     width: 100%;
     /* background-color: red; */
@@ -908,6 +974,7 @@ footer a:hover{
     flex-direction: column;
     margin-bottom: 3em;
     margin-top: 0.5em;
+    z-index: 100;
 }
 
 .footer-contacto .contacto-mail a:nth-child(1){
@@ -1089,3 +1156,60 @@ footer a:hover{
         background-position-x: 1000px;
     }
 } */
+
+.welcome{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    color: var(--white);
+    height: 100vh;
+}
+
+.welcome img{
+    width: 100px;
+}
+
+.welcome button{
+    background-color: var(--white);
+    padding: 1em 2em;
+    border-radius: 2em;
+    font-weight: bold;
+    border: none;
+    text-transform: uppercase;
+}
+
+.welcome button a{
+    color: var(--black);
+}
+
+.welcome button:nth-of-type(2) a{
+    color: var(--white);
+}
+
+.welcome button:hover{
+    background-color: var(--orange);
+}
+
+.welcome button:nth-of-type(2){
+    /* background-color: red; */
+    background-color: transparent;
+    color: var(--white);
+}
+
+.welcome button:nth-of-type(2):hover{
+    /* color: var(--black); */
+    background-color: var(--white)
+}
+
+.welcome button:nth-of-type(2):hover a{
+    color: var(--black);
+}
+
+.welcome__text{
+    text-align: center;
+    width: 50%;
+    /* background-color: red; */
+    color: #7a7a7a;
+}

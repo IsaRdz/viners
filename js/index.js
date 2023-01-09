@@ -10,8 +10,10 @@ const getWines = async () => {
 
 const wineCard = (wine) => {
   return `<div id="wine${wine.id}" class="card">
+
                 <div class="card__body">
-                    <div class="card__img">
+                <div class="card__img">
+                  <a href="./pages/detail.html"><button value='${wine.marca}' class="card__button view_more">Ver más</button></a>
                         <img
                         src="${wine.img}"
                         alt="${wine.marca}"
@@ -23,7 +25,7 @@ const wineCard = (wine) => {
                     </div>
                     <div class="button-card-container">
                         <a href="#popup-add-cart" rel="noopener noreferrer" class="link"><button value='${wine.marca}' class="card__button add_to_cart">Agregar al carrito</button></a>
-                        <a href="./pages/detail.html"><button value='${wine.marca}' class="card__button">Ver producto</button></a>
+                        <!--<a href="./pages/detail.html"><button value='${wine.marca}' class="card__button view_more">Ver más</button></a>-->
                     </div>
                 </div>
             </div>`
@@ -162,6 +164,27 @@ buttonsSelect.forEach((button) => {
     cardButtonListeners()
   })
 })
+
+ const filterListeners = () => {
+    const filtersContainers = document.querySelectorAll('.button-filter')
+    filtersContainers.forEach(filter => {
+        filter.addEventListener('click', event => {
+            allWines.map(wine => {
+                let wineToFilter = document.querySelector(`#wine${wine.id}`)
+                wineToFilter.classList.remove('hidden')
+                if (event.target.id == 'all_wines') {
+                    wineToFilter.classList.remove('hidden')
+                } 
+                else {
+                    if (wine.tipo.split(' ')[0] != event.target.id ) {
+                        wineToFilter.classList.toggle('hidden')
+                    }
+                }
+            })
+        })
+    })
+}
+filterListeners() 
 
 const addToCartListener = () => {
   const addToCartButtonsContainers = document.querySelectorAll(".add_to_cart")
