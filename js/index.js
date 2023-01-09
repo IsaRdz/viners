@@ -2,10 +2,10 @@ var allWines = []
 var cartProducts = []
 
 const getWines = async () => {
-  var response = await fetch("./db.json")
-  const myWines = await response.json()
-
-  return myWines.vinos
+    var response = await fetch('../db.json')
+    const myWines = await response.json()
+    
+    return myWines.vinos
 }
 
 const wineCard = (wine) => {
