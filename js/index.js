@@ -13,7 +13,7 @@ const wineCard = (wine) => {
 
                 <div class="card__body">
                 <div class="card__img">
-                  <a href="../pages/detail.html"><button value='${wine.marca}' class="card__button view_more">Ver más</button></a>
+                  <a href="../pages/detail.html"><button value='${wine.titleProduct}' class="card__button view_more">Ver más</button></a>
                         <img
                         src="${wine.imageProduct}"
                         alt="${wine.titleProduct}"

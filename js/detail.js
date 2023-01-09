@@ -71,7 +71,7 @@ const readLocalStorage = () => {
   wine = JSON.parse(localStorage.getItem("myEvent"))
 
   const detailContainer = document.querySelector(".detail-container")
-  console.log(wine)
+//   console.log(wine)
 
   detailContainer.insertAdjacentHTML("beforeend", renderDetail(wine))
   buttonListener()
