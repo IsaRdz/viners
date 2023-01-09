@@ -77,7 +77,7 @@
 }
 .clean-cart {
   background-color: var(--green);
-  padding: 1vh 5vh 1vh 5vh;
+  padding: 1vh;
   color: var(--yellow);
   border-radius: 3px;
   font-size: medium;
@@ -152,14 +152,16 @@
   /* flex-direction: column; */
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 2em;
+  margin: 2em 2em 2em 2em;
 }
 
 .copiar_coupon h2 {
   font-size: 20px;
   font-weight: bold;
-  color: #333; }
-/*h3{
+  color: #333; 
+}
+
+.price_cont h3{
   font-size: 40px;
   font-weight: bold;
   color: #7e57c2;
@@ -202,6 +204,7 @@ span{
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 10px;
 }
 .price_cont{
   width: 100%;
