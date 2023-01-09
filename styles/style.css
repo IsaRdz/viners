@@ -372,10 +372,10 @@ a {
 .filter__searchBar{
     height: 50px;
     position: relative;
-    box-shadow: 	0px 0px 11px 1px rgba(0,0,0,0.14),
-		            0px 0px 19px 6px rgba(0,0,0,0.03),
-		            0px 0px 26px 12px rgba(0,0,0,0.14),
-		            0px 0px 29px 12px rgba(0,0,0,0.14);
+    box-shadow: 0px 0px 11px 1px rgba(0,0,0,0.14),
+                0px 0px 19px 6px rgba(0,0,0,0.03),
+                0px 0px 26px 12px rgba(0,0,0,0.14),
+                0px 0px 29px 12px rgba(0,0,0,0.14);
     border:	1px solid rgba(0,0,0,0);
     border-radius:	4px;
     display: flex;
@@ -1072,3 +1072,60 @@ footer a:hover{
         background-position-x: 1000px;
     }
 } */
+
+.welcome{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    color: var(--white);
+    height: 100vh;
+}
+
+.welcome img{
+    width: 100px;
+}
+
+.welcome button{
+    background-color: var(--white);
+    padding: 1em 2em;
+    border-radius: 2em;
+    font-weight: bold;
+    border: none;
+    text-transform: uppercase;
+}
+
+.welcome button a{
+    color: var(--black);
+}
+
+.welcome button:nth-of-type(2) a{
+    color: var(--white);
+}
+
+.welcome button:hover{
+    background-color: var(--orange);
+}
+
+.welcome button:nth-of-type(2){
+    /* background-color: red; */
+    background-color: transparent;
+    color: var(--white);
+}
+
+.welcome button:nth-of-type(2):hover{
+    /* color: var(--black); */
+    background-color: var(--white)
+}
+
+.welcome button:nth-of-type(2):hover a{
+    color: var(--black);
+}
+
+.welcome__text{
+    text-align: center;
+    width: 50%;
+    /* background-color: red; */
+    color: #7a7a7a;
+}
