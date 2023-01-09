@@ -2,10 +2,10 @@ var allWines = []
 var cartProducts = []
 
 const getWines = async () => {
-  var response = await fetch("./db.json")
-  const myWines = await response.json()
-
-  return myWines.vinos
+    var response = await fetch('../db.json')
+    const myWines = await response.json()
+    
+    return myWines.vinos
 }
 
 const wineCard = (wine) => {
@@ -13,7 +13,7 @@ const wineCard = (wine) => {
 
                 <div class="card__body">
                 <div class="card__img">
-                  <a href="./pages/detail.html"><button value='${wine.marca}' class="card__button view_more">Ver más</button></a>
+                  <a href="../pages/detail.html"><button value='${wine.marca}' class="card__button view_more">Ver más</button></a>
                         <img
                         src="${wine.imageProduct}"
                         alt="${wine.titleProduct}"
