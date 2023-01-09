@@ -2,9 +2,9 @@ var CartProducts = []
 
 const productRender = (wine) => {
   return `<div id="Container${wine.id}" class="product-resume">
-                <p class="product-name">${wine.marca}</p>
+                <p class="product-name">${wine.titleProduct}</p>
                 <p class="product-units">Cant. x${wine.cantidad}</p>
-                <p class="product-price">$ ${wine.precio}</p>
+                <p class="product-price">$ ${wine.price}</p>
                 <i id="${wine.id}" class="fa-solid fa-trash-can"></i>
             </div>`
 }
