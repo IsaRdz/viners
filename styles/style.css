@@ -98,6 +98,10 @@ header{
     /* background-color: red; */
 }
 
+.invisible{
+  display: none;  
+}
+
 .nav-container > ul {
   display: flex;
   flex-direction: row;
