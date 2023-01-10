@@ -68,7 +68,7 @@ const subtractListener = () => {
                                 document.querySelector('.cart_products_total').innerHTML--
                                 Unit.innerHTML--
                                 CartProduct.cantidad--
-                                document.querySelector(`#Precio${event.target.id}`).innerHTML = CartProduct.cantidad * CartProduct.price
+                                document.querySelector(`#Precio${event.target.id}`).innerHTML = `$ ${CartProduct.cantidad * CartProduct.price}`
                                 localStorage.setItem('CartProducts', JSON.stringify(CartProducts))
                                 renderTotalPrice()
                             }
@@ -102,7 +102,7 @@ const addListener = () => {
                             document.querySelector('.cart_products_total').innerHTML++
                             Unit.innerHTML++
                             CartProduct.cantidad++
-                            document.querySelector(`#Precio${event.target.id}`).innerHTML = CartProduct.cantidad * CartProduct.price
+                            document.querySelector(`#Precio${event.target.id}`).innerHTML = `$ ${CartProduct.cantidad * CartProduct.price}`
                             localStorage.setItem('CartProducts', JSON.stringify(CartProducts))
                             renderTotalPrice()
                             subtractButtonsContainer.forEach(subtract => {
