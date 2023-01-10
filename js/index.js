@@ -165,27 +165,6 @@ buttonsSelect.forEach((button) => {
   })
 })
 
- const filterListeners = () => {
-    const filtersContainers = document.querySelectorAll('.button-filter')
-    filtersContainers.forEach(filter => {
-        filter.addEventListener('click', event => {
-            allWines.map(wine => {
-                let wineToFilter = document.querySelector(`#wine${wine.id}`)
-                wineToFilter.classList.remove('hidden')
-                if (event.target.id == 'all_wines') {
-                    wineToFilter.classList.remove('hidden')
-                } 
-                else {
-                    if (wine.category.split(' ')[0] != event.target.id ) {
-                        wineToFilter.classList.toggle('hidden')
-                    }
-                }
-            })
-        })
-    })
-}
-filterListeners() 
-
 const addToCartListener = () => {
     const addToCartButtonsContainers = document.querySelectorAll(".add_to_cart")
     CartProducts = JSON.parse(localStorage.getItem("CartProducts"))
