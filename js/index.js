@@ -227,3 +227,13 @@ window.onscroll = () => {
     })
   })
 }
+
+//Pre-Loader
+window.onload = function(){
+  const $loaderContainer = document.getElementById("loaderContainer");
+  const $body = document.getElementById("body");
+  $loaderContainer.style.visibility = "hidden";
+  $loaderContainer.style.display = "none";
+  $body.style.overflow = "visible";
+  // // alert("hola")
+}

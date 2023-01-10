@@ -30,6 +30,43 @@ main{
     min-height: 72vh;
 }
 
+/** -----PRE-LOADER----- **/
+
+.loaderContainer{
+  height: 100vh;
+  background-color: var(--gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.loader:before , .loader:after{
+  content: '';
+  border-radius: 50%;
+  position: absolute;
+  inset: 0;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3) inset;
+}
+.loader:after {
+  box-shadow: 0 2px 0 #FF3D00 inset;
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+  0% {  transform: rotate(0)}
+  100% { transform: rotate(360deg)}
+}
+
+.hide{
+  overflow: hidden;
+}
+
 /** -----HEADER----- **/
 header{
     width: 100%;
@@ -1174,28 +1211,25 @@ footer a:hover{
     font-weight: bold;
     border: none;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
-.welcome button a{
+.welcome a{
     color: var(--black);
+    
 }
 
-.welcome button:nth-of-type(2) a{
-    color: var(--white);
+.welcome a:nth-of-type(2) button{
+    background-color: transparent;
+    color: white;
 }
 
 .welcome button:hover{
     background-color: var(--orange);
 }
 
-.welcome button:nth-of-type(2){
-    /* background-color: red; */
-    background-color: transparent;
-    color: var(--white);
-}
-
-.welcome button:nth-of-type(2):hover{
-    /* color: var(--black); */
+.welcome a:nth-of-type(2):hover button{
+    color: var(--black);
     background-color: var(--white)
 }
 
@@ -1206,6 +1240,5 @@ footer a:hover{
 .welcome__text{
     text-align: center;
     width: 50%;
-    /* background-color: red; */
     color: #7a7a7a;
 }
