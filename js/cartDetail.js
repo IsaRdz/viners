@@ -191,6 +191,7 @@ function copyCoupon() {
 function canjearCoupon() {
     let canjearTxt = document.getElementById("input2").value;
     let canjearBtn = document.getElementById("btn2");
+    const totalPriceContainer = document.querySelector('.total-product-price')
 
     let number = document.getElementById("price").innerHTML;
     let discount = document.getElementById("discount");
@@ -198,16 +199,17 @@ function canjearCoupon() {
     function getPercent(percent) { return number / 100 * percent; }
     let percentResult = getPercent(90); //VOY A OBTENER EL 90 PORCIENTO DE 200.
 
-    if (canjearTxt === "54ldqwer23") {
+    if (canjearTxt === "viners10") {
         canjearBtn.innerHTML = "cupon canjeado";
 
         discount.innerHTML = `<h3 id="number2">${percentResult}</h3><h3>$</h3><span>${number}$</span>`;
+        totalPriceContainer.innerHTML = `Total: $${percentResult}`;
 
     } else if (canjearTxt === "") {
 
         discount.innerHTML = '<h3 style="font-size: 15px; width: 300px;">Aún no has pegado el código 🤔</h3>';
          
-    } else if (canjearTxt !== "54ldqwer23") {
+    } else if (canjearTxt !== "viners10") {
         discount.innerHTML = '<h3 style="font-size: 15px; width: 300px;">El cupón no es válido 🥲</h3>';
     } 
 }

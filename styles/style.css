@@ -459,7 +459,7 @@ main p {
 }
 
 .button-filter--active {
-  background-color: lightsteelblue;
+  background-color: rgb(43, 188, 135);
 }
 
 .filter__searchBar > i {
@@ -477,7 +477,6 @@ main p {
     position: relative; 
     background-color: red; 
 } */
-
 .container__background-triangle{
     max-width: 1200px;
     height: 600px;

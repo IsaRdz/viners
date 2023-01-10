@@ -235,5 +235,4 @@ window.onload = function(){
   $loaderContainer.style.visibility = "hidden";
   $loaderContainer.style.display = "none";
   $body.style.overflow = "visible";
-  // // alert("hola")
 }
