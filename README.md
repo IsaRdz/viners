@@ -114,19 +114,15 @@ Luego, la aplicación debería comenzar a funcionar sin problemas.
 <br>
 
 ## Capturas
-![](https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Capturas%2FCaptura1.png?alt=media&token=ee25490c-5222-491d-b52a-4ec9bb20ca39)<br>
-> Navbar y Slider
-<br>
-
-![](https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Capturas%2FCaptura2.png?alt=media&token=9d73475d-54a4-4c97-b02f-506d730d9f96)<br>
+![](https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Capturas%2FCards.png?alt=media&token=22a977e2-9808-48c2-af1d-c4f83fa1f6f3)<br>
 > Productos
 <br>
 
-![](https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Capturas%2FCaptura3.png?alt=media&token=e5d60cd0-e7fc-4625-9e66-2bca0a89bd62)<br>
-> Contacto
+![](https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Capturas%2FDetails.png?alt=media&token=0f1cc7b8-0f40-4cd8-a02a-a4c2f7a0b547)<br>
+> Details
 <br>
 
-![](https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Capturas%2FCaptura4.png?alt=media&token=64ad0611-205c-4015-bb57-f91bd99d00b7)
+![](https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Capturas%2FFooter.png?alt=media&token=5b3d5633-fc67-4cbb-aa26-2403e23a62a2)
 > Footer
 <br>
 
