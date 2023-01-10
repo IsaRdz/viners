@@ -1,10 +1,10 @@
 const renderDetail = (wine) => {
     return `<div id="Container${wine.id}" class="item-cart">
                 <div class="item-image">
-                    <img src="${wine.img}" alt="${wine.marca}">
+                    <img src="${wine.imageProduct}" alt="${wine.titleProduct}">
                 </div>
                 <div class="item-name">
-                    <p>${wine.marca}</p>
+                    <p>${wine.titleProduct}</p>
                 </div>
                 <form class="count-product">
                     <button id="${wine.id}" type="button" class="button-item-cart subtract" aria-label="Subtract one item">-</button>
@@ -12,7 +12,7 @@ const renderDetail = (wine) => {
                     <button id="${wine.id}" type="button" class="button-item-cart add" aria-label="Add one item">+</button>
                 </form>
                 <div class="item-price">
-                    <p id="Precio${wine.id}">$ ${wine.precio * wine.cantidad}</p>
+                    <p id="Precio${wine.id}">$ ${wine.price * wine.cantidad}</p>
                 </div>
                 <i id="${wine.id}" class="fa-regular fa-trash-can fa-xl"></i>
             </div>`
@@ -68,7 +68,7 @@ const subtractListener = () => {
                                 document.querySelector('.cart_products_total').innerHTML--
                                 Unit.innerHTML--
                                 CartProduct.cantidad--
-                                document.querySelector(`#Precio${event.target.id}`).innerHTML = CartProduct.cantidad * CartProduct.precio
+                                document.querySelector(`#Precio${event.target.id}`).innerHTML = `$ ${CartProduct.cantidad * CartProduct.price}`
                                 localStorage.setItem('CartProducts', JSON.stringify(CartProducts))
                                 renderTotalPrice()
                             }
@@ -98,11 +98,11 @@ const addListener = () => {
             CartProducts.map(CartProduct => {
                 if (CartProduct.id == event.target.id) {
                     unitsContainer.forEach(Unit => {
-                        if (Unit.id == event.target.id) {
+                        if (Unit.id == event.target.id && CartProduct.stock > CartProduct.cantidad) {
                             document.querySelector('.cart_products_total').innerHTML++
                             Unit.innerHTML++
                             CartProduct.cantidad++
-                            document.querySelector(`#Precio${event.target.id}`).innerHTML = CartProduct.cantidad * CartProduct.precio
+                            document.querySelector(`#Precio${event.target.id}`).innerHTML = `$ ${CartProduct.cantidad * CartProduct.price}`
                             localStorage.setItem('CartProducts', JSON.stringify(CartProducts))
                             renderTotalPrice()
                             subtractButtonsContainer.forEach(subtract => {
@@ -126,7 +126,7 @@ const renderTotalPrice = () => {
     var CartProducts = JSON.parse(localStorage.getItem('CartProducts'))
 
     let preciototal = CartProducts.reduce((accumulator, product) => 
-        accumulator + product.cantidad * product.precio
+        accumulator + product.cantidad * product.price
     ,0)
 
     totalPriceContainer.innerHTML = `Total: $${preciototal}`
@@ -191,6 +191,7 @@ function copyCoupon() {
 function canjearCoupon() {
     let canjearTxt = document.getElementById("input2").value;
     let canjearBtn = document.getElementById("btn2");
+    const totalPriceContainer = document.querySelector('.total-product-price')
 
     let number = document.getElementById("price").innerHTML;
     let discount = document.getElementById("discount");
@@ -198,16 +199,17 @@ function canjearCoupon() {
     function getPercent(percent) { return number / 100 * percent; }
     let percentResult = getPercent(90); //VOY A OBTENER EL 90 PORCIENTO DE 200.
 
-    if (canjearTxt === "54ldqwer23") {
+    if (canjearTxt === "viners10") {
         canjearBtn.innerHTML = "cupon canjeado";
 
         discount.innerHTML = `<h3 id="number2">${percentResult}</h3><h3>$</h3><span>${number}$</span>`;
+        totalPriceContainer.innerHTML = `Total: $${percentResult}`;
 
     } else if (canjearTxt === "") {
 
         discount.innerHTML = '<h3 style="font-size: 15px; width: 300px;">Aún no has pegado el código 🤔</h3>';
          
-    } else if (canjearTxt !== "54ldqwer23") {
+    } else if (canjearTxt !== "viners10") {
         discount.innerHTML = '<h3 style="font-size: 15px; width: 300px;">El cupón no es válido 🥲</h3>';
     } 
 }

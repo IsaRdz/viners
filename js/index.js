@@ -2,10 +2,10 @@ var allWines = []
 var cartProducts = []
 
 const getWines = async () => {
-  var response = await fetch("./db.json")
-  const myWines = await response.json()
-
-  return myWines.vinos
+    var response = await fetch('../db.json')
+    const myWines = await response.json()
+    
+    return myWines.vinos
 }
 
 const wineCard = (wine) => {
@@ -13,18 +13,18 @@ const wineCard = (wine) => {
 
                 <div class="card__body">
                 <div class="card__img">
-                  <a href="./pages/detail.html"><button value='${wine.marca}' class="card__button view_more">Ver más</button></a>
+                  <a href="../pages/detail.html"><button value='${wine.titleProduct}' class="card__button view_more">Ver más</button></a>
                         <img
-                        src="${wine.img}"
-                        alt="${wine.marca}"
+                        src="${wine.imageProduct}"
+                        alt="${wine.titleProduct}"
                         />
                     </div>
                     <div class="card__info">
-                        <h2>${wine.marca}</h2>
-                        <h2>${wine.tipo}</h2>
+                        <h2>${wine.titleProduct}</h2>
+                        <h2>${wine.category}</h2>
                     </div>
                     <div class="button-card-container">
-                        <a href="#popup-add-cart" rel="noopener noreferrer" class="link"><button value='${wine.marca}' class="card__button add_to_cart">Agregar al carrito</button></a>
+                        <a href="#popup-add-cart" rel="noopener noreferrer" class="link"><button value='${wine.titleProduct}' class="card__button add_to_cart">Agregar al carrito</button></a>
                         <!--<a href="./pages/detail.html"><button value='${wine.marca}' class="card__button view_more">Ver más</button></a>-->
                     </div>
                 </div>
@@ -37,7 +37,7 @@ const cardButtonListeners = () => {
     cardButtonsContainers.forEach((cardButton) => {
         cardButton.addEventListener("click", (event) => {
             allWines.map((wine) => {
-                wine.marca == event.target.value
+                wine.titleProduct == event.target.value
                 ? localStorage.setItem("myEvent", JSON.stringify(wine))
                 : null
             })
@@ -50,7 +50,7 @@ const renderAllWines = async () => {
 
     CartProductsExist = JSON.parse(localStorage.getItem('CartProducts'))
     CartProductsExist ? null : localStorage.setItem('CartProducts', JSON.stringify(cartProducts))
-
+    
     allWines = await getWines()
 
     allWines.map(wine => {
@@ -81,7 +81,7 @@ const wineTypes = async () => {
   allWines = await getWines()
   let tipos = []
   allWines.map((wine) => {
-    tipos.push(wine.tipo)
+    tipos.push(wine.category)
   })
   return [...new Set(tipos)]
 }
@@ -91,7 +91,7 @@ function filtrarPorTipo(vinos, tipoSeleccionado) {
     return vinos
   } else {
     return vinos.filter(
-      (vino) => vino.tipo.toLowerCase() === tipoSeleccionado.toLowerCase()
+      (vino) => vino.category.toLowerCase() === tipoSeleccionado.toLowerCase()
     )
   }
 }
@@ -99,8 +99,8 @@ function filtrarPorTipo(vinos, tipoSeleccionado) {
 function filtrarPorBusqueda(vinos, busqueda) {
   return vinos.filter((vino) => {
     return (
-      vino.marca.toLowerCase().includes(busqueda.toLowerCase()) ||
-      vino.tipo.toLowerCase().includes(busqueda.toLowerCase())
+      vino.titleProduct.toLowerCase().includes(busqueda.toLowerCase()) ||
+      vino.category.toLowerCase().includes(busqueda.toLowerCase())
     )
   })
 }
@@ -176,7 +176,7 @@ buttonsSelect.forEach((button) => {
                     wineToFilter.classList.remove('hidden')
                 } 
                 else {
-                    if (wine.tipo.split(' ')[0] != event.target.id ) {
+                    if (wine.category.split(' ')[0] != event.target.id ) {
                         wineToFilter.classList.toggle('hidden')
                     }
                 }
@@ -187,28 +187,29 @@ buttonsSelect.forEach((button) => {
 filterListeners() 
 
 const addToCartListener = () => {
-  const addToCartButtonsContainers = document.querySelectorAll(".add_to_cart")
-  CartProducts = JSON.parse(localStorage.getItem("CartProducts"))
+    const addToCartButtonsContainers = document.querySelectorAll(".add_to_cart")
+    CartProducts = JSON.parse(localStorage.getItem("CartProducts"))
 
-  addToCartButtonsContainers.forEach((addToCartButton) => {
-    addToCartButton.addEventListener("click", (event) => {
-      allWines.map((wine) => {
-        if (wine.marca == event.target.value) {
-          if (CartProducts.find((product) => product.id == wine.id)) {
-            CartProducts.map((product) => {
-              if (product.id == wine.id) {
-                product.cantidad++
-              }
+    addToCartButtonsContainers.forEach((addToCartButton) => {
+        addToCartButton.addEventListener("click", (event) => {
+            allWines.map((wine) => {
+                if (wine.titleProduct == event.target.value) {
+                    if (CartProducts.find((product) => product.id == wine.id)) {
+                        CartProducts.map((product) => {
+                            if (product.id == wine.id && product.stock > product.cantidad) {
+                                product.cantidad++
+                                document.querySelector(".cart_products_total").innerHTML++
+                            }
+                        })
+                    } else {
+                        CartProducts.push(wine)
+                        document.querySelector(".cart_products_total").innerHTML++
+                    }
+                    localStorage.setItem("CartProducts", JSON.stringify(CartProducts))
+                }
             })
-          } else {
-            CartProducts.push(wine)
-          }
-          document.querySelector(".cart_products_total").innerHTML++
-          localStorage.setItem("CartProducts", JSON.stringify(CartProducts))
-        }
-      })
+        })
     })
-  })
 }
 
 const buttonTop = document.querySelector("#buttonTop")
@@ -225,4 +226,13 @@ window.onscroll = () => {
       behavior: "smooth",
     })
   })
+}
+
+//Pre-Loader
+window.onload = function(){
+  const $loaderContainer = document.getElementById("loaderContainer");
+  const $body = document.getElementById("body");
+  $loaderContainer.style.visibility = "hidden";
+  $loaderContainer.style.display = "none";
+  $body.style.overflow = "visible";
 }

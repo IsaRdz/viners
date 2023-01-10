@@ -3,29 +3,29 @@ var wine = {}
 const renderDetail = (wine) => {
     return `<div class="icon"><i class="fa-solid fa-heart fa-xl active" id="fa-heart"></i></div>
             <picture class="image-container">
-                <img src="${wine.img}" alt="${wine.marca}">
+                <img src="${wine.imageProduct}" alt="${wine.titleProduct}">
             </picture>
             <div class="detail-info-container">
                 <div class="name-id-container">
-                    <h1 class="wine-name">${wine.marca}</h1>
+                    <h1 class="wine-name">${wine.titleProduct}</h1>
                     <p class="wine-id">ID producto: ${wine.id}</p>
                 </div>
-                <h2 class="wine-price">Precio: $ ${wine.precio}</h2>
+                <h2 class="wine-price">Precio: $ ${wine.price}</h2>
                 <div class="description-container">
                     <h3 class="wine-description-title">Descripción:</h3>
                     <p class="wine-description">
-                        ${wine.descripcion}
+                        ${wine.descriptionProduct}
                     </p>
                     <div class="wine-category">
                     <h3 class="wine-category-title">Categoría: </h3>
                     <p class="wine-categories">
-                        ${wine.tipo}
+                        ${wine.category}
                     </p>
                     </div>
                 </div>
                 <div class="wine-available">
                     <h3 class="wine-available-title"> Stock: </h3>
-                    <p>15 unidades</p>
+                    <p>${wine.stock} unidades</p>
                 </div>
                 <div class="purchase-container">
                     <a href="#popup-add-cart" rel="noopener noreferrer" class="link">
@@ -42,13 +42,16 @@ const buttonListener = () => {
         var CartProducts = JSON.parse(localStorage.getItem('CartProducts'))
         if (CartProducts.find(product => product.id == wine.id)) {
             CartProducts.map(product => {
-                product.id == wine.id ? product.cantidad++ : null
+                if (product.id == wine.id && product.stock > product.cantidad) {
+                    product.cantidad++
+                    document.querySelector('.cart_products_total').innerHTML++
+                }
             })
         }
         else {
             CartProducts.push(wine)
+            document.querySelector('.cart_products_total').innerHTML++
         }
-        document.querySelector('.cart_products_total').innerHTML++
         localStorage.setItem('CartProducts', JSON.stringify(CartProducts))
     })
 }
@@ -68,6 +71,7 @@ const readLocalStorage = () => {
   wine = JSON.parse(localStorage.getItem("myEvent"))
 
   const detailContainer = document.querySelector(".detail-container")
+//   console.log(wine)
 
   detailContainer.insertAdjacentHTML("beforeend", renderDetail(wine))
   buttonListener()
