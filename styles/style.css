@@ -1242,3 +1242,24 @@ footer a:hover{
     width: 50%;
     color: #7a7a7a;
 }
+
+.item-name {
+  width: 400px;
+  font-size: 25px;
+  font-weight: 900;
+}
+
+.item-price {
+  width: 150px;
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.show-units {
+  width: 30px;
+  text-align: center;
+}
+
+.button-item-cart {
+  width: 30px;
+}
