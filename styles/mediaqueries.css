@@ -50,6 +50,12 @@
     .welcome__text {
       width: 60%;
     }
+    .hide-header{
+        display: flex;
+    }
+    .hide-body{
+        display: none;
+    }
 }
 
 @media (max-width: 767px) {
@@ -96,6 +102,9 @@
 .welcome__text {
   width: 70%;
 }
+.filter__searchBar > input {
+  width: 16em;
+}
 }
 
 /* Celu */
@@ -140,6 +149,9 @@
 }
 .welcome__text {
   width: 80%;
+}
+.filter__searchBar > input {
+  width: 10em;
 }
 }
 
@@ -207,5 +219,8 @@
 }
 .welcome__text {
   width: 90%;
+}
+.filter__searchBar > input {
+  width: 5em;
 }
 }

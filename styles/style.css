@@ -459,7 +459,7 @@ main p {
 }
 
 .filter__searchBar>input{
-    width: 20em;
+    width: 22em;
     height: 100%;
     padding: 10px 25px;
     border: none;
@@ -1273,4 +1273,8 @@ footer a:hover{
 
 .button-item-cart {
   width: 30px;
+}
+
+.hide-header {
+  display: none;
 }
