@@ -47,6 +47,18 @@
     .footer-container > div{
         margin-right: 1em;
     }
+      /** -----LOGIN----- **/
+  #popupBody{
+    width: 60%;
+    margin-top: 5vh;
+  }
+  .popupContent{
+    padding: 7vh 5vw 1vh 5vw;
+  }
+  .container-icons img{
+    margin: 3vh 3vw;
+    width: 24px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -80,7 +92,78 @@
   .cart-resume-container {
     width: 70% !important;
   }
+  /** -----LOGIN----- **/
+  #popupBody{
+    width: 80%;
+  }
+  .popupContent{
+    padding: 7vh 5vw 1vh 5vw;
+  }
+  .container-icons img{
+    margin: 3vh 3vw;
+    width: 24px;
+  }
+  /** -----HOME'S CARDS----- **/
+  .view_more{
+    position: absolute;
+    display: block;
+    z-index: 99;
+    top: 10em;
+    color: var(--white);
+    text-shadow: 1px 1px 2px gray;
+    font-size: large;
+    width: 90%;
+    padding: 1em;
+    background: rgba(225,225,225,0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    align-self: center;
+    align-items: center;
+  }
+
+
+  /** -----DETAIL----- **/
+  .detail-container{
+    width: 85%;
+  }
+  .image-container{
+    width: 80%;
+  }
+  .detail-info-container{
+    width: 85%;
+  }
+  .name-id-container{
+    text-align: center;
+    padding: 0;
+    justify-content: center;
+  }
+  .wine-name{
+    width: 100%;
+  }
+  .wine-description-title,
+  .wine-category-title,
+  .wine-available-title {
+    margin-top: 1vh;
 }
+
+/** -----CART RESUME----- **/
+.empty-cart {
+  width: 80%;
+}
+/** -----CONFIRMATION----- **/
+.confirmation-content{
+  width: 75%;
+}
+.main-title{
+  font-size: xx-large;
+}
+.order-number{
+  font-size: x-large;
+}
+
+
+}
+
 
 @media (max-width: 450px) {
   /** -----SLIDER----- **/
