@@ -181,9 +181,9 @@ main p {
     color: red;
 }
   
-main p {
+/*main p {
     margin: 2em;
-}
+}*/
 
 /** -----LOGIN----- **/
 
@@ -207,7 +207,7 @@ main p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 56%;
+  width: 40%;
   border-radius: 15px;
   box-shadow: 3px 3px 5px 2px var(--gray);
   color: var(--black);
@@ -229,13 +229,14 @@ main p {
 
 .popupContent{
   width: 100%;
-  padding: 10vh 5vw 5vh 5vw;
+  padding: 10vh 5vw 0 5vw;
   color: var(--black);
   -webkit-mask-image: url(../assets/img/background-footer.svg);
   mask-image: url(../assets/img/background-footer.svg);
   -webkit-mask-size: cover;
   mask-size: cover;
   background-color: #6098a7;
+  border-radius: 15px;
 }
 .title-login{
   width: 100%;
@@ -286,10 +287,9 @@ main p {
   background-color: var(--green);
 }
 .forgot-pass{
-  padding-top: 1vh;
   text-align: center;
+  margin: 2vh;
 }
-
 /** -----CONFIRM OF ADD TO CART----- **/
 .overlay-add-cart {
     position: fixed;
@@ -899,10 +899,10 @@ textarea {
   color: var(--white);
 }
 .total-product-price{
-  margin-right: 2em;
+  margin-right: 2vw;
 }
 .btns-container{
-  padding: 3em 0 0 7em;
+  padding: 8vh 5vw 2vh;
   }
 
 .btn-limpiar{
@@ -922,11 +922,11 @@ textarea {
   background-color: var(--green);
   color: var(--white);
   font-size: large;
-  padding: 1em 3em;
+  padding: 1em 2em;
   border-radius: 5px;
   border: none;
   box-shadow: 2px 2px 2px var(--gray);
-  margin-right: 8em;
+  margin-right: 10vw;
 }
 .btn-finalizar:hover{
   background-color: #266779;

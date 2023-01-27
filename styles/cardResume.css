@@ -129,8 +129,8 @@
     cursor: pointer;
 }
 
-.empty_cart{
-    width: 100%;
+.empty-cart{
+    width: 40%;
     margin: auto;
     padding: 1vh 5vw 3vh 5vw;
     background-color: var(--white);
