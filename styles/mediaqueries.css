@@ -95,4 +95,29 @@
   .filter__searchBar > input {
     width: 100%;
   }
+  .iframe-container , .footer-direccion, .footer-contacto{
+    display: none;
+  }
+  .footer-top {
+    margin-top: 2em;
+  }
+  .circular-image {
+    height: 200px;
+    width: 200px;
+  }
+  .form-container {
+    width: 100%;
+    padding-bottom: 10px;
+  }
+  
+  .iframe-form-container{
+    padding: 3vh !important;
+  }
+  .form-container > h2 {
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-bottom: 5px;
+    padding: 5px !important;
+  }
 }
