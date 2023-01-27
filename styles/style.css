@@ -693,7 +693,7 @@ main p {
      /*display: inline-block;*/
     /*background-color: var(--gray);*/
     font-size: large;
-    padding: 0.5em 3em;
+    padding: 0.5em 1.5em;
     border-radius: 0.4em;
     cursor: pointer;
     border: none;
