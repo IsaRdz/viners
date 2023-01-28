@@ -154,8 +154,8 @@
     top: 10em;
     color: var(--white);
     text-shadow: 1px 1px 2px gray;
-    font-size: large;
-    width: 90%;
+    /*font-size: medium;*/
+    width: 80%;
     padding: 1em;
     background: rgba(225,225,225,0.1);
     backdrop-filter: blur(5px);
@@ -189,10 +189,57 @@
     margin-top: 1vh;
 }
 
-/** -----CART RESUME----- **/
+/** -----CART DETAIL----- **/
 .empty-cart {
   width: 80%;
 }
+.item-cart{
+  flex-wrap: wrap;
+  padding: 2vh 0 2vh 5vw;
+}
+.item-image{
+  width: 30%;
+  position: absolute;
+  left: 0;
+  margin-left: 8vw;
+}
+.item-name p{
+  text-align: center;
+  margin-bottom: 1vh;
+}
+.item-price{
+  width: auto;
+}
+.count-product{
+  margin-left: 15vw;
+}
+.item-cart i{
+  margin-right: 5vw;
+}
+.total-price{
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.total-product-price{
+  margin: 1vh;
+  text-align: center;
+}
+.btn-finalizar{
+  margin: 2vh 10vw;
+}
+.copiar_cupon, .canjear_cupon{
+  width: 90%;
+  height: auto;
+  padding: 2vh;
+}
+.action_cont input{
+  width: 50%;
+  text-align: center;
+}
+.action_cont button{
+  width: 50%;
+}
+
 /** -----CONFIRMATION----- **/
 .confirmation-content{
   width: 75%;
@@ -203,8 +250,6 @@
 .order-number{
   font-size: x-large;
 }
-
-
   .cards-container {
     gap: 2em;
     margin: 1em;
