@@ -1,3 +1,21 @@
+@media (max-width:1210px) {
+  .filter__searchBar{
+    width: 30em;
+  }  
+}
+
+@media (max-width:996px) {
+  .filter__searchBar{
+    width: 25em;
+  }  
+}
+
+@media (max-width:885px) {
+  .filter__searchBar{
+    width: 20em;
+  }  
+}
+
 /* Tablet */
 @media (max-width: 992px) {
   /** -----SLIDER----- **/
@@ -62,6 +80,98 @@
         align-items: center;
         gap: 2em;
     }
+
+    header{
+      min-height: 100px;
+      padding: 0 5%;
+      justify-content: space-between;
+    }
+
+    .nav-container{
+      position: relative;
+    }
+
+    .menu-hamb{
+      display: block;
+    }
+
+    .indices{
+      display: block;
+    }
+
+    .filter__searchBar{
+      width: 100%;
+    }
+
+    .filter__searchBar>input{
+      padding: 10px 65px;
+    }
+
+    .nav-container{
+      display: none;
+    }
+
+    .botones{
+      display: block;
+    }
+
+    .botones{
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      gap: 30px;
+    }
+}
+
+@media (min-width:767px) {
+  .menu{
+      position: static;
+      width: auto;
+      height: auto;
+      transform: translateX(0%);
+      float: right;
+      background-color: var(--blue);
+  }
+
+  .menu ul{
+      display: flex;
+  }
+
+  .menu a{
+      border: none;
+  }
+  
+  .menu .boton{
+      display: flex;
+      margin-top: 10px;
+      height: 20px;
+      background-color: rgba(255, 255, 255, 0.767);
+      border-top-left-radius: 10%;
+      border-bottom-right-radius: 10%;
+      border-bottom: none;
+      color: var(--celeste);
+      width: auto;
+      border-bottom: none;
+  }
+
+  .botones a:hover{
+      background-color: rgba(76, 99, 124, 0.3);
+      color: var(--white);
+      transition: all 0.3s ease;
+  }
+
+  .menu .entrar{
+      color: rgb(10, 121, 67);
+  }
+
+  header  label{
+      display: none;
+  }
+
+  #menu-toggle:checked ~ .x{
+      display: none;
+      transition: all 1s ease;
+  }
 }
 
 /* Celu */
@@ -80,6 +190,20 @@
   .cart-resume-container {
     width: 70% !important;
   }
+
+  .logo{
+    position: absolute;
+    left: 130px;
+    font-size: 1em;
+    cursor: pointer;
+    z-index: 200;
+  }
+}
+
+@media (max-width: 540px) {
+  .logo{
+    left: 120px;
+  }
 }
 
 @media (max-width: 450px) {
@@ -94,5 +218,9 @@
   }
   .filter__searchBar > input {
     width: 100%;
+  }
+
+  .logo{
+    left: 110px;
   }
 }
