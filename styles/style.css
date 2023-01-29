@@ -191,7 +191,18 @@ main p {
   margin-top: 1em;
 }
 
-/** -----LOGIN----- **/
+.error {
+    color: red;
+}
+  
+/*main p {
+    margin: 2em;
+}*/
+
+/** -----MENU----- **/
+#menu-toggle{
+  display: none;
+}
 
 .menu-hamb{
   display: none;
