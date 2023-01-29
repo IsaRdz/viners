@@ -21,38 +21,107 @@
   <div class="loaderContainer" id="loaderContainer">
     <span class="loader"></span>
   </div>
+
   <header>
-    <a href="#" class="logo">
+    <a href="./home.html" class="logo">
+        <img src="../assets/img/viners-logo1.png" alt="">
+    </a>
+    <input type="checkbox" name="" id="menu-toggle">
+    <div class="container-menuHamburg">
+      <label for="menu-toggle" class="menu-hamb"><i class="fa-solid fa-bars"></i></label>
+      <label for="menu-toggle" class="x"><i class="fa-solid fa-x"></i></label>
+    </div>
+    <div class="container__searchBar">
+      <section class="filter__searchBar">
+        <input id="input-search" class="searchInput" type="text" />
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </section>
+    </div>
+    <nav class="menu">
+        <div>
+          <ul>
+            <li class="indices">
+              <a href="#productos"><h2>Productos</h2></a>
+            </li>
+            <li class="indices">
+              <a href="#contacto"><h2>Contacto</h2></a>
+            </li>
+            <li class="indices">
+              <a href="#footer-container"><h2>Desarrolladores</h2></a>
+            </li>
+            <li class="botones indices">
+              <a href="#popup-login" class="boton entrar">Entrar</a>
+              <a href="#popup-login" class="boton">Registro</a>
+          </li>
+          </ul>
+        </div>
+        <div class="nav-container">
+            <ul>
+                <li>
+                    <!-- <img src="https://img.icons8.com/external-tanah-basah-glyph-tanah-basah/48/FFFFFF/external-profile-social-media-ui-tanah-basah-glyph-tanah-basah.png"/> -->
+                    <a href="#popup-login" rel="noopener noreferrer" class="link">
+                    <i class="fa-solid fa-user fa-xl"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+      <div class="shopping-cart-image-container button-home">
+        <!-- <img src="https://img.icons8.com/ios-filled/50/FFFFFF/shopping-cart.png"/> -->
+        <i class="fa-solid fa-cart-shopping fa-xl"></i>
+        <div class="cart_products_total">0</div>
+      </div>
+      <div class="cart-resume-container hidden">
+          <div class="products_container_resume"></div>
+          <div class="empty_cart" id="empty-cart">
+            <img src="../assets/empty-cart.png" alt="empty-cart" class="empty_img">
+            <h2 class="empty_title">¡Carrito vacío!</h2>
+            <!--<p>Let's go buy something!</p>-->
+          </div>
+          <div class="buttons_container">
+              <button class="clean-cart clean-cart-button">Vaciar carrito</button>
+              <a href="./cartDetail.html" class="clean-cart">Ver detalle</a>
+          </div>
+      </div>
+</header>
+  <!-- <header>
+    <input type="checkbox" name="" id="menu-toggle">
+    <label for="menu-toggle" class="menu-hamb"><i class="fa-solid fa-bars"></i></label>
+    <label for="menu-toggle" class="x"><i class="fa-solid fa-x"></i></label>
+    <a href="#" class="logo button-home">
       <img src="../assets/img/viners-logo1.png" alt="" />
     </a>
-    <section class="filter__searchBar hide-header">
-      <input id="input-search" class="searchInput" type="text" />
-      <i class="fa-solid fa-magnifying-glass"></i>
-    </section>
-    <nav>
+    <div class="shopping-cart-image-container">
+      <i class="fa-solid fa-cart-shopping fa-xl"></i>
+      <div class="cart_products_total">0</div>
+    </div>
+
+    <nav class="menu">
       <div class="nav-container">
         <ul>
+          <li class="indices">
+            <a href=""><h2>Productos</h2></a>
+          </li>
+          <li class="indices">
+            <a href=""><h2>Contacto</h2></a>
+          </li>
+          <li class="indices">
+            <a href=""><h2>Desarrolladores</h2></a>
+          </li>
           <li>
-            <!-- <img src="https://img.icons8.com/external-tanah-basah-glyph-tanah-basah/48/FFFFFF/external-profile-social-media-ui-tanah-basah-glyph-tanah-basah.png"/> -->
-            <!--<i class="fa-solid fa-user fa-xl"></i>-->
             <a href="#popup-login" rel="noopener noreferrer" class="link">
               <i class="fa-solid fa-user fa-xl"></i>
             </a>
           </li>
-          <li class="shopping-cart-image-container">
-            <!-- <img src="https://img.icons8.com/ios-filled/50/FFFFFF/shopping-cart.png"/> -->
-            <i class="fa-solid fa-cart-shopping fa-xl"></i>
-            <div class="cart_products_total">0</div>
-          </li>
+          
         </ul>
-
       </div>
+
       <div class="cart-resume-container hidden">
         <div class="products_container_resume"></div>
         <div class="empty_cart" id="empty-cart">
           <img src="../assets/empty-cart.png" alt="empty-cart" class="empty_img">
           <h2 class="empty_title">¡Carrito vacío!</h2>
-          <!--<p>Let's go buy something!</p>-->
         </div>
         <div class="buttons_container">
           <button class="clean-cart clean-cart-button">Vaciar carrito</button>
@@ -60,7 +129,7 @@
         </div>
       </div>
     </nav>
-  </header>
+  </header> -->
   <main>
     <section class="login">
       <div id="popup-login" class="overlay">
@@ -154,10 +223,6 @@
             <h2 id="all_wines">Ver todo</h2>
           </button>
         </section>
-        <section class="filter__searchBar hide-body">
-          <input id="input-search" class="searchInput" type="text" />
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </section>
       </div>
       <div class="error hidden" id="errorP">
         <img src="../assets/noItemFound.png" alt="">
@@ -167,8 +232,8 @@
       <div class="title-container typing__efect">
         <h2 class="titleWine">Nuestros productos 🍷</h2>
       </div>
-
-      <section class="cards-container">
+      
+      <section class="cards-container" id="productos">
       </section>
     </section>
     <section class="iframe-form-container">
@@ -178,7 +243,7 @@
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen></iframe>
       </div>
-      <div class="form-container">
+      <div class="form-container" id="contacto">
         <h2 class="form-title">Contacto</h2>
         <form class="form-contact" name="contact-form" netlify>
           <label for="name">Nombre: <span>*</span></label>
