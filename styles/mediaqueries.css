@@ -180,6 +180,9 @@
   .button-filter i {
     display: none;
   }
+  .button-filter h2 {
+    color: aliceblue;
+  }
   .button-filter:hover {
     width: 90px;
     height: 90px;

@@ -89,12 +89,12 @@ header{
     border-bottom: 2px solid #25282aa0;
 }
 
-.logo {
+.logo, .logo-cart, .logo-detail {
   font-size: xx-large;
   font-weight: bold;
 }
 
-.logo img{
+.logo img, .logo-cart img, .logo-detail img {
     width: 2.5em;
     /* background-color: red; */
 }
@@ -103,21 +103,27 @@ header{
   display: none;  
 }
 
-.nav-container > ul {
+.nav-container > ul, 
+.nav-container-cart > ul, 
+.nav-container-detail > ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
-.nav-container > ul > li {
+.nav-container > ul > li, 
+.nav-container-cart > ul > li, 
+.nav-container-detail > ul > li {
   list-style-type: none;
   margin: 2vw;
   margin-left: 2vw;
   margin-right: 2vw;
 }
 
-.nav-container > ul > li > i {
+.nav-container > ul > li > i, 
+.nav-container-cart > ul > li > i, 
+.nav-container-detail > ul > li > i {
   color: var(--white);
   cursor: pointer;
 }
