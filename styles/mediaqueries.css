@@ -181,6 +181,7 @@
     display: none;
   }
   .button-filter h2 {
+    margin-bottom: -15px;
     color: aliceblue;
   }
   .button-filter:hover {
