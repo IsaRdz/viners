@@ -15,7 +15,8 @@
     justify-content: space-between;
     position: absolute;
     background-color: white;
-    right: 5%;
+    top: 80px;
+    right: 2%;
     width: 450px;
     height: 50vh;
     border-radius: 3px;
@@ -129,8 +130,8 @@
     cursor: pointer;
 }
 
-.empty_cart{
-    width: 100%;
+.empty-cart{
+    width: 40%;
     margin: auto;
     padding: 1vh 5vw 3vh 5vw;
     background-color: var(--white);
@@ -244,7 +245,7 @@ span{
   background-color: var(--orange);
   border-radius: 0px 5px 5px 0px;
   border: none;
-
+  box-shadow: 2px 2px 2px gray;
   font-size: 18px;
   font-weight: bold;
 

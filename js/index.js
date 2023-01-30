@@ -215,3 +215,13 @@ window.onload = function(){
   $loaderContainer.style.display = "none";
   $body.style.overflow = "visible";
 }
+
+let checkedMenu = document.getElementById("menu-toggle")
+
+// Cerrar menu al hacer scroll
+
+window.addEventListener("scroll", () => {
+  if (checkedMenu.checked) {
+    checkedMenu.checked = false
+  }
+})
