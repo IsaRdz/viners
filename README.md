@@ -126,6 +126,15 @@ Luego, la aplicación debería comenzar a funcionar sin problemas.
 > Footer
 <br>
 
+### Capturas Version Mobile
+<p align="center">
+  <img src="https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Capturas%2FVersion%20Mobile%2F1_Inicio.jpg?alt=media&token=83fc9f6e-fb73-4c7d-a8e6-c9b0d9553a1c" width=250>
+  <img src="https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Capturas%2FVersion%20Mobile%2F1_Inicio.jpg?alt=media&token=83fc9f6e-fb73-4c7d-a8e6-c9b0d9553a1c" width=250>
+  <img src="https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Capturas%2FVersion%20Mobile%2F1_Inicio.jpg?alt=media&token=83fc9f6e-fb73-4c7d-a8e6-c9b0d9553a1c" width=250><br>
+</p>
+> Bienvenida
+<br>
+
 ## Colaboradores
 | [<img src="https://avatars.githubusercontent.com/u/72816896?v=4" width=50><br><sub>Boujon, Juan</sub>](https://github.com/Juan2805) |  [<img src="https://avatars.githubusercontent.com/u/74721434?v=4" width=50><br><sub>Mansilla, Cristian</sub>](https://github.com/cristianmansilla) |  [<img src="https://avatars.githubusercontent.com/u/87336052?v=4" width=50><br><sub>Rodríguez, Isabel</sub>](https://github.com/isardz) | [<img src="https://avatars.githubusercontent.com/u/87342125?v=4" width=50><br><sub>Trostdorf, Andres</sub>](https://github.com/TrostdorfA)
 | :---: | :---: | :---: | :---: |
