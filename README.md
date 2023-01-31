@@ -129,6 +129,8 @@ Luego, la aplicación debería comenzar a funcionar sin problemas.
 ### Capturas Version Mobile
 <p align="center">
   <img src="https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Capturas%2FVersion%20Mobile%2F1_Inicio.jpg?alt=media&token=83fc9f6e-fb73-4c7d-a8e6-c9b0d9553a1c" width=250><br>
+  <img src="https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Capturas%2FVersion%20Mobile%2F1_Inicio.jpg?alt=media&token=83fc9f6e-fb73-4c7d-a8e6-c9b0d9553a1c" width=250><br>
+  <img src="https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Capturas%2FVersion%20Mobile%2F1_Inicio.jpg?alt=media&token=83fc9f6e-fb73-4c7d-a8e6-c9b0d9553a1c" width=250><br>
 </p>
 > Bienvenida
 <br>
