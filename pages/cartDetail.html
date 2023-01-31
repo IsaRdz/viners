@@ -54,26 +54,34 @@
       <section class="login">
         <div id="popup-login" class="overlay">
           <div id="popupBody">
-            <a id="cerrar" href="#">&times;</a>
-            <h2 class="title-login">Ingresar</h2>
-            <div class="popupContent">
-              <form action="" class="form-login">
-                <label for="email">Email: </label>
-                <input type="email" name="email" id="email" placeholder=" Ingresar email">
-                <label for="password">Contraseña: </label>
-                <input type="password" name="password" id="password" placeholder=" Ingresar contraseña">
-                <div class="container-check">
-                  <input type="checkbox" name="remember" id="remeber">
-                  <label for="remeber">No cerrar sesión</label>
+            <div>
+              <a id="cerrar" href="#">&times;</a>
+              <h2 class="title-login">Ingresar</h2>
+              <div class="popupContent">
+                <h1 class="hidden" id="user-name">Username</h1>
+                <form action="" class="form-login">
+                  <label for="username">Username: </label>
+                  <input type="text" id="username" name="username" placeholder=" Ingresar Username">
+                  <label for="email">Email: </label>
+                  <input type="email" id="email-login" name="email" placeholder=" Ingresar email">
+                  <label for="password">Contraseña: </label>
+                  <input type="password" name="password" id="password" placeholder=" Ingresar contraseña">
+                  <div class="container-check">
+                    <input type="checkbox" name="remember" id="remeber">
+                    <label for="remeber">No cerrar sesión</label>
+                  </div>
+                  <div class="container-icons">
+                    <img id="googleSign" src="https://img.icons8.com/color/48/null/google-logo.png" />
+                  </div>
+                </form>
+                <div class="container-btn-login">
+                  <a href="#"><button type="submit" id="signUp-btn" class="btn-login">Iniciar Sesión</button></a>
                 </div>
-                <div class="container-icons">
-                  <img src="https://img.icons8.com/color/48/null/google-logo.png" />
+                <div class="container-btn-logout">
+                  <a href="#"><button id="logout" class="btn-logout hidden">Cerrar Sesión</button></a>
                 </div>
-              </form>
-              <div class="container-btn-login">
-                <a href="#"><button type="submit" class="btn-login">Iniciar sesión</button></a>
+                <p class="forgot-pass">¿No tienes cuenta? Regístrate</p>
               </div>
-              <p class="forgot-pass">¿No tienes cuenta? Regístrate</p>
             </div>
           </div>
         </div>
@@ -173,5 +181,5 @@
 <script src="../js/cartDetail.js"></script>
 <!-- <script src="../js/cartResume.js"></script> -->
 <!-- <script src="../index.js"></script> -->
-
+<script type="module" src="../js/firebaseLogin.js"></script>
 </html>
