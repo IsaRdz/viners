@@ -138,7 +138,7 @@ Luego, la aplicación debería comenzar a funcionar sin problemas.
   <img src="https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Capturas%2FVersion%20Mobile%2F7_Carrito.jpg?alt=media&token=f431c97b-06d6-46f3-a625-1e705beba9c4" width=250>
   <img src="https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Capturas%2FVersion%20Mobile%2F8_Detalle-Carrito.jpg?alt=media&token=f7b8cf75-4a60-43d9-aae7-4c7f1fd50318" width=250><br>
 </p>
-> Bienvenida
+> Páginas: Bienvenida, Inicio, Menú hamburguesa, Registro, Detalles, Carrito, Detalles de carrito
 <br>
 
 ## Colaboradores
