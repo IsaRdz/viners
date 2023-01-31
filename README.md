@@ -130,13 +130,11 @@ Luego, la aplicación debería comenzar a funcionar sin problemas.
 <p align="center">
   <img src="https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Capturas%2FVersion%20Mobile%2F1_Inicio.jpg?alt=media&token=83fc9f6e-fb73-4c7d-a8e6-c9b0d9553a1c" width=250>
   <img src="https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Capturas%2FVersion%20Mobile%2F2_Home.jpg?alt=media&token=11f04dbd-b5fb-4f06-8350-98037dd0f2ec" width=250>
-  <img src="https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Capturas%2FVersion%20Mobile%2F3_Menu-Hamburguesa.jpg?alt=media&token=0d1085e1-c3aa-4279-9eb9-994547861636" width=250><br>
+  <img src="https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Capturas%2FVersion%20Mobile%2F3_Menu-Hamburguesa.jpg?alt=media&token=0d1085e1-c3aa-4279-9eb9-994547861636" width=250>
+  <img src="https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Capturas%2FVersion%20Mobile%2F4_Registro.jpg?alt=media&token=5ac47633-e70d-420b-967e-4e706da8c4af" width=250><br>
   
-  <img src="https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Capturas%2FVersion%20Mobile%2F4_Registro.jpg?alt=media&token=5ac47633-e70d-420b-967e-4e706da8c4af" width=250>
   <img src="https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Capturas%2FVersion%20Mobile%2F5_Contacto.jpg?alt=media&token=0900a217-2168-4f09-9c3b-d3f15fb58497" width=250>
-  <img src="https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Capturas%2FVersion%20Mobile%2F6_Footer.jpg?alt=media&token=812c3b4d-b1ac-40ba-95e4-3b58ea939715" width=250><br>
-  
- 
+  <img src="https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Capturas%2FVersion%20Mobile%2F6_Footer.jpg?alt=media&token=812c3b4d-b1ac-40ba-95e4-3b58ea939715" width=250>
   <img src="https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Capturas%2FVersion%20Mobile%2F7_Carrito.jpg?alt=media&token=f431c97b-06d6-46f3-a625-1e705beba9c4" width=250>
   <img src="https://firebasestorage.googleapis.com/v0/b/viners-iniciatec.appspot.com/o/Capturas%2FVersion%20Mobile%2F8_Detalle-Carrito.jpg?alt=media&token=f7b8cf75-4a60-43d9-aae7-4c7f1fd50318" width=250><br>
 </p>
