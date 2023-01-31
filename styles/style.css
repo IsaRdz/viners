@@ -383,7 +383,7 @@ header  label{
   cursor: pointer;
   filter: drop-shadow(2px 2px 2px var(--gray));
 }
-.btn-login{
+.btn-login, #logout{
   padding: 1vh 2vw 1vh 2vw;
   background-color: var(--gray);
   border-radius: 5px;
@@ -396,6 +396,13 @@ header  label{
 .forgot-pass{
   text-align: center;
   margin: 2vh;
+}
+#user-name {
+  font-size: 15px;
+}
+#logout {
+  margin: 10px 25%;
+  width: 50%;
 }
 /** -----CONFIRM OF ADD TO CART----- **/
 .overlay-add-cart {
